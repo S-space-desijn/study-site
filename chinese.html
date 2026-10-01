@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>语文（人教版）· 初中学习助手</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-subject="chinese">
+<div class="read-progress"></div>
+
+<header class="topbar">
+  <a class="home-link" href="index.html"><span class="logo-dot">📖</span> 学习助手</a>
+  <span class="subject-name"><b>语文</b> · 人教版（部编）</span>
+  <button class="menu-btn" aria-label="菜单">☰</button>
+  <div class="search-box">
+    <span class="ico">🔍</span>
+    <input id="searchInput" type="text" placeholder="搜索：论语、岳阳楼记、表现手法…">
+  </div>
+</header>
+<div class="sidebar-mask"></div>
+
+<div class="layout">
+  <aside class="sidebar">
+    <h4>分册目录</h4>
+    <nav>
+      <a href="#grade-7a">七年级上册</a>
+      <a href="#grade-7b">七年级下册</a>
+      <a href="#grade-8a">八年级上册</a>
+      <a href="#grade-8b">八年级下册</a>
+      <a href="#grade-9a">九年级上册</a>
+      <a href="#grade-9b">九年级下册</a>
+      <a href="#grade-topic">方法与专题</a>
+    </nav>
+    <div class="progress-wrap">
+      <div class="bar"><i></i></div>
+      <p>掌握进度 <span class="pct">0%</span></p>
+    </div>
+    <h4 style="margin-top:18px">题库训练</h4>
+    <nav>
+      <a href="#quiz" data-tab="quiz">📝 真题 / 模拟题练习</a>
+      <a href="#wrong" data-tab="wrong">❌ 错题集 <span class="wrong-count" style="color:var(--red);font-weight:700">0</span></a>
+    </nav>
+  </aside>
+
+  <main class="content">
+    <section class="page-hero" data-emoji="📖">
+      <h1>语文 · 人教版（部编版）</h1>
+      <p>按七至九年级六册教材整理必背古诗文、重点文言文、现代文篇目、名著导读，并附文言文、阅读鉴赏与写作方法专题。</p>
+      <div class="tags">
+        <span>必背古诗文 80+</span><span>重点文言文 30+</span><span>名著导读 12 部</span><span>阅读写作专题</span>
+      </div>
+    </section>
+
+    <div class="quiz-tabs">
+      <button type="button" data-tab="knowledge" class="active">📖 知识要点</button>
+      <button type="button" data-tab="quiz">📝 真题练习</button>
+      <button type="button" data-tab="wrong">❌ 错题集 <span class="wrong-count">0</span></button>
+    </div>
+
+    <div id="knowledge">
+    <div class="toolbar">
+      <button id="expandAll">全部展开</button>
+      <button id="collapseAll">全部收起</button>
+      <span class="tip">点击章节标题展开；点击右侧圆圈标记“已掌握”</span>
+    </div>
+
+    <!-- ================= 七年级上册 ================= -->
+    <section class="grade-block" id="grade-7a">
+      <h2 class="grade-title"><span class="badge">七年级上册</span><span class="en">部编版语文七年级上</span></h2>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head">
+          <span class="ch-no">1</span><span class="ch-title">必背古代诗歌（12 首）</span>
+          <span class="ch-master"></span><span class="ch-arrow">▼</span>
+        </button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <div class="tbl-wrap">
+          <table>
+            <tr><th>篇目</th><th>作者/朝代</th><th>核心名句与考点</th></tr>
+            <tr><td>观沧海</td><td>曹操（东汉末）</td><td>“日月之行，若出其中；星汉灿烂，若出其里”——借大海吞吐日月星辰，写统一天下的博大胸襟。</td></tr>
+            <tr><td>闻王昌龄左迁龙标遥有此寄</td><td>李白（唐）</td><td>“我寄愁心与明月，随君直到夜郎西”——拟人，托月寄情。</td></tr>
+            <tr><td>次北固山下</td><td>王湾（唐）</td><td>“海日生残夜，江春入旧年”——蕴含新旧更替的理趣；“乡书何处达？归雁洛阳边”思乡。</td></tr>
+            <tr><td>天净沙·秋思</td><td>马致远（元）</td><td>“枯藤老树昏鸦……断肠人在天涯”，<b class="kw">枯藤/老树/昏鸦</b>等名词意象叠加（列锦），游子之愁。</td></tr>
+            <tr><td>峨眉山月歌</td><td>李白</td><td>“夜发清溪向三峡，思君不见下渝州”——连用五地名，写行旅轻快与思友。</td></tr>
+            <tr><td>江南逢李龟年</td><td>杜甫</td><td>“正是江南好风景，落花时节又逢君”——以乐景写衰世，寄寓盛唐衰落之慨。</td></tr>
+            <tr><td>行军九日思长安故园</td><td>岑参</td><td>“遥怜故园菊，应傍战场开”——寄托对和平的渴望。</td></tr>
+            <tr><td>夜上受降城闻笛</td><td>李益</td><td>“不知何处吹芦管，一夜征人尽望乡”——边塞征人思乡。</td></tr>
+            <tr><td>秋词（其一）</td><td>刘禹锡</td><td>“晴空一鹤排云上，便引诗情到碧霄”——一反悲秋传统，昂扬乐观。</td></tr>
+            <tr><td>夜雨寄北</td><td>李商隐</td><td>“何当共剪西窗烛，却话巴山夜雨时”——<b class="kw">虚实结合</b>，今日之苦与来日重逢对照。</td></tr>
+            <tr><td>十一月四日风雨大作</td><td>陆游（南宋）</td><td>“夜阑卧听风吹雨，铁马冰河入梦来”——梦中仍思报国，忧国忧民。</td></tr>
+            <tr><td>潼关</td><td>谭嗣同（清）</td><td>“河流大野犹嫌束，山入潼关不解平”——少年豪迈、追求解放。</td></tr>
+          </table>
+          </div>
+          <div class="box exam">《观沧海》中“水何澹澹，山岛竦峙。树木丛生，百草丰茂。秋风萧瑟，洪波涌起”为<b class="kw">实写</b>；“日月之行……”为<b class="kw">虚写（想象）</b>。</div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head">
+          <span class="ch-no">2</span><span class="ch-title">文言文：《〈论语〉十二章》《世说新语》二则《诫子书》《狼》</span>
+          <span class="ch-master"></span><span class="ch-arrow">▼</span>
+        </button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <h3>《〈论语〉十二章》</h3>
+          <ul>
+            <li><b class="kw">学习方法</b>：“学而时习之，不亦说乎”“温故而知新”“学而不思则罔，思而不学则殆”（学思结合）。</li>
+            <li><b class="kw">学习态度</b>：“知之者不如好之者，好之者不如乐之者”“三人行，必有我师焉”“逝者如斯夫，不舍昼夜”（珍惜时间）。</li>
+            <li><b class="kw">修身做人</b>：“人不知而不愠，不亦君子乎”“吾日三省吾身”“不义而富且贵，于我如浮云”。</li>
+          </ul>
+          <h3>《世说新语》二则（咏雪 / 陈太丘与友期行）</h3>
+          <ul>
+            <li>“未若柳絮因风起”——谢道韫以柳絮喻雪，<b class="kw">比喻</b>贴切，后以“咏絮之才”赞女子文学才能。</li>
+            <li>《陈太丘》：元方“入门不顾”，表现<b class="kw">明白事理、落落大方、维护父亲尊严</b>；友人“无信”“无礼”。</li>
+          </ul>
+          <h3>《诫子书》诸葛亮</h3>
+          <div class="box formula">静以修身，俭以养德。非淡泊无以明志，非宁静无以致远。夫学须静也，才须学也。非学无以广才，非志无以成学。淫慢则不能励精，险躁则不能治性。</div>
+          <p>劝勉儿子勤学立志、修身养性，核心是<b class="kw">“静”</b>；反面关键词：淫慢、险躁。</p>
+          <h3>《狼》蒲松龄（《聊斋志异》）</h3>
+          <ul>
+            <li>情节：遇狼→惧狼→御狼→杀狼；狼的形象：贪婪、狡诈、凶狠。</li>
+            <li>主旨：“禽兽之变诈几何哉？止增笑耳”——<b class="kw">对待恶势力要敢于斗争、善于斗争</b>。</li>
+            <li>重点词：顾（回头看）、苫蔽（覆盖遮盖）、弛（卸下）、黠（狡猾）、寐（睡觉）。</li>
+          </ul>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head">
+          <span class="ch-no">3</span><span class="ch-title">现代文重点课文与文学常识</span>
+          <span class="ch-master"></span><span class="ch-arrow">▼</span>
+        </button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li><b>《春》朱自清</b>：盼春—绘春（春草、春花、春风、春雨、迎春）—颂春；比喻、拟人，结尾三个比喻句赞美春“新、美、力”。</li>
+            <li><b>《济南的冬天》老舍</b>：原名舒庆春，作品《骆驼祥子》《茶馆》《四世同堂》；抓住“温晴”特点，融情于景。</li>
+            <li><b>《秋天的怀念》史铁生</b>：母爱的深沉隐忍；“看花”为<b class="kw">线索</b>，反复出现，象征重生与希望。</li>
+            <li><b>《散步》莫怀戚</b>：以小见大，中年人的责任，尊老爱幼、亲情与生命传承。</li>
+            <li><b>《散文诗二首》</b>：泰戈尔《金色花》（印度，《新月集》）、冰心《荷叶·母亲》（借荷叶护莲喻母爱，<b class="kw">托物言情</b>）。</li>
+            <li><b>《从百草园到三味书屋》鲁迅</b>：选自《朝花夕拾》；百草园的自由欢乐对比三味书屋的读书生活，色彩、动静、虚实结合（美女蛇传说）。</li>
+            <li><b>《再塑生命的人》海伦·凯勒</b>：美国盲聋女作家，《假如给我三天光明》；莎莉文老师充满爱心与教育智慧。</li>
+            <li><b>《纪念白求恩》毛泽东</b>：纪念白求恩<b class="kw">国际主义、毫不利己专门利人、对技术精益求精</b>的精神；夹叙夹议、对比论证。</li>
+            <li><b>《植树的牧羊人》让·乔诺</b>：法国；一个人靠坚持把荒漠变成绿洲，无私与毅力。</li>
+            <li><b>《走一步，再走一步》莫顿·亨特</b>：把大困难分解成小困难，<b class="kw">化整为零、逐步克服</b>。</li>
+          </ul>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head">
+          <span class="ch-no">4</span><span class="ch-title">名著导读：《朝花夕拾》《西游记》</span>
+          <span class="ch-master"></span><span class="ch-arrow">▼</span>
+        </button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <h3>《朝花夕拾》鲁迅（回忆性散文集，原名《旧事重提》，共 10 篇）</h3>
+          <ul>
+            <li>常考篇目：《从百草园到三味书屋》《阿长与〈山海经〉》《藤野先生》《二十四孝图》《五猖会》《无常》《父亲的病》《琐记》《范爱农》《狗·猫·鼠》。</li>
+            <li>阿长：粗俗好事但淳朴善良、真诚热心；藤野先生：治学严谨、无民族偏见；衍太太：自私虚伪。</li>
+            <li>手法：<b class="kw">夹叙夹议、对比、反讽</b>；温情回忆与理性批判交织。</li>
+          </ul>
+          <h3>《西游记》吴承恩（明代，神魔小说，共 100 回）</h3>
+          <ul>
+            <li>孙悟空：大闹天宫—被压五行山—三打白骨精—三调芭蕉扇等；桀骜不驯、敢于反抗、机智勇敢。</li>
+            <li>猪八戒：憨厚淳朴又好吃懒做、爱耍小聪明；沙僧：忠厚任劳任怨；唐僧：信念坚定但有时贤愚不分。</li>
+            <li>主题：为实现理想不畏艰险、<b class="kw">持之以恒</b>；浪漫主义想象、三复情节（三打/三调）。</li>
+          </ul>
+        </div></div>
+      </article>
+    </section>
+
+    <!-- ================= 七年级下册 ================= -->
+    <section class="grade-block" id="grade-7b">
+      <h2 class="grade-title"><span class="badge">七年级下册</span><span class="en">部编版语文七年级下</span></h2>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head">
+          <span class="ch-no">1</span><span class="ch-title">必背古代诗歌（14 首）</span>
+          <span class="ch-master"></span><span class="ch-arrow">▼</span>
+        </button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <div class="tbl-wrap">
+          <table>
+            <tr><th>篇目</th><th>作者</th><th>核心考点</th></tr>
+            <tr><td>木兰诗</td><td>北朝民歌（《乐府诗集》）</td><td>“万里赴戎机，关山度若飞”“将军百战死，壮士十年归”；<b class="kw">互文、复沓、排比、对偶</b>；木兰忠孝两全、不慕名利。</td></tr>
+            <tr><td>竹里馆</td><td>王维</td><td>“深林人不知，明月来相照”——月夜幽林，宁静淡泊，<b class="kw">诗中有画</b>。</td></tr>
+            <tr><td>春夜洛城闻笛</td><td>李白</td><td>“此夜曲中闻折柳，何人不起故园情”——“折柳”曲含惜别思乡意。</td></tr>
+            <tr><td>逢入京使</td><td>岑参</td><td>“马上相逢无纸笔，凭君传语报平安”——边塞思乡，豪迈中见柔情。</td></tr>
+            <tr><td>晚春</td><td>韩愈</td><td>“杨花榆荚无才思，惟解漫天作雪飞”——拟人写晚春争芳，寄寓珍惜光阴。</td></tr>
+            <tr><td>登幽州台歌</td><td>陈子昂</td><td>“前不见古人，后不见来者。念天地之悠悠，独怆然而涕下”——怀才不遇，时空对比。</td></tr>
+            <tr><td>望岳</td><td>杜甫</td><td>“会当凌绝顶，一览众山小”——化用“登泰山而小天下”，<b class="kw">不怕困难、敢于攀登</b>。</td></tr>
+            <tr><td>登飞来峰</td><td>王安石</td><td>“不畏浮云遮望眼，自缘身在最高层”——<b class="kw">站得高看得远</b>，与苏轼“不识庐山真面目”正反对照。</td></tr>
+            <tr><td>游山西村</td><td>陆游</td><td>“山重水复疑无路，柳暗花明又一村”——<b class="kw">困境中出现转机</b>；淳朴民风。</td></tr>
+            <tr><td>己亥杂诗（其五）</td><td>龚自珍</td><td>“落红不是无情物，化作春泥更护花”——<b class="kw">托物言志</b>，虽辞官仍心系国家。</td></tr>
+            <tr><td>泊秦淮</td><td>杜牧</td><td>“商女不知亡国恨，隔江犹唱后庭花”——借古讽今，批判统治者醉生梦死。</td></tr>
+            <tr><td>贾生</td><td>李商隐</td><td>“可怜夜半虚前席，不问苍生问鬼神”——托古讽时，叹贤才不被重用。</td></tr>
+            <tr><td>过松源晨炊漆公店</td><td>杨万里</td><td>“正入万山围子里，一山放出一山拦”——比喻困难层层，不可松懈。</td></tr>
+            <tr><td>约客</td><td>赵师秀</td><td>“有约不来过夜半，闲敲棋子落灯花”——细节写怅惘孤寂。</td></tr>
+          </table>
+          </div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head">
+          <span class="ch-no">2</span><span class="ch-title">文言文：《孙权劝学》《卖油翁》《陋室铭》《爱莲说》《河中石兽》</span>
+          <span class="ch-master"></span><span class="ch-arrow">▼</span>
+        </button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <h3>《孙权劝学》（《资治通鉴》，司马光主持编纂，编年体通史）</h3>
+          <ul>
+            <li>“卿今当涂掌事，不可不学”“孤岂欲卿治经为博士邪！但当涉猎，见往事耳”。</li>
+            <li>“士别三日，即更刮目相待”“吴下阿蒙”——开卷有益；<b class="kw">侧面描写</b>（鲁肃叹学）表现吕蒙进步。</li>
+          </ul>
+          <h3>《卖油翁》欧阳修（北宋，谥号文忠，唐宋八大家）</h3>
+          <ul>
+            <li>陈尧咨射箭“当世无双”而自矜；卖油翁酌油沥钱孔而钱不湿——“我亦无他，惟手熟尔”。</li>
+            <li>道理：<b class="kw">熟能生巧、实践出真知；戒骄傲，须知人外有人</b>。</li>
+          </ul>
+          <h3>《陋室铭》刘禹锡</h3>
+          <div class="box formula">山不在高，有仙则名。水不在深，有龙则灵。斯是陋室，惟吾德馨。苔痕上阶绿，草色入帘青……孔子云：何陋之有？</div>
+          <ul>
+            <li><b class="kw">托物言志</b>：借陋室表达安贫乐道、高洁傲岸的情操。用典：南阳诸葛庐、西蜀子云亭、孔子云。</li>
+          </ul>
+          <h3>《爱莲说》周敦颐</h3>
+          <div class="box formula">出淤泥而不染，濯清涟而不妖，中通外直，不蔓不枝，香远益清，亭亭净植，可远观而不可亵玩焉。</div>
+          <ul>
+            <li><b class="kw">托物言志＋对比衬托</b>：菊（隐逸者，正衬）、牡丹（富贵者，反衬）、莲（君子者）；不慕名利、洁身自好。</li>
+          </ul>
+          <h3>《河中石兽》纪昀（《阅微草堂笔记》）</h3>
+          <ul>
+            <li>寺僧（只凭常情）、讲学家（空谈事理“颠”）、老河兵（结合实践经验，正确）。</li>
+            <li>主旨：“然则天下之事，但知其一，不知其二者多矣，可据理臆断欤？”——<b class="kw">实践出真知，不可主观臆断</b>。</li>
+          </ul>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head">
+          <span class="ch-no">3</span><span class="ch-title">现代文重点课文与文学常识</span>
+          <span class="ch-master"></span><span class="ch-arrow">▼</span>
+        </button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li><b>《邓稼先》杨振宁</b>：小标题式结构；将邓稼先与奥本海默<b class="kw">对比</b>，突出忠厚平实、真诚坦白；中华几千年传统文化孕育的精神。</li>
+            <li><b>《说和做——记闻一多先生言行片段》臧克家</b>：作为学者“做了再说，做了不说”，作为革命家“说了就做”；言行一致、英勇无畏。</li>
+            <li><b>《回忆鲁迅先生》萧红</b>：生活细节展现鲁迅平易近人、幽默风趣、勤奋忘我。</li>
+            <li><b>《黄河颂》光未然</b>：组诗《黄河大合唱》第二乐章；呼告、比喻、反复；赞美黄河“摇篮”“屏障”，激励民族精神。</li>
+            <li><b>《老山界》陆定一</b>：按时间变化、地点转移<b class="kw">顺叙</b>；翻越长征第一座难走的山，革命乐观主义。</li>
+            <li><b>《谁是最可爱的人》魏巍</b>：通讯；松骨峰战斗、火中救儿童、防空洞谈话三材料，志愿军是最可爱的人。</li>
+            <li><b>《土地的誓言》端木蕻良</b>：“九一八”后对关东原野的誓言；<b class="kw">呼告、排比、移情于物</b>，炽热爱国情。</li>
+            <li><b>《阿长与〈山海经〉》鲁迅</b>：欲扬先抑；阿长买来《山海经》表现淳朴善良的母爱式温情。</li>
+            <li><b>《老王》杨绛</b>：老王（送冰、送钱先生看病、临终送香油鸡蛋）善良不幸；“那是一个幸运的人对一个不幸者的愧怍”——<b class="kw">人道主义关怀与自省</b>。</li>
+            <li><b>《台阶》李森祥</b>：以“台阶”为线索，父亲勤劳坚韧、谦卑朴实，也反映农民改善地位的艰难。</li>
+          </ul>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head">
+          <span class="ch-no">4</span><span class="ch-title">名著导读：《骆驼祥子》《海底两万里》</span>
+          <span class="ch-master"></span><span class="ch-arrow">▼</span>
+        </button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <h3>《骆驼祥子》老舍</h3>
+          <ul>
+            <li>祥子“三起三落”：苦干三年买新车（被大兵抢）→攒钱又被孙侦探敲诈→虎妞出钱买车又卖车葬虎妞；最终因小福子之死彻底堕落。</li>
+            <li>主题：<b class="kw">揭露黑暗旧社会对劳动者的摧残</b>，个人奋斗道路在旧中国行不通；京味语言、心理描写。</li>
+            <li>人物：虎妞（泼辣精明又悲剧）、刘四爷（残忍霸道）、小福子（善良软弱）、曹先生（善良正直的旧知识分子）。</li>
+          </ul>
+          <h3>《海底两万里》儒勒·凡尔纳（法国，“现代科学幻想小说之父”）</h3>
+          <ul>
+            <li>鹦鹉螺号（诺第留斯号）潜艇；尼摩船长（神秘、知识渊博、反抗压迫、善良正义）、阿龙纳斯、康塞尔、尼德·兰。</li>
+            <li>特色：<b class="kw">科学与幻想巧妙结合</b>；海底狩猎、南极冰层、勇斗鲨鱼、章鱼袭击等情节。</li>
+          </ul>
+        </div></div>
+      </article>
+    </section>
+
+    <!-- ================= 八年级上册 ================= -->
+    <section class="grade-block" id="grade-8a">
+      <h2 class="grade-title"><span class="badge">八年级上册</span><span class="en">部编版语文八年级上</span></h2>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head">
+          <span class="ch-no">1</span><span class="ch-title">古诗文：短文两篇与诗词五首</span>
+          <span class="ch-master"></span><span class="ch-arrow">▼</span>
+        </button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <h3>山水文言四篇（见下一章详解）配套诗歌</h3>
+          <div class="tbl-wrap">
+          <table>
+            <tr><th>篇目</th><th>作者</th><th>核心考点</th></tr>
+            <tr><td>野望</td><td>王绩</td><td>“树树皆秋色，山山唯落晖”；惆怅孤寂，追怀采薇。</td></tr>
+            <tr><td>黄鹤楼</td><td>崔颢</td><td>“日暮乡关何处是？烟波江上使人愁”——乡愁；对仗工整，被誉唐人七律第一。</td></tr>
+            <tr><td>使至塞上</td><td>王维</td><td>“大漠孤烟直，长河落日圆”——<b class="kw">诗中有画、线条色彩构图</b>；“征蓬出汉塞，归雁入胡天”自比。</td></tr>
+            <tr><td>渡荆门送别</td><td>李白</td><td>“山随平野尽，江入大荒流”；“仍怜故乡水，万里送行舟”拟人。</td></tr>
+            <tr><td>钱塘湖春行</td><td>白居易</td><td>“几处早莺争暖树，谁家新燕啄春泥”；早春生机，“行”为线索。</td></tr>
+            <tr><td>饮酒（其五）</td><td>陶渊明</td><td>“采菊东篱下，悠然见南山”——心远地自偏，物我两忘；“见”字不可换“望”。</td></tr>
+            <tr><td>春望</td><td>杜甫</td><td>“国破山河在，城春草木深。感时花溅泪，恨别鸟惊心”；忧国伤时思家；“烽火连三月，家书抵万金”。</td></tr>
+            <tr><td>雁门太守行</td><td>李贺</td><td>“黑云压城城欲摧，甲光向日金鳞开”“报君黄金台上意，提携玉龙为君死”；色彩浓烈、誓死报国。</td></tr>
+            <tr><td>赤壁</td><td>杜牧</td><td>“东风不与周郎便，铜雀春深锁二乔”——<b class="kw">以小见大、借史抒怀</b>，历史兴亡之叹。</td></tr>
+            <tr><td>渔家傲（天接云涛连晓雾）</td><td>李清照</td><td>豪放浪漫，记梦；“九万里风鹏正举”用《庄子》典故，抒苦闷与追求。</td></tr>
+          </table>
+          </div>
+          <p>课外古诗词诵读：《庭中有奇树》《龟虽寿》（曹操：老骥伏枥，志在千里）《赠从弟》（刘桢：岂不罹凝寒？松柏有本性）《梁甫行》（曹植）；《浣溪沙》（晏殊：无可奈何花落去，似曾相识燕归来）、《采桑子》（欧阳修）、《相见欢》（朱敦儒）、《如梦令》（李清照：争渡，争渡，惊起一滩鸥鹭）。</p>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head">
+          <span class="ch-no">2</span><span class="ch-title">文言文：《三峡》《答谢中书书》《记承天寺夜游》《与朱元思书》《孟子》二章《愚公移山》《周亚夫军细柳》</span>
+          <span class="ch-master"></span><span class="ch-arrow">▼</span>
+        </button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <h3>《三峡》郦道元（《水经注》，地理名著）</h3>
+          <ul>
+            <li>先写山（连绵高峻）后写水：夏水襄陵（奔放美）→春冬之时（清荣峻茂，清幽美）→秋（林寒涧肃、猿鸣，凄婉美）。</li>
+            <li>“巴东三峡巫峡长，猿鸣三声泪沾裳”；<b class="kw">侧面烘托</b>（“自非亭午夜分，不见曦月”写山高）。</li>
+          </ul>
+          <h3>《答谢中书书》陶弘景（“山中宰相”）</h3>
+          <p>书信体山水小品；“山川之美，古来共谈”；晨昏变化、动静结合，表达沉醉山水的愉悦与与古今知音共赏的自豪。</p>
+          <h3>《记承天寺夜游》苏轼</h3>
+          <div class="box formula">庭下如积水空明，水中藻、荇交横，盖竹柏影也。何夜无月？何处无竹柏？但少闲人如吾两人者耳。</div>
+          <p>“闲人”一词意蕴丰富：贬谪悲凉、人生感慨、赏月欣喜、漫步悠闲，<b class="kw">旷达乐观</b>。比喻写月光空明。</p>
+          <h3>《与朱元思书》吴均</h3>
+          <p>骈文；“奇山异水，天下独绝”；水“异”（清、急）、山“奇”（高、寒、幽）；“鸢飞戾天者，望峰息心；经纶世务者，窥谷忘反”——鄙弃名利、爱慕自然。</p>
+          <h3>《〈孟子〉二章》</h3>
+          <ul>
+            <li><b>《富贵不能淫》</b>：“居天下之广居，立天下之正位，行天下之大道……富贵不能淫，贫贱不能移，威武不能屈，此之谓大丈夫。”</li>
+            <li><b>《生于忧患，死于安乐》</b>：舜、傅说、胶鬲等六人事例；“故天将降大任于是人也，必先苦其心志，劳其筋骨……”“然后知生于忧患而死于安乐也”；<b class="kw">举例论证＋道理论证</b>。</li>
+          </ul>
+          <h3>《愚公移山》（《列子·汤问》）</h3>
+          <ul>
+            <li>愚公（目光长远、坚持不懈、人定胜天）对比智叟（目光短浅、畏难而止）；孀妻弱子“跳往助之”与智叟讥讽对比。</li>
+            <li>神话结尾（天帝命神移山）衬托愚公精神感人；主题：<b class="kw">只要下定决心、持之以恒就能战胜困难</b>。</li>
+          </ul>
+          <h3>《周亚夫军细柳》司马迁（《史记》）</h3>
+          <ul>
+            <li>汉文帝到霸上、棘门军“直驰入”，到细柳军不得入、按辔徐行——<b class="kw">对比、正面侧面结合</b>，赞周亚夫“真将军”：治军严明、刚正不阿、恪尽职守。</li>
+          </ul>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head">
+          <span class="ch-no">3</span><span class="ch-title">现代文重点（新闻单元 / 回忆性散文 / 说明文）</span>
+          <span class="ch-master"></span><span class="ch-arrow">▼</span>
+        </button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <h3>新闻（活动·探究单元）</h3>
+          <ul>
+            <li>《消息二则》毛泽东；新闻结构：<b class="kw">标题、导语、主体、背景、结语</b>；六要素“5W1H”；语言准确简洁、时效性强。</li>
+            <li>《首届诺贝尔奖颁发》消息；《“飞天”凌空——跳水姑娘吕伟夺魁记》新闻特写（截取瞬间、描写生动）；《一着惊海天》通讯。</li>
+          </ul>
+          <h3>回忆性散文与传记</h3>
+          <ul>
+            <li><b>《藤野先生》鲁迅</b>：东京—仙台—弃医从文；匿名信事件、看电影事件；明线（与藤野交往）暗线（爱国情感）。</li>
+            <li><b>《回忆我的母亲》朱德</b>：勤劳一生；“回忆—感谢—尽忠”，将爱母亲与爱民族人民结合。</li>
+            <li><b>《列夫·托尔斯泰》茨威格</b>：<b class="kw">欲扬先抑</b>，平庸外貌反衬灵魂高贵，“眼睛”是重点。</li>
+            <li><b>《美丽的颜色》艾芙·居里</b>：居里夫人发现镭，坚守忘我、热爱科学。</li>
+          </ul>
+          <h3>散文与说明文</h3>
+          <ul>
+            <li><b>《背影》朱自清</b>：四次写背影、四次流泪；父爱深沉、儿子情感变化（不耐烦→感动），白描、细节描写。</li>
+            <li><b>《白杨礼赞》茅盾</b>：<b class="kw">象征</b>——白杨树象征北方抗日军民朴质、坚强、力求上进的精神；欲扬先抑、反问排比。</li>
+            <li><b>《昆明的雨》汪曾祺</b>：以“雨”为线索，风土人情，平淡有味。</li>
+            <li><b>《中国石拱桥》茅以昇</b>：举例子（赵州桥、卢沟桥）、列数字、作比较、打比方；说明<b class="kw">抓住特征、语言准确</b>。</li>
+            <li><b>《苏州园林》叶圣陶</b>：总特征“务必使游览者无论站在哪个点上，眼前总是一幅完美的图画”；先总后分。</li>
+            <li><b>《蝉》法布尔</b>：科学观察与文学性结合。</li>
+          </ul>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head">
+          <span class="ch-no">4</span><span class="ch-title">名著导读：《红星照耀中国》《昆虫记》</span>
+          <span class="ch-master"></span><span class="ch-arrow">▼</span>
+        </button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <h3>《红星照耀中国》（又名《西行漫记》）埃德加·斯诺（美国记者，纪实文学）</h3>
+          <ul>
+            <li>1936 年深入陕甘宁边区采访，向世界真实报道中国共产党和红军；毛泽东、周恩来、彭德怀、贺龙等人物形象。</li>
+            <li>内容：红军长征（强渡大渡河、飞夺泸定桥、过草地）、苏区生活、抗日主张；<b class="kw">第一手材料、实录精神</b>。</li>
+          </ul>
+          <h3>《昆虫记》法布尔（法国，“昆虫的史诗”）</h3>
+          <ul>
+            <li>科普作品但文学性强，被雨果称“昆虫世界的荷马”；蝉、螳螂、杨柳天牛、切叶蜂、蟋蟀等。</li>
+            <li>语言活泼、拟人；<b class="kw">尊重生命、热爱自然、细致观察、求真务实</b>。</li>
+          </ul>
+        </div></div>
+      </article>
+    </section>
+
+    <!-- ================= 八年级下册 ================= -->
+    <section class="grade-block" id="grade-8b">
+      <h2 class="grade-title"><span class="badge">八年级下册</span><span class="en">部编版语文八年级下</span></h2>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head">
+          <span class="ch-no">1</span><span class="ch-title">古诗文：记游名篇与《诗经》二首、唐诗三首</span>
+          <span class="ch-master"></span><span class="ch-arrow">▼</span>
+        </button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <h3>《诗经》二首</h3>
+          <ul>
+            <li>《诗经》是我国最早<b class="kw">诗歌总集</b>，收录西周到春秋 305 篇，分<b class="kw">风、雅、颂</b>，手法<b class="kw">赋、比、兴</b>，四言为主、重章叠句。</li>
+            <li>《关雎》：“关关雎鸠，在河之洲”（<b class="kw">兴</b>）；“窈窕淑女，君子好逑”；写恋爱追求，乐而不淫、哀而不伤。</li>
+            <li>《蒹葭》：“蒹葭苍苍，白露为霜。所谓伊人，在水一方”；<b class="kw">重章叠句、反复咏叹</b>，可望不可即的追寻与怅惘。</li>
+            <li>课外：《式微》《子衿》（“一日不见，如三月兮”）。</li>
+          </ul>
+          <h3>唐诗三首 / 课外诗词</h3>
+          <ul>
+            <li>《茅屋为秋风所破歌》杜甫：“安得广厦千万间，大庇天下寒士俱欢颜”——推己及人、忧国忧民。</li>
+            <li>《卖炭翁》白居易：“可怜身上衣正单，心忧炭贱愿天寒”；宫市之害，<b class="kw">矛盾心理</b>，现实主义。</li>
+            <li>《送杜少府之任蜀州》王勃：“海内存知己，天涯若比邻”——豁达送别，一改伤感。</li>
+            <li>《望洞庭湖赠张丞相》孟浩然：“气蒸云梦泽，波撼岳阳城”；欲渡无舟楫，委婉求荐。</li>
+            <li>《题破山寺后禅院》常建：“曲径通幽处，禅房花木深”“万籁此都寂，但余钟磬音”（以声衬静）。</li>
+            <li>《送友人》李白、《卜算子·黄州定慧院寓居作》苏轼（“拣尽寒枝不肯栖，寂寞沙洲冷”）、《卜算子·咏梅》陆游（“零落成泥碾作尘，只有香如故”，高洁自守）。</li>
+          </ul>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head">
+          <span class="ch-no">2</span><span class="ch-title">文言文：《桃花源记》《小石潭记》《核舟记》《庄子》二则《礼记》二则《马说》</span>
+          <span class="ch-master"></span><span class="ch-arrow">▼</span>
+        </button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <h3>《桃花源记》陶渊明</h3>
+          <ul>
+            <li>渔人发现桃花源：发现—访问—离开—再寻不得；“芳草鲜美，落英缤纷”“黄发垂髫，并怡然自乐”。</li>
+            <li>寄托<b class="kw">没有压迫剥削、和平安宁的社会理想</b>，暗含对现实黑暗的不满；虚实结合。</li>
+          </ul>
+          <h3>《小石潭记》柳宗元（“永州八记”之一，唐宋八大家）</h3>
+          <ul>
+            <li>发现石潭—潭中景物（鱼“皆若空游无所依”，侧面写水清）—小潭源流—潭上气氛—离开；移步换景、情景交融。</li>
+            <li>“凄神寒骨，悄怆幽邃”——<b class="kw">乐是忧的另一种形式</b>，寄寓贬谪孤寂悲凉。</li>
+          </ul>
+          <h3>《核舟记》魏学洢（《虞初新志》）</h3>
+          <p>说明文：空间顺序（中—头—尾—背）介绍核舟“奇巧”；“罔不因势象形，各具情态”；赞雕刻者王叔远技艺精湛。</p>
+          <h3>《庄子》二则</h3>
+          <ul>
+            <li>《北冥有鱼》：鲲鹏“抟扶摇而上者九万里”——借助外物、追求绝对精神自由；想象奇特、夸张浪漫。</li>
+            <li>《庄子与惠子游于濠梁之上》：“子非鱼，安知鱼之乐”——轻松机智的辩论，<b class="kw">万物与我合一</b>的审美心境。</li>
+          </ul>
+          <h3>《礼记》二则（虽有嘉肴 / 大道之行也）</h3>
+          <ul>
+            <li>“教学相长也”——教与学相互促进；“大道之行也，天下为公……是谓大同”——<b class="kw">大同社会</b>理想。</li>
+          </ul>
+          <h3>《马说》韩愈（说：议论性文体）</h3>
+          <div class="box formula">世有伯乐，然后有千里马。千里马常有，而伯乐不常有……其真无马邪？其真不知马也！</div>
+          <ul>
+            <li><b class="kw">托物寓意</b>：千里马—人才；伯乐—识才者；食马者—昏庸统治者；“祗辱于奴隶人之手，骈死于槽枥之间”；怀才不遇之愤。</li>
+          </ul>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head">
+          <span class="ch-no">3</span><span class="ch-title">现代文重点（民俗/科学文艺/游记/演讲）</span>
+          <span class="ch-master"></span><span class="ch-arrow">▼</span>
+        </button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li><b>《社戏》鲁迅</b>（小说）：月夜行船、船头看戏、归航偷豆；江南水乡诗情画意，平桥村是“乐土”，赞劳动人民淳朴善良和童真。</li>
+            <li><b>《回延安》贺敬之</b>：信天游形式（比兴、两句一节）；“母亲延安”，翻身喜悦与眷恋。</li>
+            <li><b>《安塞腰鼓》刘成章</b>：排比、反复、短句，歌颂生命力量与黄土高原精神。</li>
+            <li><b>《灯笼》吴伯箫</b>：以小见大，亲情乡情到家国情怀。</li>
+            <li><b>《大自然的语言》竺可桢</b>：事理说明文；“物候、物候学”；逻辑顺序（现象—本质），举例子、作比较。</li>
+            <li><b>《阿西莫夫短文两篇》</b>：《恐龙无处不有》（板块构造）、《被压扁的沙子》（恐龙灭绝）；<b class="kw">不同科学领域之间相互联系</b>。</li>
+            <li><b>《大雁归来》利奥波德</b>（《沙乡年鉴》，“生态伦理之父”）；《时间的脚印》陶世龙（岩石记录时间）。</li>
+            <li>演讲单元：《最后一次讲演》闻一多（拍案而起，对比、呼告、反复，爱憎分明）；《应有格物致知精神》丁肇中（实验精神的重要）；《我一生中的重要抉择》王选；顾拜旦《庆祝奥林匹克运动复兴 25 周年》。</li>
+            <li>游记单元：《壶口瀑布》梁衡（刚柔相济、借景抒情，写黄河精神）；《在长江源头各拉丹冬》；《登勃朗峰》马克·吐温；《一滴水经过丽江》阿来（以水的游踪为线，新颖独特）。</li>
+          </ul>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head">
+          <span class="ch-no">4</span><span class="ch-title">名著导读：《傅雷家书》《钢铁是怎样炼成的》</span>
+          <span class="ch-master"></span><span class="ch-arrow">▼</span>
+        </button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <h3>《傅雷家书》（书信合集，选择性阅读）</h3>
+          <ul>
+            <li>傅雷与留学的儿子傅聪（钢琴家）通信；内容涉及<b class="kw">做人、艺术、生活修养</b>；先做人，次为艺术家，再为音乐家，终为钢琴家。</li>
+            <li>教导：谦虚、严谨、礼仪得体、遇困境不气馁、热爱祖国、德艺俱备、人格卓越。</li>
+          </ul>
+          <h3>《钢铁是怎样炼成的》尼古拉·奥斯特洛夫斯基（苏联）</h3>
+          <ul>
+            <li>保尔·柯察金：从贫苦少年到布尔什维克战士；战场搏杀、筑路（伤寒）、瘫痪失明后写作《暴风雨所诞生的》。</li>
+            <li>名言：“人最宝贵的是生命……当回忆往事的时候，他不会因为虚度年华而悔恨，也不会因为碌碌无为而羞愧。”</li>
+            <li>主题：<b class="kw">为理想献身、钢铁般意志、顽强奋斗</b>；自传性、书信日记穿插、内心独白。</li>
+          </ul>
+        </div></div>
+      </article>
+    </section>
+
+    <!-- ================= 九年级上册 ================= -->
+    <section class="grade-block" id="grade-9a">
+      <h2 class="grade-title"><span class="badge">九年级上册</span><span class="en">部编版语文九年级上</span></h2>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head">
+          <span class="ch-no">1</span><span class="ch-title">诗词三首与课外诗词</span>
+          <span class="ch-master"></span><span class="ch-arrow">▼</span>
+        </button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <div class="tbl-wrap">
+          <table>
+            <tr><th>篇目</th><th>作者</th><th>核心考点</th></tr>
+            <tr><td>沁园春·雪</td><td>毛泽东</td><td>（词，置于现代诗歌单元）“北国风光，千里冰封，万里雪飘”；“俱往矣，数风流人物，还看今朝”——<b class="kw">当代英雄的豪情</b>；写景议论抒情结合。</td></tr>
+            <tr><td>行路难（其一）</td><td>李白</td><td>“长风破浪会有时，直挂云帆济沧海”——用宗悫典故，失意中豪迈自信；“停杯投箸”细节。</td></tr>
+            <tr><td>酬乐天扬州初逢席上见赠</td><td>刘禹锡</td><td>“沉舟侧畔千帆过，病树前头万木春”——<b class="kw">新事物必将取代旧事物</b>，豁达进取。</td></tr>
+            <tr><td>水调歌头·明月几时有</td><td>苏轼</td><td>“人有悲欢离合，月有阴晴圆缺，此事古难全。但愿人长久，千里共婵娟”；由出世入世矛盾到旷达祝福。</td></tr>
+            <tr><td>月夜忆舍弟</td><td>杜甫</td><td>“露从今夜白，月是故乡明”；战乱思亲。</td></tr>
+            <tr><td>长沙过贾谊宅</td><td>刘长卿</td><td>借贾谊遭贬抒迁谪之悲。</td></tr>
+            <tr><td>左迁至蓝关示侄孙湘</td><td>韩愈</td><td>“云横秦岭家何在？雪拥蓝关马不前”——获罪远谪的悲愤与不悔。</td></tr>
+            <tr><td>商山早行</td><td>温庭筠</td><td>“鸡声茅店月，人迹板桥霜”——<b class="kw">名词叠加（列锦）</b>写早行之苦与思乡。</td></tr>
+            <tr><td>咸阳城东楼</td><td>许浑</td><td>“溪云初起日沉阁，山雨欲来风满楼”——比喻危机将至。</td></tr>
+            <tr><td>无题</td><td>李商隐</td><td>“春蚕到死丝方尽，蜡炬成灰泪始干”——双关“思”，后喻奉献精神。</td></tr>
+            <tr><td>行香子·树绕村庄</td><td>秦观</td><td>田园春景，白描，质朴清新。</td></tr>
+            <tr><td>丑奴儿·书博山道中壁</td><td>辛弃疾</td><td>“少年不识愁滋味”“而今识尽愁滋味”——<b class="kw">对比</b>，报国无门的深沉悲愤。</td></tr>
+          </table>
+          </div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head">
+          <span class="ch-no">2</span><span class="ch-title">文言文：《岳阳楼记》《醉翁亭记》《湖心亭看雪》</span>
+          <span class="ch-master"></span><span class="ch-arrow">▼</span>
+        </button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <h3>《岳阳楼记》范仲淹（北宋政治家、文学家）</h3>
+          <div class="box formula">不以物喜，不以己悲……先天下之忧而忧，后天下之乐而乐。</div>
+          <ul>
+            <li>结构：叙事（作记缘由）—写景（洞庭全景）—抒情（迁客骚人览物之情：悲、喜）—议论（古仁人之心）。</li>
+            <li>“迁客骚人”以物喜以己悲，对比“古仁人”<b class="kw">不以物喜不以己悲、先忧后乐</b>的政治抱负；骈散结合。</li>
+          </ul>
+          <h3>《醉翁亭记》欧阳修（号醉翁、六一居士）</h3>
+          <div class="box formula">醉翁之意不在酒，在乎山水之间也。山水之乐，得之心而寓之酒也……人知从太守游而乐，而不知太守之乐其乐也。</div>
+          <ul>
+            <li>“乐”字贯穿：山水之乐—宴酣之乐—禽鸟乐—游人乐—太守<b class="kw">与民同乐</b>；21 个“而”、21 个“也”，回环咏叹。</li>
+            <li>写于贬滁州，表现随遇而安、与民同乐的旷达。</li>
+          </ul>
+          <h3>《湖心亭看雪》张岱（明末清初，《陶庵梦忆》）</h3>
+          <ul>
+            <li>“雾凇沆砀，天与云与山与水，上下一白……惟长堤一痕、湖心亭一点、与余舟一芥、舟中人两三粒而已”——<b class="kw">白描、量词精妙、天人合一</b>。</li>
+            <li>“莫说相公痴，更有痴似相公者”；“痴”：痴迷山水、孤寂清高、故国之思。</li>
+          </ul>
+          <div class="box exam">三句话辨析：①范仲淹“先忧后乐”（家国担当）；②欧阳修“与民同乐”（随遇而安）；③张岱“痴”（孤高隐逸、故国之思）。</div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head">
+          <span class="ch-no">3</span><span class="ch-title">现代文重点（诗歌/议论性文章/小说）</span>
+          <span class="ch-master"></span><span class="ch-arrow">▼</span>
+        </button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <h3>现代诗歌（活动·探究）</h3>
+          <ul>
+            <li>《我爱这土地》艾青：“为什么我的眼里常含泪水？因为我对这土地爱得深沉”；鸟、土地、河流、风、黎明等<b class="kw">意象</b>。</li>
+            <li>《乡愁》余光中：邮票、船票、坟墓、海峡四个意象，<b class="kw">时间顺序、比喻反复</b>，个人愁升华为家国之思。</li>
+            <li>《你是人间的四月天》林徽因；《我看》穆旦。</li>
+          </ul>
+          <h3>议论性文章</h3>
+          <ul>
+            <li><b>《敬业与乐业》梁启超</b>：“敬业乐业”是人类生活的不二法门；引用、举例、对比论证。</li>
+            <li><b>《就英法联军远征中国致巴特勒上尉的信》雨果</b>：反语讽刺强盗行径，珍视人类文明成果、立场公正。</li>
+            <li><b>《论教养》利哈乔夫</b>：教养的本质是尊重他人；《精神的三间小屋》毕淑敏。</li>
+            <li><b>《中国人失掉自信力了吗》鲁迅</b>：驳论文；驳“中国人失掉自信力”，立“我们有并不失掉自信力的中国人在”（中国脊梁）；<b class="kw">先驳后立、反语</b>。</li>
+            <li>《怀疑与学问》顾颉刚：“学者先要会疑”；《谈创造性思维》；《创造宣言》陶行知。</li>
+          </ul>
+          <h3>古典小说单元</h3>
+          <ul>
+            <li><b>《故乡》鲁迅</b>：闰土（少年活泼→中年麻木）、杨二嫂（尖刻自私）；“隔膜”；结尾“地上本没有路，走的人多了，也便成了路”——追求新生活。</li>
+            <li><b>《我的叔叔于勒》莫泊桑</b>（法国，短篇小说之王）：菲利普夫妇<b class="kw">虚荣势利、金钱至上</b>，若瑟夫有同情心；悬念、巧合、对比。</li>
+            <li><b>《孤独之旅》曹文轩</b>：杜小康放鸭成长，环境描写烘托心理。</li>
+            <li>《智取生辰纲》施耐庵（《水浒传》）：杨志精明谨慎又急躁；吴用等<b class="kw">智用天时地利矛盾、下药</b>；明暗双线。</li>
+            <li>《范进中举》吴敬梓（《儒林外史》）：夸张对比、讽刺科举制度对人性的毒害；胡屠户前倨后恭。</li>
+            <li>《三顾茅庐》罗贯中（《三国演义》）；《刘姥姥进大观园》曹雪芹（《红楼梦》）：细节写各人笑态、性格。</li>
+          </ul>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head">
+          <span class="ch-no">4</span><span class="ch-title">名著导读：《艾青诗选》《水浒传》</span>
+          <span class="ch-master"></span><span class="ch-arrow">▼</span>
+        </button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <h3>《艾青诗选》</h3>
+          <ul>
+            <li>艾青原名蒋正涵，代表作《大堰河——我的保姆》《我爱这土地》《北方》《向太阳》《光的赞歌》。</li>
+            <li>核心意象：<b class="kw">土地（多灾多难的祖国与农民）、太阳/光（光明与胜利）</b>；风格自由奔放、散文化，“诗中有画”。</li>
+          </ul>
+          <h3>《水浒传》施耐庵（元末明初，白话章回小说，108 将）</h3>
+          <ul>
+            <li>主题“官逼民反”：鲁智深（拳打镇关西、倒拔垂杨柳、大闹野猪林——嫉恶如仇、粗中有细）；林冲（风雪山神庙，由委曲求全到奋起反抗）；武松（打虎、醉打蒋门神、血溅鸳鸯楼）；宋江（及时雨，忠义但有忠君局限）；吴用（智多星）、李逵（率真鲁莽）。</li>
+            <li>艺术：先分后合链式结构、人物共性中见个性、白话生动；重点章回：智取生辰纲、三打祝家庄。</li>
+          </ul>
+        </div></div>
+      </article>
+    </section>
+
+    <!-- ================= 九年级下册 ================= -->
+    <section class="grade-block" id="grade-9b">
+      <h2 class="grade-title"><span class="badge">九年级下册</span><span class="en">部编版语文九年级下</span></h2>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head">
+          <span class="ch-no">1</span><span class="ch-title">词四首与课外古诗词</span>
+          <span class="ch-master"></span><span class="ch-arrow">▼</span>
+        </button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <div class="tbl-wrap">
+          <table>
+            <tr><th>篇目</th><th>作者</th><th>核心考点</th></tr>
+            <tr><td>渔家傲·秋思</td><td>范仲淹</td><td>“浊酒一杯家万里，燕然未勒归无计”“人不寐，将军白发征夫泪”；边塞将士功业未建与思乡的矛盾。</td></tr>
+            <tr><td>江城子·密州出猎</td><td>苏轼</td><td>“会挽雕弓如满月，西北望，射天狼”；用典（亲射虎、遣冯唐），豪放词风、报国之志。</td></tr>
+            <tr><td>破阵子·为陈同甫赋壮词以寄之</td><td>辛弃疾</td><td>“了却君王天下事，赢得生前身后名。可怜白发生！”；壮与悲对照，壮志难酬。</td></tr>
+            <tr><td>满江红·小住京华</td><td>秋瑾</td><td>“俗子胸襟谁识我？”“青衫湿”；鉴湖女侠冲破家庭、投身革命的苦闷与豪情。</td></tr>
+            <tr><td>十五从军征</td><td>《乐府诗集》</td><td>“出门东向看，泪落沾我衣”；汉代兵役制度给百姓的苦难，白描。</td></tr>
+            <tr><td>白雪歌送武判官归京</td><td>岑参</td><td>“忽如一夜春风来，千树万树梨花开”——以春景喻冬雪；“山回路转不见君，雪上空留马行处”依依惜别。</td></tr>
+            <tr><td>南乡子·登京口北固亭有怀</td><td>辛弃疾</td><td>“生子当如孙仲谋”；借古讽今，盼英雄抗金。</td></tr>
+            <tr><td>过零丁洋</td><td>文天祥</td><td>“人生自古谁无死？留取丹心照汗青”；双关“惶恐滩/零丁洋”，以死明志。</td></tr>
+            <tr><td>山坡羊·潼关怀古</td><td>张养浩（元散曲）</td><td>“兴，百姓苦；亡，百姓苦”；<b class="kw">怀古伤今、同情百姓</b>。</td></tr>
+          </table>
+          </div>
+          <p>课外：《定风波》苏轼（“竹杖芒鞋轻胜马，谁怕？一蓑烟雨任平生”）、《临江仙·夜登小阁》陈与义、《太常引·建康中秋夜为吕叔潜赋》辛弃疾、《浣溪沙》纳兰性德。现代短诗：《月夜》沈尹默、《萧红墓畔口占》戴望舒、《断章》卞之琳（你站在桥上看风景……）、《风雨吟》芦荻、《统一》聂鲁达。</p>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head">
+          <span class="ch-no">2</span><span class="ch-title">文言文：《鱼我所欲也》《唐雎不辱使命》《送东阳马生序》《曹刿论战》《邹忌讽齐王纳谏》《出师表》</span>
+          <span class="ch-master"></span><span class="ch-arrow">▼</span>
+        </button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <h3>《鱼我所欲也》（《孟子·告子上》）</h3>
+          <p>以鱼与熊掌设喻提出<b class="kw">舍生取义</b>；“一箪食，一豆羹”与“万钟”对比；批评见利忘义，强调人应保有“本心”（羞恶之心）。</p>
+          <h3>《唐雎不辱使命》（《战国策》，国别体史书）</h3>
+          <ul>
+            <li>秦王以五百里易安陵（诈骗），唐雎挺剑而起，列举专诸、聂政、要离三士，“若士必怒，伏尸二人，流血五步，天下缟素”。</li>
+            <li>对话描写、对比：唐雎<b class="kw">不畏强暴、敢于斗争、机智善辩</b>；秦王前倨后恭、色厉内荏。</li>
+          </ul>
+          <h3>《送东阳马生序》宋濂（明初；序：赠序）</h3>
+          <ul>
+            <li>作者自述求学之难：致书之难（借书抄录）、叩问之难（俯身倾耳）、奔走之难（负箧曳屣行深山巨谷）、衣食之难（缊袍敝衣）。</li>
+            <li>与同舍生豪华穿戴对比“以中有足乐者，不知口体之奉不若人也”；劝勉后学<b class="kw">专心刻苦、虚心求教</b>。</li>
+          </ul>
+          <h3>《曹刿论战》（《左传》，编年体史书，左丘明）</h3>
+          <ul>
+            <li>长勺之战；曹刿认为“肉食者鄙，未能远谋”；政治上取信于民（“小大之狱，虽不能察，必以情”）是取胜前提。</li>
+            <li>战术：“夫战，勇气也。一鼓作气，再而衰，三而竭”；<b class="kw">彼竭我盈</b>而后击之；察“辙乱旗靡”才追击——<b class="kw">把握战机、详察敌情</b>。</li>
+          </ul>
+          <h3>《邹忌讽齐王纳谏》（《战国策》）</h3>
+          <ul>
+            <li>邹忌与徐公比美：妻“私我”、妾“畏我”、客“有求于我”；<b class="kw">设喻说理、以小见大</b>，类比齐王受蒙蔽更深。</li>
+            <li>齐王纳谏，令初下—数月—期年三变，燕赵韩魏皆朝于齐，“此所谓战胜于朝廷”。</li>
+          </ul>
+          <h3>《出师表》诸葛亮（表：古代向帝王陈情言事文体）</h3>
+          <ul>
+            <li>三条建议：<b class="kw">开张圣听（广开言路）、陟罚臧否不宜异同（严明赏罚）、亲贤臣远小人（亲贤远佞，核心）</b>。</li>
+            <li>陈述身世“臣本布衣，躬耕于南阳，苟全性命于乱世，不求闻达于诸侯”；“三顾茅庐”“临崩寄臣以大事”；“鞠躬尽瘁，死而后已”之情。</li>
+          </ul>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head">
+          <span class="ch-no">3</span><span class="ch-title">现代文重点（诗歌/小说/文艺随笔/戏剧）</span>
+          <span class="ch-master"></span><span class="ch-arrow">▼</span>
+        </button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li><b>《祖国啊，我亲爱的祖国》舒婷</b>：朦胧诗；意象群由贫困古老走向希望新生（破旧老水车、矿灯、路基、胚芽、笑涡），抒报国深情。</li>
+            <li><b>《梅岭三章》陈毅</b>：绝命诗，借泉台、烽烟、自由花，革命到底的乐观。</li>
+            <li><b>《海燕》高尔基</b>（苏联，散文诗）：<b class="kw">象征</b>——海燕（无产阶级革命先驱）、暴风雨（革命风暴）、海鸥海鸭企鹅（怯懦的假革命者/资产阶级）；“让暴风雨来得更猛烈些吧！”</li>
+            <li><b>《孔乙己》鲁迅</b>：咸亨酒店小伙计视角；孔乙己好喝懒做、迂腐善良；“笑”声中的悲剧，批判<b class="kw">封建科举制度与社会冷漠</b>；“大约孔乙己的确死了”。</li>
+            <li><b>《蒲柳人家》刘绍棠</b>：京东北运河乡土小说，何满子、一丈青大娘、何大学问，乡土气息浓郁。</li>
+            <li><b>《变色龙》契诃夫</b>（俄国短篇小说大师）：奥楚蔑洛夫处理狗咬人案<b class="kw">六次变色</b>，媚上欺下、见风使舵；夸张讽刺。</li>
+            <li><b>《溜索》阿城</b>：峡谷溜索，写马帮汉子沉着勇敢。</li>
+            <li>读书鉴赏：《短文两篇》（培根《谈读书》：“读书足以怡情，足以傅彩，足以长才”；马南邨《不求甚解》）、《无言之美》朱光潜、《驱遣我们的想象》叶圣陶。</li>
+            <li><b>《屈原》（节选）郭沫若</b>：历史剧；“雷电颂”风雷电独白，呼告、象征，痛恨黑暗、呼唤光明。</li>
+            <li>《天下第一楼》何冀平、《枣儿》（话剧）：象征、空巢老人与亲情。</li>
+          </ul>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head">
+          <span class="ch-no">4</span><span class="ch-title">名著导读：《儒林外史》《简·爱》</span>
+          <span class="ch-master"></span><span class="ch-arrow">▼</span>
+        </button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <h3>《儒林外史》吴敬梓（清代长篇讽刺小说）</h3>
+          <ul>
+            <li>写封建文士群像，批判<b class="kw">科举制度和封建礼教</b>：范进中举、周进撞号板、严监生（临死点两茎灯草，吝啬）、严贡生（横行乡里）、匡超人（蜕变堕落）。</li>
+            <li>正面人物：王冕（淡泊名利）、杜少卿（蔑视礼教、尊重女性）；<b class="kw">现实主义讽刺艺术</b>：白描、夸张、不谐调对比、悲喜交织。</li>
+          </ul>
+          <h3>《简·爱》夏洛蒂·勃朗特（英国）</h3>
+          <ul>
+            <li>简·爱经历：盖茨海德府（舅母虐待）—洛伍德学校（海伦、谭波儿小姐）—桑菲尔德庄园（家庭教师，与罗切斯特相爱）—婚礼受阻（疯妻伯莎·梅森）—流浪被圣约翰兄妹所救—回到失明的罗切斯特身边。</li>
+            <li>主题：<b class="kw">自尊自爱、追求平等独立、真挚爱情</b>；“我们的灵魂是平等的”；第一人称、浓郁抒情与自传色彩。</li>
+          </ul>
+        </div></div>
+      </article>
+    </section>
+
+    <!-- ================= 方法与专题 ================= -->
+    <section class="grade-block" id="grade-topic">
+      <h2 class="grade-title"><span class="badge">方法与专题</span><span class="en">中考语文核心能力</span></h2>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head">
+          <span class="ch-no">1</span><span class="ch-title">文言文阅读：实词、虚词、句式与翻译</span>
+          <span class="ch-master"></span><span class="ch-arrow">▼</span>
+        </button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <h3>高频实词（古今异义举例）</h3>
+          <div class="tbl-wrap">
+          <table>
+            <tr><th>词</th><th>古义</th><th>今义</th></tr>
+            <tr><td>妻子</td><td>妻子和儿女</td><td>男子的配偶</td></tr>
+            <tr><td>绝境</td><td>与人世隔绝的地方</td><td>没有出路的境地</td></tr>
+            <tr><td>交通</td><td>交错相通</td><td>运输事业</td></tr>
+            <tr><td>无论</td><td>不要说，更不必说</td><td>表条件关系连词</td></tr>
+            <tr><td>卑鄙</td><td>社会地位低微，见识短浅</td><td>品行恶劣</td></tr>
+            <tr><td>感激</td><td>感奋激发</td><td>感谢</td></tr>
+            <tr><td>可以</td><td>可以凭借</td><td>能够</td></tr>
+            <tr><td>走</td><td>跑</td><td>步行</td></tr>
+          </table>
+          </div>
+          <h3>一词多义高频字</h3>
+          <p><b class="kw">之</b>：代词 / 结构助词“的” / 动词“去、往” / 主谓间取消句子独立性 / 宾语前置、定语后置标志 / 调节音节。<b class="kw">其</b>：代词（他的、那）/ 语气副词（大概、难道）。<b class="kw">而</b>：并列、承接、修饰、转折、假设。<b class="kw">以</b>：用/凭/靠、因为、按照、来、以致。<b class="kw">于</b>：在、到、对、向、比、从、被。<b class="kw">为</b>：做、担任、成为、是、替给、被、句末语气词。</p>
+          <h3>常见通假字</h3>
+          <p>不亦<b>说</b>乎（悦）／学而时习之，不亦说乎；<b>女</b>还顾望旧乡…（汝）；十有五而志于学（又）；略无阙处（缺）；蝉则千转不穷（啭）；窥谷忘反（返）；始一反焉（返）；汝之不惠（慧）；无陇断焉（垄）；军士吏被甲（披）；曾益其所不能（增）；衡于虑（横）；法家拂士（弼）；百废具兴（俱）；属予作文以记之（嘱）；玉盘珍羞直万钱（馐/值）。</p>
+          <h3>词类活用</h3>
+          <ul>
+            <li><b>名词作状语</b>：箕畚运于渤海之尾、斗折蛇行、犬牙差互、复前行。</li>
+            <li><b>名词作动词</b>：名之者谁、陈胜王、公将鼓之。</li>
+            <li><b>使动用法</b>：饿其体肤、空乏其身、忿恚尉、闻寡人之耳者。</li>
+            <li><b>意动用法</b>：吾妻之美我者（认为……美）、渔人甚异之、不耻下问。</li>
+            <li><b>形容词作名词/动词</b>：优劣得所、亲贤臣，远小人。</li>
+          </ul>
+          <h3>特殊句式</h3>
+          <ul>
+            <li><b>判断句</b>：……者……也、乃、则、即、为；如“此则岳阳楼之大观也”。</li>
+            <li><b>省略句</b>：（村人）见渔人，乃大惊；一鼓作气，再（鼓）而衰。</li>
+            <li><b>倒装</b>：宾语前置（何陋之有、吾谁与归、忌不自信）、定语后置（马之千里者）、状语后置（战于长勺、皆以美于徐公）。</li>
+            <li><b>被动句</b>：帝感其诚、山峦为晴雪所洗。</li>
+          </ul>
+          <div class="box tip">翻译六字诀：<b>留（人名地名年号）、删（虚词）、补（省略）、换（单音换双音）、调（语序）、变（意译修辞）</b>。直译为主，落实重点词，语意通顺。</div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head">
+          <span class="ch-no">2</span><span class="ch-title">古诗词鉴赏：意象、情感与表现手法</span>
+          <span class="ch-master"></span><span class="ch-arrow">▼</span>
+        </button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <h3>常见意象寓意</h3>
+          <p>月（思乡怀人）、柳（送别留恋）、菊（隐逸高洁）、梅（坚贞不屈）、莲（高洁不染）、鸿雁（传书思乡）、杜鹃（悲苦思归）、落花（伤春/奉献）、夕阳（迟暮苍凉）、酒（愁绪/豪情）、羌笛芦管（边塞乡愁）、草木（盛衰兴亡）。</p>
+          <h3>常考情感</h3>
+          <ul>
+            <li>忧国伤时、建功报国、壮志难酬；思乡怀人、送别不舍、羁旅愁思。</li>
+            <li>寄情山水、归隐田园、淡泊宁静；热爱自然、昂扬进取、旷达乐观。</li>
+            <li>怀才不遇、送别勉励、物是人非、历史兴亡之叹。</li>
+          </ul>
+          <h3>表达技巧</h3>
+          <ul>
+            <li><b>修辞</b>：比喻、拟人、夸张、对偶、借代、双关、用典、互文、反复、反问、设问。</li>
+            <li><b>表达方式</b>：描写（动静结合、虚实结合、正侧面、视听结合、远近高低、白描、细节）；抒情（直抒胸臆、借景抒情、情景交融、托物言志、借古讽今、用典抒情）。</li>
+            <li><b>表现手法</b>：对比、衬托（正衬/反衬，以乐景写哀情）、象征、渲染、烘托、抑扬、以小见大、联想想象。</li>
+          </ul>
+          <div class="box exam">炼字题答题格式：释字义 → 描画面（该字写了什么情景）→ 点手法 → 说效果（营造意境/表达情感）。如“春风又<b>绿</b>江南岸”，“绿”化静为动，写出春到江南的生机与思乡之切。</div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head">
+          <span class="ch-no">3</span><span class="ch-title">现代文阅读：记叙文、说明文、议论文</span>
+          <span class="ch-master"></span><span class="ch-arrow">▼</span>
+        </button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <h3>记叙文（含散文、小说）</h3>
+          <ul>
+            <li><b>六要素</b>：时间、地点、人物、起因、经过、结果；<b>线索</b>：人、物、事、情、时间、地点、游踪。</li>
+            <li><b>顺序</b>：顺叙、倒叙（设悬念）、插叙（补充交代、丰富人物）；人称：第一人称真实亲切、第二人称拉近距离、第三人称客观自由。</li>
+            <li><b>描写</b>：人物（外貌、语言、动作、心理、神态）＋环境（自然环境：渲染气氛、烘托心情、推动情节；社会环境：交代背景）。</li>
+            <li><b>标题作用</b>：概括内容、线索、点明主旨、设悬念、双关、寄托情感；<b>句段作用</b>：开头（总领下文、设悬念、铺垫）、中间（承上启下）、结尾（照应开头、深化主题、言有尽意无穷）。</li>
+            <li><b>小说三要素</b>：人物（正面＋侧面刻画）、情节（开端发展高潮结局）、环境；主题靠人物命运与情节揭示。</li>
+          </ul>
+          <h3>说明文</h3>
+          <ul>
+            <li><b>对象</b>：事物说明文 / 事理说明文；<b>顺序</b>：时间、空间、逻辑（由现象到本质、由因到果、由总到分、由主到次）。</li>
+            <li><b>说明方法</b>：举例子、列数字、作比较、打比方、分类别、下定义、作诠释、列图表、引资料、摹状貌。</li>
+            <li><b>语言</b>：准确性（“大约、左右、主要、几乎”等表约数/限制的词不能删，答：定性＋句意＋去后变化＋体现准确严谨）；生动性（修辞、描写）。</li>
+          </ul>
+          <h3>议论文</h3>
+          <ul>
+            <li><b>三要素</b>：论点（明确的判断句，常看标题、开头、结尾、“可见/总之”）、论据（事实论据、道理论据）、论证。</li>
+            <li><b>论证方法</b>：举例论证、道理论证（引用）、对比论证、比喻论证；作用格式：方法＋内容＋观点。</li>
+            <li><b>结构</b>：总分（总分总）、并列、递进、对照；<b>语言</b>：严密、概括、鲜明。</li>
+          </ul>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head">
+          <span class="ch-no">4</span><span class="ch-title">作文提分与文学文化常识</span>
+          <span class="ch-master"></span><span class="ch-arrow">▼</span>
+        </button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <h3>作文提分</h3>
+          <ul>
+            <li><b>审题</b>：抓题眼、明限制、定文体；半命题补题要“小、新、真”。</li>
+            <li><b>立意</b>：正确、集中、深刻、新颖；以小见大，由事及理。</li>
+            <li><b>结构</b>：题记点题＋排比段＋首尾呼应；一事议深或三事串珠（详略得当）。</li>
+            <li><b>描写</b>：把概括叙述改成具体画面，调动五感；写人抓典型细节，写情借景物烘托。</li>
+            <li><b>语言</b>：句式整散结合，恰当引用诗词；开头点题、中间扣题、结尾升华。</li>
+            <li>常考主题：亲情、成长、陪伴、坚持、善良、挫折、家国、文化传承、平凡之美。</li>
+          </ul>
+          <h3>必记文学常识</h3>
+          <ul>
+            <li>《诗经》我国第一部诗歌总集；《论语》<b class="kw">语录体</b>，儒家经典“四书”（论语、孟子、大学、中庸）之一；“五经”：诗、书、礼、易、春秋。</li>
+            <li>《史记》司马迁，我国第一部<b class="kw">纪传体通史</b>，130 篇，“史家之绝唱，无韵之离骚”；《资治通鉴》司马光，<b class="kw">编年体通史</b>；《战国策》国别体；《左传》编年体。</li>
+            <li><b class="kw">唐宋八大家</b>：韩愈、柳宗元、欧阳修、苏洵、苏轼、苏辙、王安石、曾巩。</li>
+            <li>李白（诗仙，浪漫主义）、杜甫（诗圣，现实主义，“三吏三别”）、苏轼（豪放派）、李清照（婉约派）、辛弃疾（豪放派）。</li>
+            <li>小说四大家：莫泊桑（法）、契诃夫（俄）、欧·亨利（美，结尾意料之外情理之中）；莎士比亚（英）四大悲剧《哈姆雷特》等。</li>
+          </ul>
+          <h3>文化常识</h3>
+          <p><b>年龄称谓</b>：垂髫（幼年）、总角、豆蔻（女子十三四）、及笄（女 15）、束发、弱冠（男 20）、而立（30）、不惑（40）、知天命（50）、花甲/耳顺（60）、古稀（70）、耄耋、期颐（100）。<br>
+          <b>借代</b>：桑梓（家乡）、桃李（学生）、社稷（国家）、汗青（史册）、鸿雁（书信）、庙堂（朝廷）、白丁（平民）、烽烟（战争）。<br>
+          <b>科举</b>：院试（秀才）→乡试（举人，第一解元）→会试（贡士，第一会元）→殿试（进士，第一状元，连中三元）。</p>
+        </div></div>
+      </article>
+    </section>
+    </div><!-- /#knowledge -->
+
+    <!-- ================= 真题练习 ================= -->
+    <section id="quizPanel" hidden>
+      <div class="bank-info" id="bankInfo"></div>
+
+      <div class="quiz-entry">
+        <div class="row">
+          <label>年级：</label>
+          <select id="qGrade"><option value="">全部年级</option></select>
+          <label>单元：</label>
+          <select id="qUnit"></select>
+          <button type="button" class="btn-main" id="btnStartUnit">开始练习</button>
+        </div>
+        <div class="row quick">
+          <button type="button" class="btn-quick" id="btnRandom">🎲 随机 20 题综合检测</button>
+          <button type="button" class="btn-quick" id="btnMonth">🆕 本月新题</button>
+          <button type="button" class="btn-quick" id="btnWrong">❌ 错题重练（<span class="wrong-count">0</span>）</button>
+        </div>
+      </div>
+
+      <h2 class="grade-title" id="quizTitle" style="margin-top:24px">选择范围后开始练习</h2>
+      <div class="quiz-summary" id="quizSummary">完成后这里会显示正确率</div>
+      <div id="quizBody"></div>
+    </section>
+
+    <!-- ================= 错题集 ================= -->
+    <section id="wrongPanel" hidden>
+      <h2 class="grade-title">我的错题集</h2>
+      <div class="wrong-stat-bar" id="wrongStat"></div>
+      <div class="clear-row"><button type="button" class="btn-mini" id="btnClearWrong">🗑 清空全部错题</button></div>
+      <div id="wrongBody"></div>
+    </section>
+
+  </main>
+</div>
+
+<button class="back-top" aria-label="返回顶部">↑</button>
+<script src="js/main.js"></script>
+<script src="js/chinese-bank.js"></script>
+<script src="js/quiz-core.js"></script>
+</body>
+</html>
