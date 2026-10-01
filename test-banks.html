@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>题库单元测试 · 初中学习助手</title>
+<style>
+  body { font-family: "Microsoft YaHei", sans-serif; max-width: 960px; margin: 40px auto; padding: 0 20px; background: #f4f6fb; color: #23304a; }
+  h1 { font-size: 22px; margin-bottom: 8px; }
+  .subtitle { color: #5a6a86; font-size: 14px; margin-bottom: 24px; }
+  .subject-block { background: #fff; border-radius: 12px; padding: 18px 22px; margin-bottom: 16px; box-shadow: 0 2px 8px rgba(0,0,0,.06); }
+  .subject-block h2 { font-size: 17px; margin: 0 0 10px; display: flex; align-items: center; gap: 8px; }
+  .badge { font-size: 12px; padding: 2px 8px; border-radius: 20px; background: #eef1fe; color: #4f6ef7; font-weight: 700; }
+  .badge.fail { background: #fcebf0; color: #c8385f; }
+  .summary { font-size: 14px; color: #5a6a86; margin-bottom: 10px; }
+  .error { color: #c8385f; font-size: 13px; margin: 4px 0; padding: 6px 10px; background: #fdf2f4; border-radius: 6px; }
+  .success { color: #2fa46a; font-size: 13px; margin: 4px 0; }
+  .progress { height: 4px; background: #e4e9f2; border-radius: 2px; margin: 16px 0; overflow: hidden; }
+  .progress i { display: block; height: 100%; background: #4f6ef7; width: 0; transition: width .3s; }
+  #totalResult { font-size: 16px; font-weight: 700; margin-top: 20px; padding: 14px 18px; background: #fff; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,.06); }
+</style>
+</head>
+<body>
+<h1>题库单元测试报告</h1>
+<p class="subtitle">自动验证 7 科题库的数据完整性、字段规范与业务规则</p>
+<div class="progress"><i id="bar"></i></div>
+<div id="report"></div>
+<div id="totalResult"></div>
+
+<script src="js/chinese-bank.js"></script>
+<script src="js/math-bank.js"></script>
+<script src="js/english-bank.js"></script>
+<script src="js/physics-bank.js"></script>
+<script src="js/biology-bank.js"></script>
+<script src="js/geography-bank.js"></script>
+<script src="js/politics-bank.js"></script>
+
+<script>
+(function () {
+  "use strict";
+
+  var subjects = [
+    { key: "chinese",  name: "语文",         bank: window.CHINESE_BANK,  meta: window.CHINESE_BANK_META,  color: "#e0524d" },
+    { key: "math",     name: "数学",         bank: window.MATH_BANK,     meta: window.MATH_BANK_META,     color: "#3b6fe0" },
+    { key: "english",  name: "英语",         bank: window.ENGLISH_BANK,  meta: window.ENGLISH_BANK_META,  color: "#12a6a0" },
+    { key: "physics",  name: "物理",         bank: window.PHYSICS_BANK,  meta: window.PHYSICS_BANK_META,  color: "#7a52d6" },
+    { key: "biology",  name: "生物",         bank: window.BIOLOGY_BANK,  meta: window.BIOLOGY_BANK_META,  color: "#2fa46a" },
+    { key: "geography",name: "地理",         bank: window.GEOGRAPHY_BANK,meta: window.GEOGRAPHY_BANK_META,color: "#e08a2d" },
+    { key: "politics", name: "道德与法治",   bank: window.POLITICS_BANK, meta: window.POLITICS_BANK_META, color: "#c8385f" }
+  ];
+
+  var reportEl = document.getElementById("report");
+  var totalEl = document.getElementById("totalResult");
+  var barEl = document.getElementById("bar");
+  var allPassed = true;
+  var totalQ = 0, totalErr = 0;
+
+  function esc(s) {
+    return String(s).replace(/[&<>"']/g, function (c) {
+      return { "&":"&amp;", "<":"&lt;", ">":"&gt;", "\"":"&quot;", "'":"&#39;" }[c];
+    });
+  }
+
+  function validateSubject(sub, idx) {
+    var errors = [];
+    var warnings = [];
+
+    /* ---------- 元数据 ---------- */
+    if (!sub.meta) { errors.push("缺少 META 对象"); }
+    else {
+      if (!sub.meta.subject) errors.push("META 缺少 subject");
+      if (!sub.meta.bankVersion) errors.push("META 缺少 bankVersion");
+      if (!sub.meta.updatedAt) errors.push("META 缺少 updatedAt");
+      if (!sub.meta.updateRule) errors.push("META 缺少 updateRule");
+      if (!/^\d{4}\.\d{2}$/.test(sub.meta.bankVersion || "")) warnings.push("bankVersion 格式建议为 YYYY.MM（当前：" + (sub.meta.bankVersion || "空") + "）");
+    }
+
+    /* ---------- 题库数组 ---------- */
+    if (!sub.bank) { errors.push("缺少 BANK 数组"); }
+    else if (!Array.isArray(sub.bank)) { errors.push("BANK 不是数组"); }
+    else if (sub.bank.length === 0) { errors.push("BANK 为空数组"); }
+    else {
+      var ids = {};
+      var mockCount = 0;
+      var judgeCount = 0;
+      var unitSet = {};
+
+      sub.bank.forEach(function (q, i) {
+        var prefix = "第 " + (i + 1) + " 题" + (q.id ? "（" + q.id + "）" : "");
+
+        /* 必填字段 */
+        if (!q.id) errors.push(prefix + " 缺少 id");
+        if (!q.g) errors.push(prefix + " 缺少 g（册别）");
+        if (!q.unit) errors.push(prefix + " 缺少 unit（单元）");
+        else unitSet[q.unit] = true;
+        if (!q.kp) errors.push(prefix + " 缺少 kp（知识点）");
+        if (!q.type) errors.push(prefix + " 缺少 type（题型）");
+        if (q.a === undefined || q.a === null) errors.push(prefix + " 缺少 a（正确答案索引）");
+        if (!q.src) errors.push(prefix + " 缺少 src（来源）");
+        if (!q.exp) errors.push(prefix + " 缺少 exp（解析）");
+
+        /* id 唯一性 */
+        if (q.id) {
+          if (ids[q.id]) errors.push(prefix + " id 重复：" + q.id);
+          ids[q.id] = true;
+        }
+
+        /* 题型校验 */
+        if (q.type && q.type !== "single" && q.type !== "judge") {
+          errors.push(prefix + " type 无效：" + q.type);
+        }
+
+        /* 单选校验 */
+        if (q.type === "single") {
+          if (!Array.isArray(q.opts)) errors.push(prefix + " 单选题缺少 opts 数组");
+          else if (q.opts.length !== 4) errors.push(prefix + " 单选题 opts 长度应为 4，实际 " + q.opts.length);
+          if (q.a !== undefined && (q.a < 0 || q.a > 3)) errors.push(prefix + " 单选题答案索引超出 0~3 范围：" + q.a);
+        }
+
+        /* 判断校验 */
+        if (q.type === "judge") {
+          if (q.a !== undefined && q.a !== 0 && q.a !== 1) errors.push(prefix + " 判断题答案应为 0 或 1，实际 " + q.a);
+          judgeCount++;
+        }
+
+        /* 来源格式 */
+        if (q.src) {
+          if (q.src.indexOf("模拟题·") !== -1) mockCount++;
+          else if (q.src !== "真题改编") warnings.push(prefix + " src 既非“真题改编”也非“模拟题·YYYY.MM”：" + q.src);
+        }
+      });
+
+      /* 业务规则 */
+      var total = sub.bank.length;
+      totalQ += total;
+      if (mockCount < 7 || mockCount > 12) warnings.push("模拟题数量建议 7~12，实际 " + mockCount);
+      var judgePct = Math.round(judgeCount / total * 100);
+      if (judgePct < 10 || judgePct > 35) warnings.push("判断题占比建议 15%~25%，实际 " + judgePct + "%（" + judgeCount + "/" + total + "）");
+
+      /* 统计摘要 */
+      sub.summary = "共 " + total + " 题 · 模拟题 " + mockCount + " 题 · 判断题 " + judgeCount + " 题（" + judgePct + "%）· 覆盖 " + Object.keys(unitSet).length + " 个单元";
+    }
+
+    totalErr += errors.length;
+    if (errors.length) allPassed = false;
+    return { errors: errors, warnings: warnings };
+  }
+
+  /* ---------- 渲染 ---------- */
+  subjects.forEach(function (sub, idx) {
+    var result = validateSubject(sub, idx);
+    var passed = result.errors.length === 0;
+
+    var html = '<div class="subject-block">' +
+      '<h2><span style="color:' + (passed ? sub.color : "#c8385f") + '">' + esc(sub.name) + '</span>' +
+      '<span class="badge ' + (passed ? "" : "fail") + '">' + (passed ? "✅ 通过" : "❌ 失败") + '</span></h2>';
+
+    if (sub.summary) html += '<div class="summary">' + esc(sub.summary) + '</div>';
+
+    result.errors.forEach(function (e) {
+      html += '<div class="error">❌ ' + esc(e) + '</div>';
+    });
+    result.warnings.forEach(function (w) {
+      html += '<div class="error" style="background:#fff9e6;color:#b07a2c">⚠️ ' + esc(w) + '</div>';
+    });
+    if (passed && result.warnings.length === 0) {
+      html += '<div class="success">✅ 所有检查项通过，无警告</div>';
+    }
+    html += '</div>';
+    reportEl.insertAdjacentHTML("beforeend", html);
+
+    barEl.style.width = Math.round((idx + 1) / subjects.length * 100) + "%";
+  });
+
+  /* 汇总 */
+  totalEl.innerHTML = allPassed
+    ? "🎉 全部 7 科题库通过单元测试，共 " + totalQ + " 题，无严重错误。"
+    : "⚠️ 测试发现 " + totalErr + " 个严重错误，请修复后再发布。";
+})();
+</script>
+</body>
+</html>
