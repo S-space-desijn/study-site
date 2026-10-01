@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>英语（外研版）· 初中学习助手</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-subject="english">
+<div class="read-progress"></div>
+
+<header class="topbar">
+  <a class="home-link" href="index.html"><span class="logo-dot">🔤</span> 学习助手</a>
+  <span class="subject-name"><b>英语</b> · 外研版（新标准）</span>
+  <button class="menu-btn" aria-label="菜单">☰</button>
+  <div class="search-box">
+    <span class="ico">🔍</span>
+    <input id="searchInput" type="text" placeholder="搜索：现在完成时、宾语从句、比较级…">
+  </div>
+</header>
+<div class="sidebar-mask"></div>
+
+<div class="layout">
+  <aside class="sidebar">
+    <h4>分册目录</h4>
+    <nav>
+      <a href="#grade-7a">七年级上册</a>
+      <a href="#grade-7b">七年级下册</a>
+      <a href="#grade-8a">八年级上册</a>
+      <a href="#grade-8b">八年级下册</a>
+      <a href="#grade-9a">九年级上册</a>
+      <a href="#grade-9b">九年级下册</a>
+      <a href="#grade-topic">语法与写作专题</a>
+    </nav>
+    <div class="progress-wrap">
+      <div class="bar"><i></i></div>
+      <p>掌握进度 <span class="pct">0%</span></p>
+    </div>
+    <h4 style="margin-top:18px">题库训练</h4>
+    <nav>
+      <a href="#quiz" data-tab="quiz">📝 真题 / 模拟题练习</a>
+      <a href="#wrong" data-tab="wrong">❌ 错题集 <span class="wrong-count" style="color:var(--red);font-weight:700">0</span></a>
+    </nav>
+  </aside>
+
+  <main class="content">
+    <section class="page-hero" data-emoji="🔤">
+      <h1>英语 · 外研版（新标准）</h1>
+      <p>按外研版 Modules 模块话题编排，梳理六册核心语法、重点句型与话题词汇，并附八大时态、被动语态、从句、不规则动词与写作模板。</p>
+      <div class="tags">
+        <span>模块话题</span><span>核心语法</span><span>八大时态</span><span>宾语/定语从句</span><span>写作模板</span>
+      </div>
+    </section>
+
+    <div class="quiz-tabs">
+      <button type="button" data-tab="knowledge" class="active">📖 知识要点</button>
+      <button type="button" data-tab="quiz">📝 真题练习</button>
+      <button type="button" data-tab="wrong">❌ 错题集 <span class="wrong-count">0</span></button>
+    </div>
+
+    <div id="knowledge">
+    <div class="toolbar">
+      <button id="expandAll">全部展开</button>
+      <button id="collapseAll">全部收起</button>
+      <span class="tip">语法讲解配英文例句和中文对照</span>
+    </div>
+
+    <!-- ================= 七上 ================= -->
+    <section class="grade-block" id="grade-7a">
+      <h2 class="grade-title"><span class="badge">七年级上册</span><span class="en">Starter &amp; Modules 1–10</span></h2>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">1</span><span class="ch-title">be 动词、人称代词与指示代词</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <div class="box formula">
+            be 动词口诀：我(I)用 am，你(you)用 are，is 跟着他她它(he/she/it)，单数 is 复数 are。<br>
+            肯定：I am a student.　否定：I am not…　疑问：Are you…? — Yes, I am. / No, I'm not.
+          </div>
+          <div class="tbl-wrap">
+          <table>
+            <tr><th>人称</th><th>主格（作主语）</th><th>宾格（动/介后）</th><th>形容词性物主代词（+名词）</th><th>名词性物主代词</th></tr>
+            <tr><td>我</td><td>I</td><td>me</td><td>my</td><td>mine</td></tr>
+            <tr><td>你</td><td>you</td><td>you</td><td>your</td><td>yours</td></tr>
+            <tr><td>他/她/它</td><td>he/she/it</td><td>him/her/it</td><td>his/her/its</td><td>his/hers/—</td></tr>
+            <tr><td>我们/你们/他们</td><td>we/you/they</td><td>us/you/them</td><td>our/your/their</td><td>ours/yours/theirs</td></tr>
+          </table>
+          </div>
+          <ul>
+            <li>指示代词：this/these（近），that/those（远）；电话用语 <span class="en">This is… speaking. Is that…?</span></li>
+          </ul>
+          <div class="eg"><p class="en">This is my friend. These are my parents. That book is mine, not yours.</p><p class="zh">这是我的朋友。这些是我的父母。那本书是我的，不是你的。</p></div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">2</span><span class="ch-title">名词单复数、there be 与 have got</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <h3>名词复数变化</h3>
+          <ul>
+            <li>一般加 -s：books；以 s/x/ch/sh 结尾加 -es：buses, boxes, watches；辅音字母+y 变 y 为 i 加 -es：city→cities；以 o 结尾：potatoes, tomatoes（有生命的加 es），photos, pianos。</li>
+            <li>以 f/fe 结尾变 ves：knife→knives, leaf→leaves, wife, half, wolf, thief, shelf。</li>
+            <li>不规则：man→men, woman→women, child→children, foot→feet, tooth→teeth, mouse→mice, sheep→sheep, fish→fish, Chinese→Chinese。</li>
+            <li>不可数名词：water, bread, milk, news, information, homework, advice, furniture；用量词：a bottle of water, two pieces of advice。</li>
+          </ul>
+          <div class="box formula">
+            there be（某地存在某物）：There is + 单数/不可数；There are + 复数；<b>就近原则</b>：There is a pen and two books on the desk.<br>
+            have got = have（某人拥有）：I have got a bike. = I have a bike. 否定 haven't got / 疑问 Have you got…?
+          </div>
+          <div class="box exam">there be 与 have 不能同时使用：✘ There has a book. → ✔ There is a book.</div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">3</span><span class="ch-title">情态动词 can、祈使句与现在进行时</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li><b class="kw">can</b>（能、会、可以）：后接动词原形，无人称数变化；否定 can't；疑问 Can you…? — Yes, I can. / No, I can't.</li>
+          </ul>
+          <div class="eg"><p class="en">I can swim, but I can't play the piano. Can you speak English?</p><p class="zh">我会游泳，但不会弹钢琴。你会说英语吗？</p></div>
+          <ul>
+            <li>祈使句：动词原形开头，否定 Don't + 动词原形：<span class="en">Open your books. Don't eat in class.</span></li>
+            <li><b class="kw">现在进行时</b>：am/is/are + doing；表示此刻或现阶段正在进行的动作；标志词 now, look, listen, at the moment, these days。</li>
+            <li>v-ing 变化：直接加 ing；去 e 加 ing（make→making）；重读闭音节双写末尾辅音（run→running, swim→swimming, sit→sitting）；ie 变 y 加 ing（lie→lying）。</li>
+          </ul>
+          <div class="box exam">某些动词一般不用进行时：know, like, love, want, have（拥有）, understand, believe。</div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">4</span><span class="ch-title">模块话题与功能句型（M1–M10）</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <div class="tbl-wrap">
+          <table>
+            <tr><th>Module 话题</th><th>核心功能句型</th></tr>
+            <tr><td>M1  classmates / 个人介绍</td><td>Nice to meet you. Where are you from? I'm from China. I'm Chinese.</td></tr>
+            <tr><td>M2  family / 家庭</td><td>What a big family! Is this your sister? These are my parents.</td></tr>
+            <tr><td>M3  school / 学校设施</td><td>There are 30 classrooms. What's in your classroom? There isn't a computer.</td></tr>
+            <tr><td>M4  healthy food / 健康饮食</td><td>We've got lots of apples. We haven't got any meat. Have we got any chocolate?（some 肯定；any 否定/疑问）</td></tr>
+            <tr><td>M5  school day / 日常作息</td><td>We have Chinese at eight o'clock. I love history. What about you?</td></tr>
+            <tr><td>M6  animals / 动物</td><td>Does it eat meat? The tiger lives in Asia. It's good at swimming.</td></tr>
+            <tr><td>M7  computers / 电脑</td><td>How do I write my homework on the computer? First, open a new document. Finally, print it.</td></tr>
+            <tr><td>M8  choosing presents / 选礼物</td><td>I'd like to… She often goes to concerts. She spends a lot of money.</td></tr>
+            <tr><td>M9  people and places / 人们正在做什么</td><td>We're enjoying the school trip a lot. They're waiting for buses. (现在进行时)</td></tr>
+            <tr><td>M10 Spring Festival / 春节</td><td>What's happening? Are you getting ready for Spring Festival? My mother is cleaning the house.</td></tr>
+          </table>
+          </div>
+        </div></div>
+      </article>
+    </section>
+
+    <!-- ================= 七下 ================= -->
+    <section class="grade-block" id="grade-7b">
+      <h2 class="grade-title"><span class="badge">七年级下册</span><span class="en">Modules 1–12</span></h2>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">1</span><span class="ch-title">名词性物主代词、方位介词与情态动词 could</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li>名词性物主代词 = 形容词性物主代词 + 名词：mine = my+名词，其后不再跟名词。<span class="en">This bag is hers. = This is her bag.</span></li>
+            <li>方位介词：in, on, under, next to（挨着）, behind, in front of（外部前面）, in the front of（内部前部）, between…and…, opposite（在……对面）。</li>
+            <li>could：can 的过去式（过去的能力）；也可表示现在更委婉的请求：<span class="en">Could you help me?</span></li>
+          </ul>
+          <div class="eg"><p class="en">The bank is next to the hospital, opposite the station. Whose gloves are these? — They're mine.</p><p class="zh">银行在医院旁边、车站对面。这是谁的手套？——是我的。</p></div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">2</span><span class="ch-title">一般将来时：be going to 与 will</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <div class="box formula">
+            ① be going to + 动词原形：表示计划、打算，或根据迹象预测。I'm going to check my email.<br>
+            ② will + 动词原形：表示将来的事实、临时决定或无依据的预测。will not = won't。<br>
+            ③ 现在进行时可表将来：表示已安排好的动作 I'm leaving tomorrow.
+          </div>
+          <ul>
+            <li>标志词：tomorrow, next week, in the future, soon, this evening, the day after tomorrow。</li>
+            <li>there be 句型的将来时：There is/are going to be…；There will be…（be 不能换成 have）。</li>
+          </ul>
+          <div class="eg"><p class="en">— Will schools be different in the future? — Yes, they will. Students won't use pens and paper.</p><p class="zh">——将来学校会不一样吗？——会的。学生们将不再使用笔和纸。</p></div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">3</span><span class="ch-title">一般过去时</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <div class="box formula">
+            表示过去某个时间发生的动作或存在的状态。<br>
+            肯定：主语 + 动词过去式（V-ed / 不规则）；否定：didn't + 动词原形；疑问：Did + 主语 + 动词原形？<br>
+            be 动词：was（I/he/she/it 单数）/ were（we/you/they 复数）。
+          </div>
+          <ul>
+            <li>规则动词加 -ed：worked；以 e 结尾加 d：lived；辅音+y 变 i 加 ed：study→studied；重读闭音节双写：stop→stopped。</li>
+            <li>标志词：yesterday, last night/week/year, …ago, in 2010, just now, the day before yesterday。</li>
+            <li>高频不规则：go→went, come→came, see→saw, buy→bought, have→had, do→did, get→got, give→gave, take→took, eat→ate, run→ran, swim→swam, write→wrote, read→read（读音 /red/）, leave→left, find→found, tell→told, speak→spoke, spend→spent。</li>
+          </ul>
+          <div class="box exam">didn't / did 后动词必须还原：✘ Did you went? → ✔ Did you go?</div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">4</span><span class="ch-title">模块话题与功能句型（M1–M12）</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <div class="tbl-wrap">
+          <table>
+            <tr><th>Module 话题</th><th>核心功能句型</th></tr>
+            <tr><td>M1 lost and found 失物招领</td><td>Whose bag is this? It's mine/his/hers. Are these crayons yours?</td></tr>
+            <tr><td>M2 clubs 社团</td><td>I can play table tennis. I'd like to join the Music Club. I get on well with everyone.</td></tr>
+            <tr><td>M3 weekend plans 周末计划</td><td>What are you going to do? I'm looking forward to the football match.</td></tr>
+            <tr><td>M4 life in the future 未来生活</td><td>Everyone will study at home. There won't be heavy work.</td></tr>
+            <tr><td>M5 shopping 购物</td><td>What can I do for you? I'd like some sausages. How much are they?</td></tr>
+            <tr><td>M6 around town 问路</td><td>Can you tell me the way to Wangfujing? Go across the square. Turn left at Changan Street.</td></tr>
+            <tr><td>M7 my past life 过去生活</td><td>I was born in a small village. What was he like? He was friendly.</td></tr>
+            <tr><td>M8 story time 故事（金凤花姑娘）</td><td>She picked up the big bowl. She didn't like it. (一般过去时叙事)</td></tr>
+            <tr><td>M9 life history 人物生平</td><td>He left school and began work at 12. He became a successful actor.</td></tr>
+            <tr><td>M10 holiday journey 假日旅行</td><td>How long did it take? We stayed there for two days. It took about nine hours.</td></tr>
+            <tr><td>M11 body language 肢体语言</td><td>That's because people do different things in different countries. Don't stand too close.</td></tr>
+            <tr><td>M12 Western music 西方音乐</td><td>It's lively and sounds like rock. I'm a fan of Beijing Opera. both/either/too 的用法</td></tr>
+          </table>
+          </div>
+        </div></div>
+      </article>
+    </section>
+
+    <!-- ================= 八上 ================= -->
+    <section class="grade-block" id="grade-8a">
+      <h2 class="grade-title"><span class="badge">八年级上册</span><span class="en">Modules 1–12</span></h2>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">1</span><span class="ch-title">提建议、形容词比较级与最高级</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <h3>提建议句型</h3>
+          <p>Let's… / Why not + 动词原形…? / Why don't we/you…? / How about doing…? / You should/shouldn't… / You'd better (not) do… / It's a good idea to do… / Don't forget to…</p>
+          <h3>比较级和最高级</h3>
+          <div class="tbl-wrap">
+          <table>
+            <tr><th>类型</th><th>比较级</th><th>最高级</th><th>例词</th></tr>
+            <tr><td>单音节加 -er/-est</td><td>taller</td><td>tallest</td><td>small, fast</td></tr>
+            <tr><td>以 e 结尾加 -r/-st</td><td>nicer</td><td>nicest</td><td>large, late</td></tr>
+            <tr><td>辅音+y 变 i</td><td>happier</td><td>happiest</td><td>busy, easy</td></tr>
+            <tr><td>重读闭音节双写</td><td>bigger</td><td>biggest</td><td>hot, thin, fat</td></tr>
+            <tr><td>多音节前加 more/most</td><td>more careful</td><td>most careful</td><td>expensive, popular</td></tr>
+            <tr><td>不规则</td><td colspan="2" colspan="2">good/well→better→best；bad/badly→worse→worst；many/much→more→most；little→less→least；far→farther/further→farthest/furthest</td></tr>
+          </table>
+          </div>
+          <div class="box formula">
+            比较级 + than（比……）；much/a lot/a little/even + 比较级；as + 原级 + as（与……一样），not as/so + 原级 + as（不如……）。<br>
+            the + 最高级 + of/in/范围；one of the + 最高级 + 名词复数；the + 比较级…, the + 比较级…（越……越……）。
+          </div>
+          <div class="eg"><p class="en">The harder you work, the luckier you will get. Shenzhen is bigger than Hong Kong? — No, it isn't. It's newer.</p></div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">2</span><span class="ch-title">副词、动词不定式与过去进行时</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li><b class="kw">副词</b>：修饰动词、形容词或其他副词；形容词 + ly 构成（quick→quickly, careful→carefully；辅音+y 变 i：happy→happily）；不规则：good→well, fast→fast, early→early, late→late。</li>
+            <li>频率副词：always, usually, often, sometimes, seldom, never（置于实义动词前、be 动词/助动词后）。</li>
+            <li><b class="kw">动词不定式</b> to do：want/decide/hope/plan/agree/offer/learn/choose + to do；疑问词 + to do（how to learn English）；It's + 形容词 + to do sth。</li>
+            <li>使役动词 make/let/have + 宾语 + do（不带 to）；help sb (to) do。</li>
+            <li><b class="kw">过去进行时</b>：was/were + doing；表示过去某一时刻或某段时间正在进行的动作；标志 at 8 o'clock last night, this time yesterday, from 7 to 9。</li>
+          </ul>
+          <div class="eg"><p class="en">I was reading a book when my mother came back. While she was cooking, I was doing my homework.</p><p class="zh">妈妈回来时我正在看书。她做饭时我在写作业。（when 后接短暂动作用一般过去时；while 后接延续动作常用进行时）</p></div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">3</span><span class="ch-title">情态动词 must / have to / may / might</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <div class="tbl-wrap">
+          <table>
+            <tr><th>情态动词</th><th>含义</th><th>否定</th></tr>
+            <tr><td>must</td><td>必须（主观看法）；肯定推测“一定”</td><td>mustn't 禁止、不准</td></tr>
+            <tr><td>have to</td><td>不得不（客观需要），有人称时态变化</td><td>don't/doesn't have to 不必</td></tr>
+            <tr><td>can</td><td>能够；可能（理论上）</td><td>can't 不可能（否定推测）</td></tr>
+            <tr><td>may</td><td>可以；也许（约 50%）</td><td>may not 可能不</td></tr>
+            <tr><td>might</td><td>也许（把握更小）</td><td>might not</td></tr>
+          </table>
+          </div>
+          <ul>
+            <li>Must I…? 的否定回答：No, you needn't. / No, you don't have to.（不必，而不是 mustn't）。</li>
+          </ul>
+          <div class="eg"><p class="en">You mustn't walk too close to the edge. It might be dangerous. You have to stay in hospital for two days.</p></div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">4</span><span class="ch-title">模块话题与功能句型（M1–M12）</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <div class="tbl-wrap">
+          <table>
+            <tr><th>Module 话题</th><th>核心功能 / 语言点</th></tr>
+            <tr><td>M1 how to learn English 学英语</td><td>Let's try to speak English as much as possible. Why not write down our mistakes?</td></tr>
+            <tr><td>M2 hometown 家乡对比</td><td>Cambridge is bigger and busier than… It's on the River Cam. (比较级)</td></tr>
+            <tr><td>M3 sports 运动</td><td>Playing football is more exciting than watching it. What's the matter? Nothing is more enjoyable.</td></tr>
+            <tr><td>M4 planes, ships, trains 交通</td><td>What's the best way to travel? It's the fastest/cheapest. He lives the farthest from school.</td></tr>
+            <tr><td>M5 Lao She Teahouse 茶馆</td><td>I wanted to see the Beijing Opera. I hope to understand more next time. (to do)</td></tr>
+            <tr><td>M6 animals in danger 濒危动物</td><td>Scientists are doing a lot of research to help pandas produce more babies.</td></tr>
+            <tr><td>M7 a famous story 名著故事</td><td>Alice was sitting with her sister by the river. (过去进行时)</td></tr>
+            <tr><td>M8 accidents 事故</td><td>I was trying to pick it up when it bit me again. When the snake was lying…</td></tr>
+            <tr><td>M9 population 人口</td><td>The population of China is about 1.37 billion. It takes an hour to get there.</td></tr>
+            <tr><td>M10 the weather 天气</td><td>What's the temperature? It's between minus eight and minus two. best time to visit</td></tr>
+            <tr><td>M11 way of life 生活习俗</td><td>You mustn't do any cleaning on the first day. You needn't wait! (情态动词)</td></tr>
+            <tr><td>M12 help! 急救</td><td>What's wrong with him? He could be in pain. Make him comfortable. (祈使句/情态推测)</td></tr>
+          </table>
+          </div>
+        </div></div>
+      </article>
+    </section>
+
+    <!-- ================= 八下 ================= -->
+    <section class="grade-block" id="grade-8b">
+      <h2 class="grade-title"><span class="badge">八年级下册</span><span class="en">Modules 1–10</span></h2>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">1</span><span class="ch-title">系动词、感官动词与简单句句型</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li>系动词后接<b class="kw">形容词</b>作表语：be, look, sound, smell, taste, feel, seem, become, get, turn, keep, stay。</li>
+          </ul>
+          <div class="eg"><p class="en">The soup smells delicious but tastes a little salty. Your idea sounds great. Silk feels soft.</p></div>
+          <ul>
+            <li>五种简单句：① 主+谓（S+V）Birds fly. ② 主+系+表 She is happy. ③ 主+谓+宾 I like apples. ④ 主+谓+间宾+直宾 He gave me a book. ⑤ 主+谓+宾+宾补 We keep our classroom clean.（常作宾补：形容词、名词、do/doing、介词短语）</li>
+          </ul>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">2</span><span class="ch-title">现在完成时（一）：概念与基本用法</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <div class="box formula">
+            结构：have/has + 过去分词（done）。<br>
+            用法：① 过去发生的动作对现在造成影响或结果（常与 already, just, yet, ever, never 连用）；② 过去开始持续到现在的动作或状态（常与 since, for, so far, in the past/last…years 连用）。
+          </div>
+          <ul>
+            <li>already（肯定句中，have/has 后）；just（刚刚）；yet（否定句、疑问句末）；ever（曾经，疑问句）；never（从不，本身否定）。</li>
+            <li>规则过去分词同过去式（-ed）；常见不规则：go—went—gone；be—was/were—been；see—saw—seen；do—did—done；have—had—had；give—gave—given；take—took—taken；write—wrote—written；eat—ate—eaten；buy—bought—bought。</li>
+          </ul>
+          <div class="eg"><p class="en">Have you ever entered a competition? I've just finished my homework. She hasn't come back yet.</p></div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">3</span><span class="ch-title">现在完成时（二）：since/for 与 have been to / have gone to</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <div class="box formula">
+            for + 时间段（for three years）；since + 时间点/一般过去时从句（since 2015, since I came here）。<br>
+            have been to 去过（已回）；have gone to 去了（未回）；have been in 待在某地（持续）。
+          </div>
+          <ul>
+            <li>延续性问题：非延续性动词（buy, borrow, die, leave, join, marry, begin, open, come, go）在完成时中不能与 for/since 连用，要转换：buy→have；borrow→keep；die→be dead；leave→be away；join→be a member of / be in；begin→be on；marry→be married；come/go→be in/at。</li>
+          </ul>
+          <div class="eg"><p class="en">He has been away from his hometown for ten years.（不用 has left）I have had the bike since last month.（不用 have bought）</p></div>
+          <div class="box exam">一般过去时与现在完成时区别：有明确过去时间（yesterday, last year, in 2008, …ago）用一般过去时；强调与现在的联系用完成时。</div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">4</span><span class="ch-title">宾语从句</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li>宾语从句在复合句中作主句谓语动词（或介词、形容词）的宾语。</li>
+            <li><b class="kw">引导词</b>：① that（陈述句变来，口语常省略）：I think (that) he is right. ② if/whether（一般疑问句变来，“是否”）：I wonder if/whether he will come. ③ 连接代词/副词 what, who, when, where, why, how, which：Do you know where he lives?</li>
+            <li><b class="kw">语序</b>：一律用<b>陈述语序</b>（主语 + 谓语）。</li>
+            <li><b class="kw">时态呼应</b>：主句是现在时/将来时，从句按需要用时态；主句是过去时，从句用相应的过去时态；客观真理仍用一般现在时。</li>
+          </ul>
+          <div class="eg"><p class="en">Could you tell me how I can get to the station? The teacher told us that light travels faster than sound.</p><p class="zh">could 在此表委婉，并非过去时；“光比声音快”是客观真理，从句用一般现在时。</p></div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">5</span><span class="ch-title">模块话题（M1–M10）</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <div class="tbl-wrap">
+          <table>
+            <tr><th>Module 话题</th><th>核心语言点</th></tr>
+            <tr><td>M1 feelings and impressions 感觉印象</td><td>It tastes good. You look lovely. (系动词+形容词)</td></tr>
+            <tr><td>M2 experiences 经历</td><td>Have you ever won any prizes? I've stopped trying now. (现在完成时)</td></tr>
+            <tr><td>M3 journey to space 太空旅行</td><td>Scientists have sent spaceships to Mars. No one has been to Mars yet.</td></tr>
+            <tr><td>M4 seeing the doctor 看病</td><td>How long have you been like this? I've been ill since Friday. I've got a stomach ache.</td></tr>
+            <tr><td>M5 cartoons 卡通</td><td>Nemo has won the hearts of children. He has been popular for over eighty years.</td></tr>
+            <tr><td>M6 hobbies 爱好</td><td>Hobbies can make you grow as a person. Some hobbies are relaxing, such as reading.</td></tr>
+            <tr><td>M7 summer in LA 洛杉矶夏令营</td><td>We provide books and weekly tests. You can choose to take trips. (to do / 并列结构)</td></tr>
+            <tr><td>M8 time off 休假</td><td>I can hardly believe we're in the city centre. Let's walk along the lake, cross the bridge.</td></tr>
+            <tr><td>M9 friendship 友谊</td><td>Could you explain what happened then? She asked me whether she could borrow my phone. (宾语从句)</td></tr>
+            <tr><td>M10 radio 广播</td><td>Thank you for showing us around. I asked him how old he was. Keep studying.</td></tr>
+          </table>
+          </div>
+        </div></div>
+      </article>
+    </section>
+
+    <!-- ================= 九上 ================= -->
+    <section class="grade-block" id="grade-9a">
+      <h2 class="grade-title"><span class="badge">九年级上册</span><span class="en">Modules 1–10（中考重点语法）</span></h2>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">1</span><span class="ch-title">六大时态综合辨析</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <p>详见“语法与写作专题”中的<b class="kw">八大时态总表</b>。九上模块高频出现一般现在时、现在进行时、一般过去时、过去进行时、一般将来时、现在完成时的综合比较。</p>
+          <div class="eg"><p class="en">I have lived here since I was born. When I got home, my parents were watching TV. People today live longer than they did in the past.</p></div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">2</span><span class="ch-title">被动语态</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <div class="box formula">
+            基本结构：be + 过去分词（done）；be 动词随时态、人称数变化。<br>
+            一般现在时：am/is/are + done；一般过去时：was/were + done；<br>
+            一般将来时：will be + done / be going to be + done；<br>
+            现在完成时：have/has been + done；<br>
+            含情态动词：情态动词 + be + done。
+          </div>
+          <ul>
+            <li>用法：不知道动作执行者、没有必要指出、强调动作承受者时用被动；动作执行者由 by 引出。</li>
+          </ul>
+          <div class="eg"><p class="en">The Great Wall is visited by millions of people every year. The bridge was built in 1960. The work must be finished today. His new book has been translated into many languages.</p></div>
+          <div class="box exam">主动变被动步骤：宾语提前作主语 → 谓语改 be+done（时态不变）→ 主语前加 by；双宾语可把其中一个提前。不及物动词（happen, take place, appear, disappear）无被动。</div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">3</span><span class="ch-title">定语从句</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <p>在复合句中修饰名词或代词的从句；被修饰的名词叫<b class="kw">先行词</b>，引导从句的词叫<b>关系词</b>。</p>
+          <div class="tbl-wrap">
+          <table>
+            <tr><th>关系词</th><th>先行词</th><th>成分</th><th>例句</th></tr>
+            <tr><td>who</td><td>人</td><td>主/宾</td><td>The boy who is reading is my brother.</td></tr>
+            <tr><td>whom</td><td>人</td><td>宾语（正式）</td><td>The doctor whom she saw is famous.</td></tr>
+            <tr><td>which</td><td>物</td><td>主/宾</td><td>The book which is on the desk is mine.</td></tr>
+            <tr><td>that</td><td>人或物</td><td>主/宾</td><td>This is the most exciting film that I've ever seen.</td></tr>
+            <tr><td>whose</td><td>人的/物的</td><td>定语</td><td>I know a boy whose father is a pilot.</td></tr>
+          </table>
+          </div>
+          <ul>
+            <li>关系词作宾语时可以省略：The man (who/that) you met is our teacher.</li>
+            <li>只能用 that 的情况：先行词是 all, everything, nothing, anything 等不定代词；被序数词或最高级修饰；先行词既有人又有物；先行词被 the only, the very 修饰。</li>
+            <li>非限制性定语从句（逗号隔开）不用 that，用 which/who。</li>
+          </ul>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">4</span><span class="ch-title">构词法与冠词复习</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <h3>构词法</h3>
+          <ul>
+            <li><b class="kw">合成词</b>：class+room→classroom；black+board；motherland；warm-hearted；good-looking。</li>
+            <li><b class="kw">派生</b>：前缀 un-/im-/in-/dis-（happy→unhappy, possible→impossible, like→dislike）；re-（rewrite）；后缀 -er/-or（worker, actor）、-tion（invention）、-ment（development）、-ness（happiness）、-ful（careful）、-less（careless）、-ly（carefully）、-y（sunny）、-able（enjoyable）、-ous（dangerous）。</li>
+            <li><b class="kw">转化</b>：water n. 水 → v. 浇水；colour n. → v.。</li>
+          </ul>
+          <h3>冠词</h3>
+          <ul>
+            <li>a/an（首次提到、泛指一类、每一个）：a university, an hour, an honest boy, a one-way ticket（看音素不看字母）。</li>
+            <li>the（特指、上文提过、世上唯一、序数词/最高级前、the+adj 表一类人 the rich）。</li>
+            <li>零冠词：球类运动、三餐、学科、by+交通工具、复数泛指、专有名词；但 play the piano（乐器加 the）。</li>
+          </ul>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">5</span><span class="ch-title">模块话题（M1–M10）</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <div class="tbl-wrap">
+          <table>
+            <tr><th>Module 话题</th><th>核心语言点</th></tr>
+            <tr><td>M1 wonders of the world 世界奇观</td><td>I think natural wonders are more interesting than man-made ones. (时态/比较)</td></tr>
+            <tr><td>M2 public holidays 公共假日</td><td>The First of October is China's National Day. We have celebrated it since 1949.</td></tr>
+            <tr><td>M3 heroes 英雄（邓亚萍/白求恩/袁隆平）</td><td>She trained hard so that she became a great player. including/定语从句</td></tr>
+            <tr><td>M4 home alone 独自在家</td><td>I can look after myself. I became so bored with their orders… (反身代词)</td></tr>
+            <tr><td>M5 museums 博物馆</td><td>You mustn't touch. It's closed until January. No shouting! (规则/被动)</td></tr>
+            <tr><td>M6 problems 问题与建议</td><td>If you tell him the truth, he'll be angry. 条件状语从句“主将从现”</td></tr>
+            <tr><td>M7 great books 名著</td><td>It's read by millions of people. It's thought to be one of the greatest… (被动)</td></tr>
+            <tr><td>M8 sports life 体育人生（刘翔）</td><td>He was chosen for the Chinese team. Will he be encouraged? (一般过去/将来被动)</td></tr>
+            <tr><td>M9 great inventions 发明</td><td>The Internet is more powerful than printing. Books will be replaced by…? (被动/比较)</td></tr>
+            <tr><td>M10 Australia 澳大利亚</td><td>The horse that I rode was lazy. 定语从句；that 引导</td></tr>
+          </table>
+          </div>
+        </div></div>
+      </article>
+    </section>
+
+    <!-- ================= 九下 ================= -->
+    <section class="grade-block" id="grade-9b">
+      <h2 class="grade-title"><span class="badge">九年级下册</span><span class="en">Modules 1–8（中考综合）</span></h2>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">1</span><span class="ch-title">定语从句进阶与状语从句</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li>关系副词：when（先行词时间，在从句中作时间状语）、where（地点，作地点状语）、why（原因 reason）。</li>
+            <li>关系代词与关系副词选择看成分：从句缺主/宾语用 which/that；从句不缺主干成分、只缺状语用 when/where。</li>
+          </ul>
+          <div class="eg"><p class="en">I'll never forget the day when we met. This is the school where I studied for three years. The reason why he was late is that he missed the bus.</p></div>
+          <h3>状语从句</h3>
+          <ul>
+            <li>时间：when, while, as soon as, until/till, before, after。</li>
+            <li>条件：if, unless（除非 = if…not），as long as；遵守“<b class="kw">主将从现</b>”：主句将来时，if/unless/as soon as/when 引导的从句用一般现在时。</li>
+            <li>原因：because, since, as；目的：so that；结果：so…that / such…that；让步：although/though（不与 but 连用）；比较：than, as…as。</li>
+          </ul>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">2</span><span class="ch-title">模块话题与中考要点（M1–M8）</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <div class="tbl-wrap">
+          <table>
+            <tr><th>Module 话题</th><th>核心语言点</th></tr>
+            <tr><td>M1 travel 旅行</td><td>The flight takes about 12 hours. It's the busiest season. (复习时态/最高级)</td></tr>
+            <tr><td>M2 education 教育</td><td>We have a parents' meeting. What's the number of…? neither/none</td></tr>
+            <tr><td>M3 life now and then 今昔对比</td><td>People are wealthier today, but they live busier lives. (比较级/最高级综合)</td></tr>
+            <tr><td>M4 rules and suggestions 规则建议</td><td>You must keep together. You mustn't go off on your own. (情态)</td></tr>
+            <tr><td>M5 rules and suggestions / 外出安全</td><td>To keep fit, you have to walk at least 10,000 steps. can/can't 表许可</td></tr>
+            <tr><td>M6 eating together 饮食交际</td><td>Help yourself to… I don't know what to expect. 宾语从句复习</td></tr>
+            <tr><td>M7 English for you and me 英语学习</td><td>How did you learn English? It's also the subject that I'm best at. 定语从句</td></tr>
+            <tr><td>M8 my future life 未来生活</td><td>I'm going to have a big adventure. You'll have to work hard. (将来时/不定式)</td></tr>
+          </table>
+          </div>
+        </div></div>
+      </article>
+    </section>
+
+    <!-- ================= 专题 ================= -->
+    <section class="grade-block" id="grade-topic">
+      <h2 class="grade-title"><span class="badge">语法与写作专题</span></h2>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">1</span><span class="ch-title">八大时态总表</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <div class="tbl-wrap">
+          <table>
+            <tr><th>时态</th><th>结构</th><th>标志词</th><th>用法</th></tr>
+            <tr><td>一般现在时</td><td>do/does；be(am/is/are)</td><td>every day, often, usually, always, on Sundays</td><td>习惯、客观事实、真理</td></tr>
+            <tr><td>一般过去时</td><td>did；was/were</td><td>yesterday, last week, …ago, just now, in 2010</td><td>过去发生的动作或状态</td></tr>
+            <tr><td>一般将来时</td><td>will do；be going to do</td><td>tomorrow, next year, soon, in the future</td><td>将来动作/预测/打算</td></tr>
+            <tr><td>现在进行时</td><td>am/is/are doing</td><td>now, look, listen, at present</td><td>此刻或现阶段正在进行</td></tr>
+            <tr><td>过去进行时</td><td>was/were doing</td><td>at 8 last night, this time yesterday, while</td><td>过去某时刻正在进行</td></tr>
+            <tr><td>现在完成时</td><td>have/has done</td><td>already, yet, ever, never, just, since, for, so far</td><td>过去动作影响现在；持续到现在</td></tr>
+            <tr><td>过去完成时</td><td>had done</td><td>by last year, before/by the time+过去时</td><td>过去的过去（拓展）</td></tr>
+            <tr><td>过去将来时</td><td>would do；was/were going to do</td><td>宾语从句中（主句过去时）</td><td>从过去看将要发生（拓展）</td></tr>
+          </table>
+          </div>
+          <div class="box exam">第三人称单数现在时：动词加 -s/-es（watch→watches, study→studies）；主谓一致：either of/each of/everyone 作主语谓语用单数。</div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">2</span><span class="ch-title">高频非谓语动词搭配</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <div class="tbl-wrap">
+          <table>
+            <tr><th>只接 to do</th><th>只接 doing</th><th>接 to do / doing 意义不同</th></tr>
+            <tr>
+              <td>want, hope, wish, decide, plan, agree, offer, learn, choose, refuse, promise, would like, expect</td>
+              <td>enjoy, finish, practise, mind, suggest, keep, miss, avoid, imagine, consider, give up, can't help, be busy, feel like, look forward to, pay attention to, be used to（习惯于）</td>
+              <td>stop to do（停下来去做）/ stop doing（停止做）；remember to do（记得去做）/ doing（记得做过）；forget to do / doing；try to do（尽力）/ doing（尝试）；go on to do（接着做另一件）/ doing（继续做）</td>
+            </tr>
+          </table>
+          </div>
+          <ul>
+            <li>ask/tell/want/expect/invite sb <b>to do</b>；make/let/have sb <b>do</b>；see/hear/watch/notice sb do（全过程）/doing（正在进行）。</li>
+          </ul>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">3</span><span class="ch-title">不规则动词分类速记（AAA / AAB / ABA / ABB / ABC）</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li><b>AAA 型</b>：put-put-put, cut-cut-cut, read-read-read, cost-cost-cost, let-let-let, set-set-set, hit-hit-hit, hurt-hurt-hurt。</li>
+            <li><b>ABA 型</b>：come-came-come, become-became-become, run-ran-run。</li>
+            <li><b>ABB 型</b>：buy-bought-bought, bring-brought-brought, think-thought-thought, teach-taught-taught, catch-caught-caught, keep-kept-kept, sleep-slept-slept, feel-felt-felt, leave-left-left, build-built-built, lend-lent-lent, spend-spent-spent, send-sent-sent, sit-sat-sat, win-won-won, meet-met-met, have-had-had, make-made-made, say-said-said, tell-told-told, find-found-found, stand-stood-stood, understand-understood-understood, pay-paid-paid。</li>
+            <li><b>ABC 型</b>：be-was/were-been, go-went-gone, do-did-done, see-saw-seen, eat-ate-eaten, give-gave-given, take-took-taken, write-wrote-written, ride-rode-ridden, drive-drove-driven, speak-spoke-spoken, break-broke-broken, choose-chose-chosen, freeze-froze-frozen, forget-forgot-forgotten, begin-began-begun, drink-drank-drunk, sing-sang-sung, swim-swam-swum, ring-rang-rung, fly-flew-flown, know-knew-known, grow-grew-grown, throw-threw-thrown, show-showed-shown, draw-drew-drawn, wear-wore-worn, bear-bore-born。</li>
+          </ul>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">4</span><span class="ch-title">话题写作万能句型与模板</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <h3>开头</h3>
+          <p>Nowadays, … is becoming more and more popular. / It's well known that… / I'm writing to tell you something about… / How is everything going?</p>
+          <h3>观点与对比</h3>
+          <p>On the one hand…, on the other hand… / However, every coin has two sides. / In my opinion / As far as I know / Compared with… / Not only…but also…</p>
+          <h3>建议信</h3>
+          <p>Here is some advice for you. First, you should… Besides, it's a good idea to… Why not…? Last but not least… I'm sure you will make progress.</p>
+          <h3>结尾</h3>
+          <p>In a word / All in all / In conclusion, … / I'm looking forward to your reply. / Let's take action from now on!</p>
+          <h3>常考话题</h3>
+          <ul>
+            <li>人物介绍、校园生活、节日（Spring Festival）、旅行经历、健康生活、环保（protect the environment; reduce pollution; sort rubbish）、科技（online learning）、传统文化、安全（traffic/food safety）、梦想职业、变化（great changes in my hometown）。</li>
+          </ul>
+          <div class="box tip">写作提分：① 要点齐全、分段清晰；② 用从句、非谓语、连接词提升档次；③ 时态一致（叙事过去时、观点一般现在时）；④ 书写工整，检查主谓一致、单复数、冠词。</div>
+        </div></div>
+      </article>
+    </section>
+    </div><!-- /#knowledge -->
+
+    <!-- ================= 真题练习 ================= -->
+    <section id="quizPanel" hidden>
+      <div class="bank-info" id="bankInfo"></div>
+
+      <div class="quiz-entry">
+        <div class="row">
+          <label>年级：</label>
+          <select id="qGrade"><option value="">全部年级</option></select>
+          <label>单元：</label>
+          <select id="qUnit"></select>
+          <button type="button" class="btn-main" id="btnStartUnit">开始练习</button>
+        </div>
+        <div class="row quick">
+          <button type="button" class="btn-quick" id="btnRandom">🎲 随机 20 题综合检测</button>
+          <button type="button" class="btn-quick" id="btnMonth">🆕 本月新题</button>
+          <button type="button" class="btn-quick" id="btnWrong">❌ 错题重练（<span class="wrong-count">0</span>）</button>
+        </div>
+      </div>
+
+      <h2 class="grade-title" id="quizTitle" style="margin-top:24px">选择范围后开始练习</h2>
+      <div class="quiz-summary" id="quizSummary">完成后这里会显示正确率</div>
+      <div id="quizBody"></div>
+    </section>
+
+    <!-- ================= 错题集 ================= -->
+    <section id="wrongPanel" hidden>
+      <h2 class="grade-title">我的错题集</h2>
+      <div class="wrong-stat-bar" id="wrongStat"></div>
+      <div class="clear-row"><button type="button" class="btn-mini" id="btnClearWrong">🗑 清空全部错题</button></div>
+      <div id="wrongBody"></div>
+    </section>
+
+  </main>
+</div>
+
+<button class="back-top" aria-label="返回顶部">↑</button>
+<script src="js/main.js"></script>
+<script src="js/english-bank.js"></script>
+<script src="js/quiz-core.js"></script>
+</body>
+</html>
