@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>物理（北师大版）· 初中学习助手</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-subject="physics">
+<div class="read-progress"></div>
+
+<header class="topbar">
+  <a class="home-link" href="index.html"><span class="logo-dot">🧲</span> 学习助手</a>
+  <span class="subject-name"><b>物理</b> · 北师大版</span>
+  <button class="menu-btn" aria-label="菜单">☰</button>
+  <div class="search-box">
+    <span class="ico">🔍</span>
+    <input id="searchInput" type="text" placeholder="搜索：阿基米德、欧姆定律、凸透镜…">
+  </div>
+</header>
+<div class="sidebar-mask"></div>
+
+<div class="layout">
+  <aside class="sidebar">
+    <h4>分册目录</h4>
+    <nav>
+      <a href="#grade-8a">八年级上册</a>
+      <a href="#grade-8b">八年级下册</a>
+      <a href="#grade-9">九年级全一册</a>
+      <a href="#grade-topic">实验与公式专题</a>
+    </nav>
+    <div class="progress-wrap">
+      <div class="bar"><i></i></div>
+      <p>掌握进度 <span class="pct">0%</span></p>
+    </div>
+    <h4 style="margin-top:18px">题库训练</h4>
+    <nav>
+      <a href="#quiz" data-tab="quiz">📝 真题 / 模拟题练习</a>
+      <a href="#wrong" data-tab="wrong">❌ 错题集 <span class="wrong-count" style="color:var(--red);font-weight:700">0</span></a>
+    </nav>
+  </aside>
+
+  <main class="content">
+    <section class="page-hero" data-emoji="🧲">
+      <h1>物理 · 北师大版</h1>
+      <p>按北师大版八、九年级教材章节整理：物态变化、密度、运动、声、光、力、压强浮力、机械功、内能、电学与电磁，含概念、公式、实验探究与易错点。</p>
+      <div class="tags">
+        <span>声与光</span><span>力学</span><span>热学</span><span>电学</span><span>实验探究</span>
+      </div>
+    </section>
+
+    <div class="quiz-tabs">
+      <button type="button" data-tab="knowledge" class="active">📖 知识要点</button>
+      <button type="button" data-tab="quiz">📝 真题练习</button>
+      <button type="button" data-tab="wrong">❌ 错题集 <span class="wrong-count">0</span></button>
+    </div>
+
+    <div id="knowledge">
+    <div class="toolbar">
+      <button id="expandAll">全部展开</button>
+      <button id="collapseAll">全部收起</button>
+      <span class="tip">公式框可在考前快速过一遍</span>
+    </div>
+
+    <!-- ================= 八上 ================= -->
+    <section class="grade-block" id="grade-8a">
+      <h2 class="grade-title"><span class="badge">八年级上册</span><span class="en">物态 · 密度 · 运动 · 声 · 光</span></h2>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">1</span><span class="ch-title">物态及其变化</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li>三种物态：固态（有一定形状和体积）、液态（无固定形状有体积）、气态（无固定形状和体积）。</li>
+            <li><b class="kw">温度</b>：表示物体冷热程度；常用温度计原理：<b>液体热胀冷缩</b>；摄氏温标：标准大气压下冰水混合物 0℃、沸水 100℃。</li>
+            <li>使用：玻璃泡全部浸入被测液体、不碰容器底壁、示数稳定后读数、读数时留在液体中且视线与液柱上表面相平。</li>
+          </ul>
+          <h3>六种物态变化</h3>
+          <div class="tbl-wrap">
+          <table>
+            <tr><th>变化</th><th>方向</th><th>吸/放热</th><th>举例</th></tr>
+            <tr><td>熔化</td><td>固→液</td><td>吸热</td><td>冰化成水</td></tr>
+            <tr><td>凝固</td><td>液→固</td><td>放热</td><td>水结冰</td></tr>
+            <tr><td>汽化</td><td>液→气</td><td>吸热</td><td>蒸发、沸腾</td></tr>
+            <tr><td>液化</td><td>气→液</td><td>放热</td><td>白气、露、雾</td></tr>
+            <tr><td>升华</td><td>固→气</td><td>吸热</td><td>干冰、樟脑丸变小、灯丝变细</td></tr>
+            <tr><td>凝华</td><td>气→固</td><td>放热</td><td>霜、雪、雾凇、灯泡壁变黑</td></tr>
+          </table>
+          </div>
+          <ul>
+            <li>晶体（冰、海波、各种金属）有固定熔点，熔化时吸热但温度不变；非晶体（蜡、松香、玻璃、沥青）没有熔点。</li>
+            <li>沸腾条件：达到沸点且继续吸热；气压越高沸点越高；蒸发在任何温度下、只在液面进行，有致冷作用；影响蒸发快慢：温度、表面积、液面上方空气流速。</li>
+            <li>液化两法：降低温度、压缩体积（液化石油气）。</li>
+          </ul>
+          <div class="box exam">“白气”不是水蒸气，而是水蒸气遇冷<b>液化</b>形成的小水滴；雾、露是液化，霜、雪是凝华。</div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">2</span><span class="ch-title">物质世界的尺度、质量和密度</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li>长度测量：刻度尺读数要<b>估读到分度值下一位</b>；1 km=10³m，1 mm=10⁻³m，1 μm=10⁻⁶m，1 nm=10⁻⁹m；误差不可避免，可通过多次测量求平均值减小。</li>
+            <li><b class="kw">质量 m</b>：物体所含物质的多少；单位 kg、g、mg、t（1 t=10³ kg，1 kg=10³ g）；质量是物体本身属性，不随形状、状态、位置、温度改变。</li>
+            <li>天平使用：放平—游码归零—调平衡螺母（左偏右调）—左物右码—镊子夹砝码，m物 = m砝 + m游；潮湿物品和化学药品不能直接放托盘。</li>
+          </ul>
+          <div class="box formula">
+            密度 ρ = m/V；单位 kg/m³ 或 g/cm³；1 g/cm³ = 10³ kg/m³。<br>
+            水的密度 1.0×10³ kg/m³（即 1 g/cm³），表示 1 m³ 水的质量为 1.0×10³ kg。<br>
+            密度是物质的一种特性，与质量、体积无关；同种物质（同状态同温度）密度相同。
+          </div>
+          <ul>
+            <li>量筒测体积：视线与凹液面底部相平；测固体密度：先测质量后测体积（避免沾水使质量偏大）。</li>
+          </ul>
+          <div class="box exam">氧气瓶用掉一半氧气后，ρ 变为原来一半（气体充满整瓶，V 不变 m 减半）；而铁块切去一半，ρ 不变。</div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">3</span><span class="ch-title">物质的简单运动</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li><b class="kw">机械运动</b>：物体位置的变化；运动是绝对的，静止是相对的。</li>
+            <li><b class="kw">参照物</b>：判断物体运动或静止时被选作标准的物体；物体相对参照物位置变化即运动。参照物选取不同，结论可能不同。</li>
+          </ul>
+          <div class="box formula">
+            比较运动快慢：相同时间比路程 / 相同路程比时间。<br>
+            速度 v = s/t；1 m/s = 3.6 km/h；人步行约 1.1 m/s，自行车约 5 m/s。<br>
+            匀速直线运动：v 不变，s 与 t 成正比；变速运动用<b>平均速度</b> v̄ = s总/t总（不是速度的平均值）。
+          </div>
+          <div class="box tip">测平均速度实验：原理 v=s/t；器材斜面、小车、刻度尺、秒表；金属挡板便于计时；斜面坡度小些使时间长、误差小。</div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">4</span><span class="ch-title">声现象</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li>声音由物体<b class="kw">振动</b>产生；以<b>声波</b>形式在介质中传播；<b>真空不能传声</b>（月球上靠无线电）。</li>
+            <li>声速：15℃ 空气中 340 m/s；一般 v固&gt;v液&gt;v气；回声：人耳区分原声回声需间隔 0.1 s 以上（障碍至少 17 m）。</li>
+          </ul>
+          <div class="box formula">
+            乐音三要素：<br>
+            ① <b>音调</b>——声音高低，由<b>频率</b>决定（频率越快音调越高），单位 Hz；人耳听觉 20～20000 Hz，高于 20000 Hz 是超声波，低于 20 Hz 是次声波。<br>
+            ② <b>响度</b>——声音大小，由振幅和距声源远近决定；单位分贝 dB。<br>
+            ③ <b>音色</b>——声音的品质特色，由发声体材料结构决定，用于“闻其声知其人”、辨别乐器。
+          </div>
+          <ul>
+            <li>噪声控制三途径：声源处减弱（消声器）、传播过程中减弱（隔音板、植树）、人耳处减弱（耳塞）。</li>
+            <li>声的利用：传递信息（B 超、声呐、回声定位、探伤）；传递能量（超声波清洗、碎石）。</li>
+          </ul>
+          <div class="box exam">“不敢高声语”的“高”指响度；“高音歌唱家”的“高”指音调。</div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">5</span><span class="ch-title">光现象</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li>光源：自身能发光的物体（月亮不是光源）；光在<b class="kw">同种均匀介质中沿直线传播</b>：影子、日食月食、小孔成像（倒立实像，像形状与孔无关）、激光准直、排队。</li>
+            <li>光速：真空中 c=3×10⁸ m/s=3×10⁵ km/s；v真空&gt;v气&gt;v液&gt;v固（与声相反）。</li>
+          </ul>
+          <h3>光的反射</h3>
+          <ul>
+            <li>三线共面、法线居中、两角相等（反射角=入射角，都是与法线夹角）；光路可逆。</li>
+            <li>镜面反射（光滑面，平行光反射后仍平行）与漫反射（粗糙面，反射光射向各方，但每条光线都遵守反射定律）。</li>
+            <li>平面镜成像特点：<b class="kw">等大、等距、垂直、虚像，像与物关于镜面对称</b>；原理是光的反射。</li>
+          </ul>
+          <h3>光的折射</h3>
+          <ul>
+            <li>光从一种介质斜射入另一种介质时传播方向发生偏折；规律：空气一侧的角大（光从空气斜射入水/玻璃，折射角小于入射角）；垂直入射不偏折；光路可逆。</li>
+            <li>现象：池水变“浅”、筷子“弯折”、海市蜃楼、彩虹、透镜成像。</li>
+          </ul>
+          <h3>光的色散</h3>
+          <ul>
+            <li>白光经三棱镜分解成红橙黄绿蓝靛紫七色；色光三原色：<b class="kw">红、绿、蓝</b>；不透明物体颜色由反射色光决定，透明物体颜色由透过色光决定；红外线（热作用、遥控器、夜视仪）、紫外线（杀菌、验钞、促进维生素 D 合成，过量有害）。</li>
+          </ul>
+          <div class="box exam">实像由实际光线会聚而成，能呈现在光屏上；虚像由光线反向延长线相交形成，不能用光屏承接。</div>
+        </div></div>
+      </article>
+    </section>
+
+    <!-- ================= 八下 ================= -->
+    <section class="grade-block" id="grade-8b">
+      <h2 class="grade-title"><span class="badge">八年级下册</span><span class="en">光具 · 力 · 压强浮力 · 机械功</span></h2>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">1</span><span class="ch-title">常见的光学仪器</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li>凸透镜：中间厚边缘薄，对光有<b class="kw">会聚</b>作用；凹透镜：中间薄边缘厚，对光有<b>发散</b>作用。</li>
+            <li>三条特殊光线：过光心传播方向不变；平行主光轴的光线过焦点；过焦点的光线出射平行主光轴。</li>
+          </ul>
+          <h3>凸透镜成像规律（u 物距，v 像距，f 焦距）</h3>
+          <div class="tbl-wrap">
+          <table>
+            <tr><th>物距 u</th><th>像的性质</th><th>像距 v</th><th>应用</th></tr>
+            <tr><td>u&gt;2f</td><td>倒立、缩小、实像</td><td>f&lt;v&lt;2f</td><td>照相机、摄像机</td></tr>
+            <tr><td>u=2f</td><td>倒立、等大、实像</td><td>v=2f</td><td>测焦距</td></tr>
+            <tr><td>f&lt;u&lt;2f</td><td>倒立、放大、实像</td><td>v&gt;2f</td><td>投影仪、幻灯机</td></tr>
+            <tr><td>u=f</td><td>不成像（平行光）</td><td>—</td><td>获得平行光</td></tr>
+            <tr><td>u&lt;f</td><td>正立、放大、虚像</td><td>v&gt;u（像物同侧）</td><td>放大镜</td></tr>
+          </table>
+          </div>
+          <div class="box tip">口诀：“一倍焦距分虚实，二倍焦距分大小；实像异侧倒，物近像远像变大；虚像同侧正，物近像近像变小。”</div>
+          <ul>
+            <li>眼睛：晶状体相当于凸透镜，视网膜相当于光屏，成倒立缩小实像；近视眼（像成在视网膜前）戴<b>凹透镜</b>矫正；远视眼（像成在视网膜后）戴<b>凸透镜</b>矫正。</li>
+            <li>显微镜：物镜成倒立放大实像，目镜相当于放大镜；望远镜：物镜成缩小实像，目镜放大。</li>
+          </ul>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">2</span><span class="ch-title">运动和力</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li>力是物体对物体的作用（施力物体同时也是受力物体，力的作用是相互的）；单位牛顿 N；力的三要素：大小、方向、作用点；作用效果：改变物体形状、改变物体运动状态（速度大小或方向）。</li>
+            <li>弹簧测力计原理：在弹性限度内，弹簧受到的拉力越大，伸长越长（伸长量与拉力成正比）。</li>
+          </ul>
+          <div class="box formula">
+            重力 G = mg（g=9.8 N/kg，粗略取 10 N/kg）；方向始终<b>竖直向下</b>；作用点在重心。<br>
+            摩擦力：滑动摩擦力大小与压力大小和接触面粗糙程度有关；与接触面积、运动速度无关。增大摩擦：增大压力、增大粗糙程度；减小摩擦：变滑动为滚动、加润滑油、使接触面分离。
+          </div>
+          <ul>
+            <li><b class="kw">牛顿第一定律（惯性定律）</b>：一切物体在没有受到力的作用时，总保持静止状态或匀速直线运动状态（实验+科学推理得出，不能实验直接验证）。</li>
+            <li><b class="kw">惯性</b>：一切物体保持原来运动状态不变的性质；惯性是物体本身属性，大小只与质量有关；不能说“受到惯性作用”“惯性力”。</li>
+            <li><b class="kw">二力平衡</b>：作用在同一物体上的两个力大小相等、方向相反、并且在同一直线上（同体、等大、反向、共线）；平衡状态是静止或匀速直线运动。</li>
+            <li>相互作用力与平衡力区别：相互作用力作用在<b>两个</b>物体上（A 对 B、B 对 A），平衡力作用在<b>同一</b>物体上。</li>
+          </ul>
+          <div class="box exam">解释惯性现象：原来……一起运动→某物体受力改变运动状态→另一物体由于惯性保持原状态→所以……</div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">3</span><span class="ch-title">压强与浮力</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <h3>压强</h3>
+          <div class="box formula">
+            压强 p = F/S；单位帕斯卡 Pa（1 Pa=1 N/m²）。增大压强：增大压力或减小受力面积（刀刃、针尖）；减小压强：减小压力或增大受力面积（坦克履带、书包宽带）。<br>
+            液体压强 p = ρgh（h 为从液面到该点的竖直深度）；液体内部各方向都有压强，同一深度各方向压强相等；深度越深、密度越大压强越大。<br>
+            连通器：上端开口下端连通，同种液体静止时液面相平（船闸、茶壶、水位计）。
+          </div>
+          <ul>
+            <li>大气压：马德堡半球实验证明存在；托里拆利实验测出大气压值约 1.01×10⁵ Pa（760 mm 水银柱）；大气压随高度增加而减小；气压越高沸点越高（高压锅）。</li>
+            <li>流体压强：流速越大的位置压强越小——飞机机翼升力、两船不能并行、火车站台安全线。</li>
+          </ul>
+          <h3>浮力</h3>
+          <div class="box formula">
+            浮力产生原因：液体对物体向上和向下的压力差（F浮=F下−F上）；方向竖直向上。<br>
+            <b>阿基米德原理</b>：F浮 = G排 = ρ液gV排（适用于液体和气体）。<br>
+            称重法：F浮 = G − F示；平衡法（漂浮/悬浮）：F浮 = G物。
+          </div>
+          <div class="tbl-wrap">
+          <table>
+            <tr><th>状态</th><th>力的关系</th><th>密度关系</th></tr>
+            <tr><td>上浮（最终漂浮）</td><td>F浮&gt;G</td><td>ρ液&gt;ρ物</td></tr>
+            <tr><td>下沉（最终沉底）</td><td>F浮&lt;G</td><td>ρ液&lt;ρ物</td></tr>
+            <tr><td>悬浮</td><td>F浮=G</td><td>ρ液=ρ物（可停在任意深度）</td></tr>
+            <tr><td>漂浮</td><td>F浮=G</td><td>ρ液&gt;ρ物（V排&lt;V物）</td></tr>
+          </table>
+          </div>
+          <div class="box exam">浮力大小只与ρ液和V排有关，与物体密度、深度、形状无关；漂浮的冰块熔化后水面高度不变。</div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">4</span><span class="ch-title">机械和功</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <h3>杠杆与滑轮</h3>
+          <div class="box formula">
+            杠杆五要素：支点 O、动力 F₁、阻力 F₂、动力臂 l₁、阻力臂 l₂。<br>
+            <b>杠杆平衡条件</b>：F₁l₁ = F₂l₂。<br>
+            省力杠杆（l₁&gt;l₂，省力费距离）：撬棍、瓶起子、钢丝钳；费力杠杆（l₁&lt;l₂，省距离）：筷子、镊子、钓鱼竿、船桨；等臂杠杆：天平、定滑轮。
+          </div>
+          <ul>
+            <li>定滑轮：等臂杠杆，不省力但能改变力方向（F=G，s=h）。</li>
+            <li>动滑轮：动力臂是阻力臂二倍的杠杆，省一半力但不改变方向（理想 F=½G，s=2h）。</li>
+            <li>滑轮组：F = (G物+G动)/n，s = nh（n 为承担物重的绳子段数）；绕线“奇动偶定”。</li>
+          </ul>
+          <h3>功、功率、机械效率</h3>
+          <div class="box formula">
+            做功两必要因素：作用在物体上的力、物体在力的方向上通过的距离。W = Fs（单位 J，1 J=1 N·m）；不做功三种情况：有力无距离、有距离无力、力与运动方向垂直。<br>
+            功率 P = W/t = Fv（单位 W、kW；1 kW=10³ W），表示做功快慢。<br>
+            有用功 W有 = Gh（提升物体）；总功 W总 = Fs；额外功（克服动滑轮重、摩擦）；<br>
+            <b>机械效率 η = W有/W总 ×100%</b>，η 总小于 1；同一滑轮组，提升物体越重 η 越高。
+          </div>
+          <h3>机械能</h3>
+          <ul>
+            <li>动能：质量越大、速度越大动能越大；重力势能：质量越大、高度越高势能越大；弹性势能：弹性形变越大越大。动能与势能统称机械能，可相互转化（滚摆、单摆、近地点远地点）；若不计阻力，机械能守恒。</li>
+          </ul>
+        </div></div>
+      </article>
+    </section>
+
+    <!-- ================= 九年级 ================= -->
+    <section class="grade-block" id="grade-9">
+      <h2 class="grade-title"><span class="badge">九年级全一册</span><span class="en">内能 · 电路 · 欧姆定律 · 电功率 · 电磁</span></h2>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">1</span><span class="ch-title">机械能、内能及其转化</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li>分子动理论：物质由分子（原子）构成；分子不停地做无规则运动（<b class="kw">扩散现象</b>说明分子在运动，温度越高越剧烈）；分子间存在引力和斥力。</li>
+            <li><b class="kw">内能</b>：物体内所有分子动能和分子势能的总和；一切物体在任何温度下都有内能；内能与温度、质量、状态有关。</li>
+            <li>改变内能两途径：<b>做功</b>（能量转化，如压缩空气、摩擦生热、钻木取火）和<b>热传递</b>（内能转移，条件：温度差）；两者等效。</li>
+          </ul>
+          <div class="box formula">
+            比热容 c：单位质量某种物质温度升高（降低）1℃ 吸收（放出）的热量；水的比热容 4.2×10³ J/(kg·℃)，最大，常用于取暖、冷却、调节气候。<br>
+            热量计算：Q吸 = cm(t−t₀)；Q放 = cm(t₀−t)；即 Q=cmΔt。<br>
+            热值 q：1 kg 某种燃料完全燃烧放出的热量；Q放 = mq（固体液体）；Q放 = Vq（气体）。<br>
+            热机效率 η = Q有用/Q总；热机一个工作循环：吸气—压缩—做功—排气四冲程，曲轴转 2 圈，做功 1 次；压缩冲程机械能→内能，做功冲程内能→机械能。
+          </div>
+          <div class="box exam">比热容是物质特性，与质量、温度无关；“热水取暖”“水冷却发动机”“沿海温差小”都利用水比热容大的特点。</div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">2</span><span class="ch-title">简单电路</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li>两种电荷：正电荷（玻璃棒与丝绸摩擦）、负电荷（橡胶棒与毛皮摩擦）；同种电荷相互排斥、异种相互吸引；带电体可吸引轻小物体；验电器原理：同种电荷相斥。</li>
+            <li>电流方向：规定<b class="kw">正电荷定向移动方向</b>为电流方向（金属中实际是自由电子定向移动，方向相反）；电源外部电流由正极流向负极。</li>
+            <li>电路三状态：通路、断路（开路）、短路（电源短路危险，不允许）。</li>
+          </ul>
+          <div class="tbl-wrap">
+          <table>
+            <tr><th></th><th>串联</th><th>并联</th></tr>
+            <tr><td>连接</td><td>元件依次相连，一条路径</td><td>元件并列连接，多条支路</td></tr>
+            <tr><td>电流</td><td>I=I₁=I₂ 处处相等</td><td>I=I₁+I₂ 干路等于各支路之和</td></tr>
+            <tr><td>电压</td><td>U=U₁+U₂</td><td>U=U₁=U₂ 各支路相等</td></tr>
+            <tr><td>电阻</td><td>R=R₁+R₂（越串越大）</td><td>1/R=1/R₁+1/R₂（越并越小）</td></tr>
+            <tr><td>特点</td><td>一处断开全路断；开关控制整个电路</td><td>支路互不影响；干路开关控全局</td></tr>
+          </table>
+          </div>
+          <div class="box formula">
+            电流 I：单位安培 A；电流表<b>串联</b>在电路中，电流“+”进“−”出，不超量程，<b>绝不允许直接接电源两极</b>。<br>
+            电压 U：单位伏特 V（干电池 1.5 V，家庭电路 220 V，对人体安全电压不高于 36 V）；电压表<b>并联</b>，可直接接电源测电源电压。<br>
+            电阻 R：单位欧姆 Ω；电阻是导体本身性质，大小由材料、长度（越长越大）、横截面积（越粗越小）、温度决定，与电压电流无关。
+          </div>
+          <ul>
+            <li><b class="kw">滑动变阻器</b>：通过改变接入电路中电阻丝长度改变电阻；接法“<b>一上一下</b>”；闭合开关前滑片置于最大阻值处；铭牌“20Ω 2A”含义。</li>
+          </ul>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">3</span><span class="ch-title">欧姆定律与电阻测量</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <div class="box formula">
+            <b>欧姆定律</b>：导体中的电流跟导体两端电压成正比，跟导体电阻成反比。<br>
+            I = U/R ⇒ U = IR，R = U/I。
+          </div>
+          <ul>
+            <li>串联分压：U₁/U₂ = R₁/R₂（电阻越大分得电压越多）；并联分流：I₁/I₂ = R₂/R₁。</li>
+            <li><b class="kw">伏安法测电阻</b>：原理 R=U/I；器材电源、开关、电压表、电流表、滑动变阻器、待测电阻；变阻器作用：改变电流电压多次测量（定值电阻取平均值减小误差；小灯泡电阻随温度升高而增大，不能求平均）。</li>
+          </ul>
+          <div class="box exam">R=U/I 只是计算式，不能说 R 与 U 成正比、与 I 成反比；电源电压不变是动态电路分析的关键。</div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">4</span><span class="ch-title">电功、电功率与家庭电路</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <div class="box formula">
+            电功（消耗的电能）：W = UIt = Pt；纯电阻还有 W=I²Rt=U²t/R；单位 J，常用 kW·h（度）：1 度=1 kW·h=3.6×10⁶ J。电能表测电功。<br>
+            电功率（电流做功快慢）：P = W/t = UI = I²R = U²/R；单位 W、kW。<br>
+            额定电压/额定功率：用电器正常工作时的值；实际电压偏低灯偏暗，偏高影响寿命。<br>
+            <b>焦耳定律</b>：电流产生的热量 Q = I²Rt；纯电阻 Q=W。
+          </div>
+          <ul>
+            <li>测小灯泡电功率：原理 P=UI；在额定电压下测得额定功率；灯的亮度由实际功率决定。</li>
+            <li>家庭电路：进户线（火线、零线，电压 220 V）→电能表→总开关→保险装置→用电器；各用电器并联；开关接火线；两孔插座“左零右火”，三孔“左零右火上接地”。</li>
+            <li>保险丝：电阻大、熔点低的铅锑合金，串联在火线上，电流过大时自动熔断；<b>不能用铜丝铁丝代替</b>。</li>
+            <li>安全用电：不接触低压带电体、不靠近高压带电体；触电先切断电源；试电笔辨别火线（氖管发光）。电流过大原因：短路、用电器总功率过大。</li>
+          </ul>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">5</span><span class="ch-title">磁现象、电磁联系与电磁波</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li>磁体：磁性、磁极（N 极 S 极，同名相斥异名相吸）；磁化；磁体周围存在<b class="kw">磁场</b>（真实存在），磁感线是物理模型（不真实），在磁体外部从 N 极出发回到 S 极；地磁场 N 极在地理南极附近。</li>
+            <li><b class="kw">电流的磁效应</b>（电生磁）：奥斯特实验证明通电导线周围存在磁场；通电螺线管磁场用<b>安培定则（右手螺旋定则）</b>判断极性。</li>
+            <li>电磁铁：通电有磁性、断电无磁性；磁性强弱与电流大小、线圈匝数、有无铁芯有关；应用：电磁继电器、电铃、扬声器。</li>
+          </ul>
+          <div class="tbl-wrap">
+          <table>
+            <tr><th></th><th>电动机</th><th>发电机</th></tr>
+            <tr><td>原理</td><td>通电线圈在磁场中受力转动</td><td>电磁感应现象（法拉第）</td></tr>
+            <tr><td>条件</td><td>需要电源供电</td><td>闭合电路一部分导体切割磁感线运动</td></tr>
+            <tr><td>能量转化</td><td>电能→机械能</td><td>机械能→电能</td></tr>
+            <tr><td>电流</td><td>外部供给直流电（换向器改变方向）</td><td>产生交变电流（我国 50 Hz）</td></tr>
+          </table>
+          </div>
+          <ul>
+            <li>产生感应电流条件：闭合电路、一部分导体、在磁场中做切割磁感线运动（三者缺一不可）。</li>
+            <li>电磁波：真空中传播速度等于光速 3×10⁸ m/s；传播不需要介质；c=λf；应用：手机、广播电视、WiFi、雷达、GPS；电磁波家族：无线电波、微波、红外线、可见光、紫外线、X 射线、γ 射线（频率递增）。</li>
+          </ul>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">6</span><span class="ch-title">粒子、宇宙与能源（科普章节）</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li>物质由分子、原子构成；原子由<b class="kw">原子核和核外电子</b>构成；原子核由质子和中子构成；质子（+）、电子（−）、中子不带电。</li>
+            <li>核能获取方式：核裂变（链式反应，核电站、原子弹，可控）；核聚变（太阳、氢弹，目前不可控）；核电站能量转化：核能→内能→机械能→电能。</li>
+            <li>宇宙：银河系、太阳系；太阳是恒星，行星绕恒星运动；层次：地球→地月系→太阳系→银河系→宇宙。</li>
+            <li>能源分类：可再生（太阳能、风能、水能、生物质能）与不可再生（煤、石油、天然气、核燃料）；一次能源（直接获取）与二次能源（电能、汽油）。</li>
+          </ul>
+        </div></div>
+      </article>
+    </section>
+
+    <!-- ================= 专题 ================= -->
+    <section class="grade-block" id="grade-topic">
+      <h2 class="grade-title"><span class="badge">实验与公式专题</span></h2>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">1</span><span class="ch-title">必做实验探究与方法</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <div class="tbl-wrap">
+          <table>
+            <tr><th>实验</th><th>原理/方法</th><th>关键结论或注意事项</th></tr>
+            <tr><td>测固体/液体密度</td><td>ρ=m/V，天平+量筒</td><td>先测质量；排水法测体积；减小误差顺序</td></tr>
+            <tr><td>测平均速度</td><td>v=s/t，斜面+停表</td><td>坡度小、挡板计时；下半程速度更大</td></tr>
+            <tr><td>探究音调与频率</td><td>控制变量法</td><td>钢尺伸出越短，振动越快音调越高</td></tr>
+            <tr><td>光的反射定律</td><td>可折转光屏</td><td>光屏向后折不能看到反射光，证明三线共面</td></tr>
+            <tr><td>平面镜成像</td><td>等效替代法（玻璃板代替平面镜）</td><td>用两支相同蜡烛、玻璃板竖直、较暗环境；像不能在光屏上呈现（虚像）</td></tr>
+            <tr><td>凸透镜成像</td><td>光具座，烛焰/透镜/光屏三心等高</td><td>u&gt;2f 缩小实像；物近像远像变大</td></tr>
+            <tr><td>探究滑动摩擦力</td><td>二力平衡（匀速直线拉动）</td><td>拉力=摩擦力；控制变量探究压力、粗糙程度</td></tr>
+            <tr><td>探究压力作用效果</td><td>转换法（海绵凹陷）</td><td>受力面积/压力两个变量</td></tr>
+            <tr><td>液体压强特点</td><td>U 形管压强计</td><td>检查气密性；同种液体同一深度各方向压强相等</td></tr>
+            <tr><td>浮力大小影响因素</td><td>称重法 + 控制变量</td><td>只与 ρ液、V排 有关；阿基米德实验要先测空桶重</td></tr>
+            <tr><td>杠杆平衡条件</td><td>F₁l₁=F₂l₂</td><td>实验前调水平平衡（消除杠杆自重影响），挂钩码后也水平（便于测力臂）</td></tr>
+            <tr><td>测滑轮组机械效率</td><td>η=Gh/Fs</td><td>匀速竖直拉动；物越重效率越高</td></tr>
+            <tr><td>比较物质吸热能力</td><td>控制变量、转换法</td><td>相同质量、相同加热器（加热时间代吸热多少）；升温慢的比热容大</td></tr>
+            <tr><td>探究 I 与 U、R 关系</td><td>控制变量法</td><td>R 不变时 I 与 U 成正比；换电阻后移动滑片保持电压表示数不变，I 与 R 成反比</td></tr>
+            <tr><td>伏安法测电阻/电功率</td><td>R=U/I；P=UI</td><td>变阻器作用不同：前者多次测量取平均，后者测三种状态下功率</td></tr>
+            <tr><td>探究感应电流产生</td><td>灵敏电流计</td><td>导体要切割磁感线；只改变磁场方向或运动方向，电流方向改变</td></tr>
+          </table>
+          </div>
+          <div class="box tip">物理研究方法：控制变量法、转换法（吸热多少→加热时间、动能大小→推动木块距离、磁场→磁感线）、等效替代法、理想模型法（光线、磁感线、匀速直线运动）、科学推理法（真空不传声、牛顿第一定律）、类比法（电流类比水流）。</div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">2</span><span class="ch-title">公式与常数速查</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <div class="tbl-wrap">
+          <table>
+            <tr><th>物理量</th><th>公式</th><th>单位</th></tr>
+            <tr><td>速度</td><td>v = s/t</td><td>m/s</td></tr>
+            <tr><td>密度</td><td>ρ = m/V</td><td>kg/m³</td></tr>
+            <tr><td>重力</td><td>G = mg（g=9.8 N/kg）</td><td>N</td></tr>
+            <tr><td>固体压强</td><td>p = F/S</td><td>Pa</td></tr>
+            <tr><td>液体压强</td><td>p = ρgh</td><td>Pa</td></tr>
+            <tr><td>浮力</td><td>F浮 = G排 = ρ液gV排</td><td>N</td></tr>
+            <tr><td>功</td><td>W = Fs</td><td>J</td></tr>
+            <tr><td>功率</td><td>P = W/t = Fv</td><td>W</td></tr>
+            <tr><td>机械效率</td><td>η = W有/W总</td><td>无单位</td></tr>
+            <tr><td>热量</td><td>Q = cmΔt；Q放 = mq</td><td>J</td></tr>
+            <tr><td>欧姆定律</td><td>I = U/R</td><td>A</td></tr>
+            <tr><td>电功</td><td>W = UIt = Pt</td><td>J / kW·h</td></tr>
+            <tr><td>电功率</td><td>P = UI = W/t</td><td>W</td></tr>
+            <tr><td>焦耳定律</td><td>Q = I²Rt</td><td>J</td></tr>
+          </table>
+          </div>
+          <div class="box formula">
+            常用常数：真空中光速 3×10⁸ m/s；15℃ 空气声速 340 m/s；水的密度 1.0×10³ kg/m³；水的比热容 4.2×10³ J/(kg·℃)；标准大气压 1.01×10⁵ Pa；g=9.8 N/kg；家庭电路 220 V；一节干电池 1.5 V；人体安全电压 ≤36 V。
+          </div>
+          <div class="box warn">单位换算：1 m/s=3.6 km/h；1 g/cm³=10³ kg/m³；1 度=1 kW·h=3.6×10⁶ J；面积 1 cm²=10⁻⁴ m²；体积 1 mL=1 cm³=10⁻⁶ m³，1 L=10⁻³ m³。</div>
+        </div></div>
+      </article>
+    </section>
+    </div><!-- /#knowledge -->
+
+    <!-- ================= 真题练习 ================= -->
+    <section id="quizPanel" hidden>
+      <div class="bank-info" id="bankInfo"></div>
+
+      <div class="quiz-entry">
+        <div class="row">
+          <label>年级：</label>
+          <select id="qGrade"><option value="">全部年级</option></select>
+          <label>单元：</label>
+          <select id="qUnit"></select>
+          <button type="button" class="btn-main" id="btnStartUnit">开始练习</button>
+        </div>
+        <div class="row quick">
+          <button type="button" class="btn-quick" id="btnRandom">🎲 随机 20 题综合检测</button>
+          <button type="button" class="btn-quick" id="btnMonth">🆕 本月新题</button>
+          <button type="button" class="btn-quick" id="btnWrong">❌ 错题重练（<span class="wrong-count">0</span>）</button>
+        </div>
+      </div>
+
+      <h2 class="grade-title" id="quizTitle" style="margin-top:24px">选择范围后开始练习</h2>
+      <div class="quiz-summary" id="quizSummary">完成后这里会显示正确率</div>
+      <div id="quizBody"></div>
+    </section>
+
+    <!-- ================= 错题集 ================= -->
+    <section id="wrongPanel" hidden>
+      <h2 class="grade-title">我的错题集</h2>
+      <div class="wrong-stat-bar" id="wrongStat"></div>
+      <div class="clear-row"><button type="button" class="btn-mini" id="btnClearWrong">🗑 清空全部错题</button></div>
+      <div id="wrongBody"></div>
+    </section>
+
+  </main>
+</div>
+
+<button class="back-top" aria-label="返回顶部">↑</button>
+<script src="js/main.js"></script>
+<script src="js/physics-bank.js"></script>
+<script src="js/quiz-core.js"></script>
+</body>
+</html>
