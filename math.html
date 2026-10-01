@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>数学（人教版）· 初中学习助手</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-subject="math">
+<div class="read-progress"></div>
+
+<header class="topbar">
+  <a class="home-link" href="index.html"><span class="logo-dot">📐</span> 学习助手</a>
+  <span class="subject-name"><b>数学</b> · 人教版</span>
+  <button class="menu-btn" aria-label="菜单">☰</button>
+  <div class="search-box">
+    <span class="ico">🔍</span>
+    <input id="searchInput" type="text" placeholder="搜索：勾股定理、二次函数、全等…">
+  </div>
+</header>
+<div class="sidebar-mask"></div>
+
+<div class="layout">
+  <aside class="sidebar">
+    <h4>分册目录</h4>
+    <nav>
+      <a href="#grade-7a">七年级上册</a>
+      <a href="#grade-7b">七年级下册</a>
+      <a href="#grade-8a">八年级上册</a>
+      <a href="#grade-8b">八年级下册</a>
+      <a href="#grade-9a">九年级上册</a>
+      <a href="#grade-9b">九年级下册</a>
+      <a href="#grade-topic">中考思想方法</a>
+    </nav>
+    <div class="progress-wrap">
+      <div class="bar"><i></i></div>
+      <p>掌握进度 <span class="pct">0%</span></p>
+    </div>
+    <h4 style="margin-top:18px">题库训练</h4>
+    <nav>
+      <a href="#quiz" data-tab="quiz">📝 真题 / 模拟题练习</a>
+      <a href="#wrong" data-tab="wrong">❌ 错题集 <span class="wrong-count" style="color:var(--red);font-weight:700">0</span></a>
+    </nav>
+  </aside>
+
+  <main class="content">
+    <section class="page-hero" data-emoji="📐">
+      <h1>数学 · 人教版</h1>
+      <p>覆盖七至九年级全部章节：数与式、方程与不等式、函数、图形的性质与变化、统计与概率，含公式定理、易错点与解题模型。</p>
+      <div class="tags">
+        <span>数与代数</span><span>图形与几何</span><span>函数</span><span>统计与概率</span><span>29 章 + 专题</span>
+      </div>
+    </section>
+
+    <div class="quiz-tabs">
+      <button type="button" data-tab="knowledge" class="active">📖 知识要点</button>
+      <button type="button" data-tab="quiz">📝 真题练习</button>
+      <button type="button" data-tab="wrong">❌ 错题集 <span class="wrong-count">0</span></button>
+    </div>
+
+    <div id="knowledge">
+    <div class="toolbar">
+      <button id="expandAll">全部展开</button>
+      <button id="collapseAll">全部收起</button>
+      <span class="tip">公式、定理、易错点单独标注，便于考前速查</span>
+    </div>
+
+    <!-- ================= 七上 ================= -->
+    <section class="grade-block" id="grade-7a">
+      <h2 class="grade-title"><span class="badge">七年级上册</span></h2>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">1</span><span class="ch-title">有理数</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li><b class="kw">正负数</b>：表示具有相反意义的量；0 既不是正数也不是负数。</li>
+            <li><b class="kw">有理数分类</b>：整数（正整数、0、负整数）和分数（正分数、负分数）统称有理数。</li>
+            <li><b class="kw">数轴</b>三要素：原点、正方向、单位长度；右边的数总比左边大。</li>
+            <li><b class="kw">相反数</b>：a 的相反数是 −a；互为相反数两数和为 0；−(−a)=a。</li>
+            <li><b class="kw">绝对值</b>：|a|≥0；正数绝对值是它本身，负数绝对值是它的相反数，|0|=0；两个负数比较，绝对值大的反而小。</li>
+          </ul>
+          <h3>运算法则</h3>
+          <ul>
+            <li>加法：同号取相同符号并把绝对值相加；异号取绝对值较大加数的符号，用大绝对值减小绝对值；互为相反数相加得 0。</li>
+            <li>减法：a−b=a+(−b)；乘除法：同号得正、异号得负，绝对值相乘除；0 乘任何数得 0，0 不能作除数。</li>
+            <li><b class="kw">乘方</b>：aⁿ（a 底数，n 指数）；负数奇次幂为负、偶次幂为正；(−1)ⁿ 规律。</li>
+            <li>运算顺序：先乘方，再乘除，后加减；同级从左到右；有括号先算括号（小→中→大）。</li>
+          </ul>
+          <div class="box formula">科学记数法：把一个数写成 a×10ⁿ 的形式（1≤|a|&lt;10，n 为整数）。原数≥10 时 n = 整数位数 −1，如 306000 = 3.06×10⁵。</div>
+          <div class="box exam">易错：① −2² = −4，(−2)² = 4；② |a| = b（b&gt;0）则 a = ±b；③ 近似数 2.30 万精确到百位；④ 倒数等于本身的是 ±1，相反数等于本身的只有 0。</div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">2</span><span class="ch-title">整式的加减</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li><b class="kw">单项式</b>：数或字母的积（单独一个数或字母也是）；数字因数叫<b>系数</b>；所有字母指数和叫<b>次数</b>。</li>
+            <li><b class="kw">多项式</b>：几个单项式的和；每个单项式叫项（含前面符号）；最高次项的次数叫多项式次数。</li>
+            <li><b class="kw">同类项</b>：所含字母相同，并且相同字母的指数也相同的项（与系数、顺序无关）。</li>
+            <li><b class="kw">合并同类项</b>：系数相加减，字母和字母的指数不变。</li>
+            <li><b class="kw">去括号</b>：括号前“+”直接去；括号前“−”去括号后各项变号。</li>
+          </ul>
+          <div class="box exam">易错：−3(x−2y) = −3x+6y（别只乘第一项）；π 是常数不是字母；整式分母中不含字母。</div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">3</span><span class="ch-title">一元一次方程</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li><b class="kw">方程</b>：含未知数的等式；只含一个未知数、次数为 1 的整式方程叫一元一次方程，标准形式 ax+b=0 (a≠0)。</li>
+            <li><b class="kw">等式的性质</b>：① 两边同加（减）同一个数（式），结果仍相等；② 两边同乘一个数或同除以一个<b>不为 0</b> 的数，结果仍相等。</li>
+            <li>解方程步骤：去分母 → 去括号 → 移项（变号）→ 合并同类项 → 系数化为 1。</li>
+          </ul>
+          <h3>应用题常见模型</h3>
+          <div class="tbl-wrap">
+          <table>
+            <tr><th>类型</th><th>基本关系</th></tr>
+            <tr><td>行程</td><td>路程 = 速度×时间；相遇：路程和 = 总路程；追及：路程差 = 距离；顺水速度=静水速+水速</td></tr>
+            <tr><td>工程</td><td>工作量 = 工作效率×工作时间（总工作量常设 1）</td></tr>
+            <tr><td>销售盈亏</td><td>利润 = 售价−进价；利润率 = 利润/进价；售价 = 进价×(1+利润率) = 标价×折扣/10</td></tr>
+            <tr><td>配套</td><td>按配套比例列等量关系</td></tr>
+            <tr><td>积分/计费</td><td>分段计费、表格中找等量关系</td></tr>
+          </table>
+          </div>
+          <div class="box tip">列方程关键：用不同方式表示<b>同一个量</b>；设未知数后，其余量用其表达，再找等量关系。</div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">4</span><span class="ch-title">几何图形初步</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li>立体图形：柱体（棱柱、圆柱）、锥体、球；展开图（正方体 11 种展开图，注意“一线不过四、田凹应弃之”）。</li>
+            <li><b class="kw">直线</b>：向两方无限延伸，两点确定一条直线；<b>射线</b>：一方延伸；<b>线段</b>：两点之间线段最短，两点间线段的长度叫两点间距离。</li>
+            <li><b class="kw">线段中点</b>：M 是 AB 中点 ⇒ AM=MB=½AB；和差倍分类讨论。</li>
+            <li><b class="kw">角</b>：1°=60′，1′=60″；角平分线把角分成两个相等的角。</li>
+            <li><b class="kw">互余/互补</b>：和为 90° 互余，和为 180° 互补；<b>同角（等角）的余角相等、补角相等</b>。</li>
+          </ul>
+          <div class="box exam">易错：角度是 60 进制，43.25° = 43°15′；度分秒运算借 1 当 60。</div>
+        </div></div>
+      </article>
+    </section>
+
+    <!-- ================= 七下 ================= -->
+    <section class="grade-block" id="grade-7b">
+      <h2 class="grade-title"><span class="badge">七年级下册</span></h2>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">1</span><span class="ch-title">相交线与平行线</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li>两线相交：<b class="kw">对顶角相等</b>；邻补角互补。</li>
+            <li><b class="kw">垂线</b>：过一点有且只有一条直线与已知直线垂直；<b>垂线段最短</b>；直线外一点到直线的垂线段长度叫<b>点到直线的距离</b>。</li>
+            <li>三线八角：<b class="kw">同位角</b>（F 型）、<b>内错角</b>（Z 型）、<b>同旁内角</b>（U 型）。</li>
+          </ul>
+          <div class="box formula">
+            平行线判定：① 同位角相等，两直线平行；② 内错角相等，两直线平行；③ 同旁内角互补，两直线平行；④ 平行于同一直线的两直线互相平行。<br>
+            平行线性质（判定反过来）：两直线平行 → 同位角相等、内错角相等、同旁内角互补。
+          </div>
+          <ul>
+            <li><b class="kw">命题</b>：由题设和结论组成，写成“如果……那么……”；真/假命题；定理是经过推理证实的真命题。</li>
+            <li><b class="kw">平移</b>：对应点连线平行（或在同一直线上）且相等；图形形状大小不变。</li>
+          </ul>
+          <div class="box exam">拐点模型（猪蹄/铅笔头）：AB∥CD，拐点 E 处作平行线，可得 ∠E=∠B+∠D（向内折）或 ∠B+∠E+∠D=360°（向外凸）。</div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">2</span><span class="ch-title">实数</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li><b class="kw">算术平方根</b>：若 x²=a (x≥0)，则 x = √a（a≥0）；规定 √0=0。</li>
+            <li><b class="kw">平方根</b>：若 x²=a，则 x 叫 a 的平方根，记作 ±√a；正数有两个互为相反数的平方根，0 的平方根是 0，负数没有平方根。</li>
+            <li><b class="kw">立方根</b>：若 x³=a，则 x=∛a；正数、0、负数都有且只有一个立方根，∛(−a)=−∛a。</li>
+            <li><b class="kw">无理数</b>：无限不循环小数（π、√2 等开方开不尽的数）；有理数和无理数统称<b>实数</b>，实数与数轴上的点一一对应。</li>
+          </ul>
+          <div class="box formula">√(a²) = |a|；(√a)² = a (a≥0)；实数运算：相反数、绝对值、运算法则与有理数相同。</div>
+          <div class="box exam">易错：① 16 的平方根是 ±4，算术平方根是 4；② √16 = 4，而 √16 的平方根是 ±2；③ 无限小数不一定是无理数（无限循环小数是有理数）。</div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">3</span><span class="ch-title">平面直角坐标系</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li>有序数对 (a, b)；x 轴（横轴）、y 轴（纵轴）、原点；四个象限（逆时针Ⅰ Ⅱ Ⅲ Ⅳ）；坐标轴上的点不属于任何象限。</li>
+            <li>点 P(a,b)：到 x 轴距离 |b|，到 y 轴距离 |a|，到原点距离 √(a²+b²)。</li>
+          </ul>
+          <div class="tbl-wrap">
+          <table>
+            <tr><th>对称</th><th>点 P(a,b) 的对称点</th></tr>
+            <tr><td>关于 x 轴</td><td>(a, −b)（横轴横不变）</td></tr>
+            <tr><td>关于 y 轴</td><td>(−a, b)</td></tr>
+            <tr><td>关于原点</td><td>(−a, −b)</td></tr>
+          </table>
+          </div>
+          <ul>
+            <li>平移规律：左右移改变横坐标（右加左减），上下移改变纵坐标（上加下减）。</li>
+            <li>象限符号：Ⅰ(+,+) Ⅱ(−,+) Ⅲ(−,−) Ⅳ(+,−)；x 轴上点 b=0，y 轴上点 a=0；一三象限角平分线 a=b，二四象限 a=−b。</li>
+          </ul>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">4</span><span class="ch-title">二元一次方程组</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li>含两个未知数、次数都是 1 的整式方程；两个二元一次方程合在一起组成方程组；使两个方程都成立的未知数的值叫方程组的解。</li>
+            <li><b class="kw">代入消元法</b>：把一个方程变形成 y=ax+b 后代入另一个方程。</li>
+            <li><b class="kw">加减消元法</b>：某未知数系数相同（减）或互为相反数（加）；不等时先乘适当的数化相同。</li>
+            <li>三元一次方程组：消元转化为二元、再转化为一元。</li>
+          </ul>
+          <div class="box tip">实际问题：鸡兔同笼、增收节支、数字问题、行程问题；关键找<b>两个独立等量关系</b>。</div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">5</span><span class="ch-title">不等式与不等式组</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li>不等式性质：① 两边同加（减）同一个数（式），不等号方向不变；② 同乘（除以）同一个<b>正数</b>，方向不变；③ 同乘（除以）同一个<b>负数</b>，<b class="kw">不等号方向改变</b>。</li>
+            <li>解一元一次不等式步骤同解方程，但乘除负数要变号；解集在数轴上表示（&gt;、&lt; 空心，≥、≤ 实心）。</li>
+            <li>不等式组：同大取大，同小取小，大小小大中间找，大大小小无处找（无解）。</li>
+          </ul>
+          <div class="box exam">易错：由 −2x&gt;4 得 x&lt;−2；“至少、不低于、不少于”对应 ≥，“至多、不超过”对应 ≤。</div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">6</span><span class="ch-title">数据的收集整理与描述</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li><b class="kw">全面调查（普查）</b>：考察全体对象；<b>抽样调查</b>：抽取样本（样本要具有代表性、广泛性）。</li>
+            <li>总体、个体、样本、样本容量（样本中个体数目，不带单位）。</li>
+            <li>统计图：条形图（具体数量）、折线图（变化趋势）、扇形图（部分占总体的百分比，圆心角 = 360°×百分比）。</li>
+            <li><b class="kw">频数分布直方图</b>：算极差 → 定组距组数 → 列频数分布表 → 画图；小长方形面积 = 组距×(频数/组距) = 频数。</li>
+          </ul>
+        </div></div>
+      </article>
+    </section>
+
+    <!-- ================= 八上 ================= -->
+    <section class="grade-block" id="grade-8a">
+      <h2 class="grade-title"><span class="badge">八年级上册</span></h2>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">1</span><span class="ch-title">三角形</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <div class="box formula">
+            ① 三边关系：任意两边之和大于第三边，任意两边之差小于第三边（判断：最短两边之和 &gt; 最长边）。<br>
+            ② 内角和：∠A+∠B+∠C = 180°；外角：三角形的一个外角等于与它不相邻的两个内角之和，大于任何一个不相邻内角；外角和 360°。<br>
+            ③ 重要线段：高、中线（平分三角形面积）、角平分线；中线交点叫重心。
+          </div>
+          <ul>
+            <li>按角分类：锐角三角形、直角三角形、钝角三角形；按边分类：不等边、等腰（含等边）。</li>
+            <li>n 边形内角和 = (n−2)×180°；任意多边形外角和都是 360°；对角线条数 = n(n−3)/2；正 n 边形每个内角 = (n−2)×180°/n。</li>
+          </ul>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">2</span><span class="ch-title">全等三角形</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <p>能够完全重合的两个三角形全等；对应边相等、对应角相等。</p>
+          <div class="box formula">
+            判定方法：<br>
+            ① SSS（三边对应相等）② SAS（两边及其夹角）③ ASA（两角及其夹边）④ AAS（两角及一对边）⑤ HL（直角三角形斜边和一条直角边对应相等）。
+          </div>
+          <div class="box warn">SSA、AAA 不能判定一般三角形全等！找条件顺序：先找边，再找角；公共边、公共角、对顶角是隐含条件。</div>
+          <h3>角平分线</h3>
+          <ul>
+            <li><b class="kw">性质</b>：角平分线上的点到角两边的距离相等。</li>
+            <li><b class="kw">判定</b>：角的内部到角两边距离相等的点在角平分线上。</li>
+            <li>三角形三条角平分线交于一点（内心），该点到三边距离相等。</li>
+          </ul>
+          <div class="box tip">常见辅助线：截长补短、倍长中线、向角两边作垂线、连接公共边。</div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">3</span><span class="ch-title">轴对称</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li>轴对称性质：关于某直线对称的两图形全等；对应点连线被对称轴<b class="kw">垂直平分</b>。</li>
+            <li><b class="kw">线段垂直平分线</b>性质：其上的点到线段两端距离相等；判定反过来也成立。</li>
+            <li>坐标对称：(a,b) 关于 x 轴对称 (a,−b)，关于 y 轴对称 (−a,b)。</li>
+          </ul>
+          <h3>等腰三角形</h3>
+          <div class="box formula">
+            性质：等边对等角（两底角相等）；顶角平分线、底边上的中线、底边上的高“<b>三线合一</b>”；轴对称图形。<br>
+            判定：等角对等边；两边相等。<br>
+            等边三角形：三边相等，三角都是 60°；判定：三边相等 / 三角相等 / 有一个角是 60° 的等腰三角形。<br>
+            30° 角所对直角边等于斜边的一半（Rt△ 中，30° 对边 = ½ 斜边）。
+          </div>
+          <div class="box tip">最短路径问题：直线 l 同侧两点 A、B，在 l 上找 P 使 PA+PB 最小——作 A 关于 l 的对称点 A′，连接 A′B 与 l 的交点即为 P（“将军饮马”模型）。</div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">4</span><span class="ch-title">整式的乘法与因式分解</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <h3>幂的运算</h3>
+          <div class="box formula">
+            aᵐ·aⁿ = aᵐ⁺ⁿ　　(aᵐ)ⁿ = aᵐⁿ　　(ab)ⁿ = aⁿbⁿ<br>
+            aᵐ÷aⁿ = aᵐ⁻ⁿ (a≠0)　　a⁰ = 1 (a≠0)　　a⁻ⁿ = 1/aⁿ (a≠0)
+          </div>
+          <h3>整式乘法与公式</h3>
+          <div class="box formula">
+            平方差公式：(a+b)(a−b) = a²−b²<br>
+            完全平方公式：(a±b)² = a²±2ab+b²
+          </div>
+          <h3>因式分解（和差化积，与整式乘法互逆）</h3>
+          <ol>
+            <li><b class="kw">提公因式法</b>：ma+mb+mc = m(a+b+c)（先看系数最大公约数、再看相同字母最低次幂）。</li>
+            <li><b class="kw">公式法</b>：a²−b²=(a+b)(a−b)；a²±2ab+b²=(a±b)²。</li>
+          </ol>
+          <div class="box tip">步骤：一提（公因式）、二套（公式）、三查（分解到不能再分）。如 −2x³+8x = −2x(x²−4) = −2x(x+2)(x−2)。</div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">5</span><span class="ch-title">分式</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li>形如 A/B，A、B 是整式且 B 中含字母；<b class="kw">分式有意义 ⇔ B≠0</b>；值为 0 ⇔ A=0 且 B≠0。</li>
+            <li><b class="kw">基本性质</b>：A/B = (A·M)/(B·M) = (A÷M)/(B÷M)（M≠0）——约分、通分的依据。</li>
+            <li>乘除：分子乘分子、分母乘分母；除变乘（颠倒除式）；加减：同分母分母不变分子加减；异分母先通分。</li>
+            <li>负整数指数幂：a⁻ⁿ = 1/aⁿ；科学记数法表示很小的数：0.000…0a = a×10⁻ⁿ（n 为第一个非零数字前 0 的个数）。</li>
+            <li><b class="kw">分式方程</b>：去分母化整式方程，<b>必须检验</b>（代入最简公分母，使分母为 0 的是增根，舍去）。</li>
+          </ul>
+          <div class="box exam">易错：解分式方程不写检验是最常见失分点；列分式方程解应用题（工程、行程、销售）也要双重检验（增根＋实际意义）。</div>
+        </div></div>
+      </article>
+    </section>
+
+    <!-- ================= 八下 ================= -->
+    <section class="grade-block" id="grade-8b">
+      <h2 class="grade-title"><span class="badge">八年级下册</span></h2>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">1</span><span class="ch-title">二次根式</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li>形如 √a (a≥0) 的式子；双重非负性：a≥0 且 √a≥0。</li>
+            <li>(√a)² = a (a≥0)；√(a²) = |a|。</li>
+          </ul>
+          <div class="box formula">
+            乘法：√a·√b = √(ab) (a≥0, b≥0)；除法：√a/√b = √(a/b) (a≥0, b&gt;0)<br>
+            最简二次根式：被开方数不含分母、不含能开得尽方的因数（式）；加减：先化简，再合并同类二次根式。
+          </div>
+          <div class="box tip">分母有理化：1/√a = √a/a；1/(√a±√b) 分子分母同乘 (√a∓√b)（共轭式）。</div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">2</span><span class="ch-title">勾股定理</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <div class="box formula">
+            <b>勾股定理</b>：直角三角形两直角边 a、b，斜边 c，则 a²+b²=c²。<br>
+            <b>逆定理</b>：若三角形三边 a、b、c 满足 a²+b²=c²，则该三角形是直角三角形（c 所对为直角）。
+          </div>
+          <ul>
+            <li>勾股数：3,4,5；5,12,13；6,8,10；8,15,17；7,24,25；9,40,41 及其倍数。</li>
+            <li>常见类型：折叠问题（设未知数列方程）、立体表面最短路径（展开成平面后用勾股）、实际测量。</li>
+          </ul>
+          <div class="box exam">易错：没给图形时，斜边可能要分类（如直角三角形两边长 3、4，第三边为 5 或 √7）。</div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">3</span><span class="ch-title">平行四边形与特殊平行四边形</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <h3>平行四边形</h3>
+          <div class="box formula">
+            性质：对边平行且相等；对角相等、邻角互补；对角线互相平分；是中心对称图形（对角线交点为对称中心）。<br>
+            判定：① 两组对边分别平行；② 两组对边分别相等；③ 一组对边平行且相等；④ 两组对角分别相等；⑤ 对角线互相平分。
+          </div>
+          <h3>矩形（长方形）</h3>
+          <p>性质：四个角都是直角；对角线相等且互相平分。判定：有一个角是直角的平行四边形 / 对角线相等的平行四边形 / 有三个角是直角的四边形。</p>
+          <h3>菱形</h3>
+          <p>性质：四条边都相等；对角线互相垂直平分且每条对角线平分一组对角；面积 = 底×高 = ½×两对角线乘积。判定：一组邻边相等的平行四边形 / 对角线互相垂直的平行四边形 / 四条边相等。</p>
+          <h3>正方形</h3>
+          <p>既是矩形又是菱形：四边相等、四角直角、对角线相等且互相垂直平分，每条对角线平分一组对角（与边成 45°）。</p>
+          <div class="box formula"><b>三角形中位线定理</b>：三角形的中位线平行于第三边，并且等于第三边的一半。</div>
+          <div class="box tip">直角三角形斜边中线等于斜边的一半；证题常连接对角线，或利用“对角线”做各类四边形的判定。</div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">4</span><span class="ch-title">一次函数</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li>在变化过程中，数值发生变化的量叫变量，始终不变的叫常量；y 是 x 的函数：每个 x 都有唯一确定的 y 与之对应。</li>
+            <li>表示方法：解析式法、列表法、图象法。</li>
+          </ul>
+          <div class="box formula">
+            正比例函数 y=kx (k≠0)：过原点的直线；k&gt;0 过一三象限，y 随 x 增大而增大；k&lt;0 过二四象限，y 随 x 增大而减小。<br>
+            一次函数 y=kx+b (k≠0)：与 y 轴交于 (0,b)，b 是截距；由 y=kx 平移 |b| 个单位（上加下减）。<br>
+            k&gt;0：图象上升；k&lt;0：图象下降。k、b 符号决定经过的象限。
+          </div>
+          <ul>
+            <li>用<b class="kw">待定系数法</b>求解析式：设 y=kx+b，代入两点坐标解方程组。</li>
+            <li>一次函数与方程：kx+b=0 的解 ⇔ 图象与 x 轴交点的横坐标；与不等式：kx+b&gt;0 的解集 ⇔ 图象在 x 轴上方部分对应的 x 范围。</li>
+            <li>两直线交点坐标就是对应方程组的解。</li>
+          </ul>
+          <div class="box tip">方案选择问题：列出两个一次函数，分 kx+b₁ = /&gt;/&lt; kx+b₂ 三种情况讨论，结合自变量取值范围选择最优方案。</div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">5</span><span class="ch-title">数据的分析</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <div class="box formula">
+            平均数 x̄ = (x₁+x₂+…+xₙ)/n；加权平均数 x̄ = (x₁f₁+x₂f₂+…)/(f₁+f₂+…)，f 叫权。<br>
+            中位数：数据从小到大排列，奇数个取中间一个，偶数个取中间两个的平均数；<br>
+            众数：出现次数最多的数据（可能不止一个，也可能没有）。
+          </div>
+          <div class="box formula">方差：s² = 1/n·[(x₁−x̄)²+(x₂−x̄)²+…+(xₙ−x̄)²]；方差越<b>大</b>，数据波动越<b>大</b>、越不稳定。</div>
+          <ul>
+            <li>平均数易受极端值影响；中位数不受极端值影响；众数反映集中趋势。</li>
+          </ul>
+        </div></div>
+      </article>
+    </section>
+
+    <!-- ================= 九上 ================= -->
+    <section class="grade-block" id="grade-9a">
+      <h2 class="grade-title"><span class="badge">九年级上册</span></h2>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">1</span><span class="ch-title">一元二次方程</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <p>标准形式 ax²+bx+c=0 (a≠0)。</p>
+          <h3>四种解法</h3>
+          <ol>
+            <li><b class="kw">直接开平方法</b>：形如 (x+m)²=n (n≥0)。</li>
+            <li><b class="kw">配方法</b>：化二次项系数为 1 → 移项 → 两边加一次项系数一半的平方 → 开方。</li>
+            <li><b class="kw">公式法</b>：x = (−b ± √(b²−4ac)) / 2a。</li>
+            <li><b class="kw">因式分解法</b>：右边化为 0，左边分解为两个一次式的积。</li>
+          </ol>
+          <div class="box formula">
+            根的判别式 Δ = b²−4ac：Δ&gt;0 两个不相等实根；Δ=0 两个相等实根；Δ&lt;0 无实根。<br>
+            根与系数关系（韦达定理，Δ≥0）：x₁+x₂ = −b/a，x₁·x₂ = c/a。
+          </div>
+          <ul>
+            <li>实际问题：传播问题（(1+x)²）、增长率/下降率 a(1±x)²=b、单（双）循环比赛 n(n−1)/2 与 n(n−1)、面积问题、利润问题；解后检验实际意义。</li>
+          </ul>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">2</span><span class="ch-title">二次函数</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <p>一般式 y=ax²+bx+c (a≠0)，图象是抛物线。</p>
+          <div class="box formula">
+            三种解析式：<br>
+            ① 一般式 y=ax²+bx+c；<br>
+            ② 顶点式 y=a(x−h)²+k，顶点 (h,k)，对称轴 x=h；<br>
+            ③ 交点式 y=a(x−x₁)(x−x₂)（x₁、x₂ 为与 x 轴交点横坐标）。<br>
+            顶点坐标 (−b/2a, (4ac−b²)/4a)，对称轴 x=−b/2a。
+          </div>
+          <ul>
+            <li>a&gt;0 开口向上，有最低点（最小值）；a&lt;0 开口向下，有最高点（最大值）；|a| 越大开口越小。</li>
+            <li>系数符号：a 看开口；“左同右异”——对称轴在 y 轴左侧时 a、b 同号，右侧时异号；c 看与 y 轴交点 (0,c) 的位置。</li>
+            <li>与一元二次方程关系：抛物线与 x 轴交点个数 ⇔ Δ 的符号。</li>
+            <li>增减性：a&gt;0 时，对称轴左侧 y 随 x 增大而减小，右侧增大；a&lt;0 相反。</li>
+            <li>抛物线平移：“上加下减（k），左加右减（h）”。</li>
+          </ul>
+          <div class="box tip">实际应用：最大利润、最大面积、抛物线型拱桥/投篮——先建系、设解析式求参数，再利用顶点求最值，注意自变量取值范围。</div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">3</span><span class="ch-title">旋转</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li>旋转三要素：旋转中心、旋转方向、旋转角；性质：对应点到旋转中心距离相等；对应点与旋转中心连线夹角等于旋转角；旋转前后图形全等。</li>
+            <li><b class="kw">中心对称</b>：把一个图形绕某点旋转 180° 后能与另一个图形重合；对应点连线经过对称中心且被平分。</li>
+            <li>中心对称图形：图形绕中心旋转 180° 后与自身重合（平行四边形、圆、线段、正六边形等；注意等腰三角形不是）。</li>
+            <li>关于原点对称的点：(a,b) → (−a,−b)。</li>
+          </ul>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">4</span><span class="ch-title">圆</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <h3>圆的基本性质</h3>
+          <ul>
+            <li>圆是轴对称图形（直径所在直线为对称轴），也是中心对称图形；同圆或等圆中，圆心角、弧、弦有一组量相等则其余对应量相等。</li>
+            <li><b class="kw">垂径定理</b>：垂直于弦的直径平分弦，并且平分弦所对的两条弧；常结合半径 r、弦长一半 a/2、弦心距 d 用 r²=d²+(a/2)² 计算。</li>
+            <li><b class="kw">圆周角定理</b>：一条弧所对的圆周角等于它所对圆心角的一半；同弧或等弧所对圆周角相等；<b>直径所对的圆周角是直角（90°）</b>，90° 圆周角所对的弦是直径。</li>
+            <li>圆内接四边形对角互补。</li>
+          </ul>
+          <h3>位置关系</h3>
+          <ul>
+            <li>点与圆：d&gt;r 外、d=r 上、d&lt;r 内；<b class="kw">不在同一直线上的三个点确定一个圆</b>；三角形外接圆圆心（外心）是三边垂直平分线交点。</li>
+            <li>直线与圆：相离 d&gt;r、相切 d=r、相交 d&lt;r。</li>
+            <li><b class="kw">切线</b>判定：经过半径外端且垂直于这条半径的直线是圆的切线；性质：切线垂直于过切点的半径；<b>切线长定理</b>：从圆外一点引圆的两条切线，切线长相等，该点与圆心连线平分两切线夹角。三角形内切圆圆心（内心）是三角平分线交点。</li>
+          </ul>
+          <h3>计算</h3>
+          <div class="box formula">
+            弧长 l = nπr/180；扇形面积 S = nπr²/360 = ½lr。<br>
+            圆锥：侧面展开图是扇形；S侧 = πrl（l 为母线长）；S全 = πrl+πr²；扇形弧长 = 底面周长 2πr。
+          </div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">5</span><span class="ch-title">概率初步</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li>事件：必然事件（概率 1）、不可能事件（概率 0）、随机事件（0&lt;P&lt;1）。</li>
+            <li><b class="kw">古典概型</b>：P(A) = 事件 A 包含的结果数 / 所有等可能结果总数。</li>
+            <li>列举法：直接列举、<b>列表法</b>（两步操作如掷两枚骰子）、<b>画树状图法</b>（两步或三步以上）。</li>
+            <li>用频率估计概率：大量重复试验中，事件发生的频率稳定在某个常数附近，该常数即概率。</li>
+          </ul>
+          <div class="box exam">“放回”与“不放回”要分清：不放回时第二步的总数与可选对象都减少；判断游戏是否公平看双方获胜概率是否相等。</div>
+        </div></div>
+      </article>
+    </section>
+
+    <!-- ================= 九下 ================= -->
+    <section class="grade-block" id="grade-9b">
+      <h2 class="grade-title"><span class="badge">九年级下册</span></h2>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">1</span><span class="ch-title">反比例函数</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <p>解析式 y = k/x (k≠0)，也可写成 xy=k、y=kx⁻¹。</p>
+          <ul>
+            <li>图象是<b class="kw">双曲线</b>，两支无限接近坐标轴但不与坐标轴相交；k&gt;0 在一三象限，在每个象限内 y 随 x 增大而减小；k&lt;0 在二四象限，在每个象限内 y 随 x 增大而增大。</li>
+            <li>图象上任意一点向两坐标轴作垂线，与坐标轴围成的<b class="kw">矩形面积 = |k|</b>；与原点、垂足构成的三角形面积 = |k|/2。</li>
+            <li>图象关于原点中心对称，也关于直线 y=±x 轴对称。</li>
+          </ul>
+          <div class="box tip">k 的几何意义常与一次函数综合考查；求 k 只需图象上一个点的坐标（横纵坐标之积）。</div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">2</span><span class="ch-title">相似</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li>相似多边形：对应角相等，对应边成比例；对应边的比叫<b class="kw">相似比</b>。</li>
+            <li>相似三角形性质：对应角相等、对应边成比例；对应高、中线、角平分线的比等于相似比；<b>周长比 = 相似比，面积比 = 相似比的平方</b>。</li>
+          </ul>
+          <div class="box formula">
+            相似三角形判定：<br>
+            ① 平行于三角形一边的直线截其他两边（或延长线），所得三角形与原三角形相似；<br>
+            ② 三边对应成比例（SSS）；③ 两边对应成比例且夹角相等（SAS）；④ 两角分别相等（AA）；<br>
+            ⑤ 两个直角三角形：斜边和一直角边对应成比例（HL 型）。
+          </div>
+          <ul>
+            <li><b class="kw">位似</b>：特殊的相似——对应顶点连线交于一点（位似中心），对应边互相平行；在坐标系中以原点为位似中心、相似比为 k 时，对应点坐标乘 k（或 −k）。</li>
+            <li>常见模型：A 字型、8 字型（X 型）、母子型（射影定理图形）、一线三等角（K 型）。</li>
+          </ul>
+          <div class="box formula">射影定理（Rt△，∠C=90°，CD⊥AB 于 D）：CD²=AD·DB；AC²=AD·AB；BC²=BD·AB。</div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">3</span><span class="ch-title">锐角三角函数与解直角三角形</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <div class="box formula">
+            在 Rt△ 中：sin A = ∠A的对边/斜边；cos A = 邻边/斜边；tan A = 对边/邻边。
+          </div>
+          <div class="tbl-wrap">
+          <table>
+            <tr><th>α</th><th>30°</th><th>45°</th><th>60°</th></tr>
+            <tr><td>sin α</td><td>1/2</td><td>√2/2</td><td>√3/2</td></tr>
+            <tr><td>cos α</td><td>√3/2</td><td>√2/2</td><td>1/2</td></tr>
+            <tr><td>tan α</td><td>√3/3</td><td>1</td><td>√3</td></tr>
+          </table>
+          </div>
+          <ul>
+            <li>互余关系：sin A = cos(90°−A)，cos A = sin(90°−A)；同一锐角 sin²A+cos²A=1，tan A = sin A/cos A。</li>
+            <li><b class="kw">解直角三角形</b>：已知除直角外两个元素（至少一边）求其余元素，依据两锐角互余、勾股定理、边角关系。</li>
+            <li>实际应用：仰角/俯角、方位角（北偏东 x°）、坡度（坡比）i = 铅直高度/水平宽度 = tan α；遇到非直角三角形常作高转化。</li>
+          </ul>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">4</span><span class="ch-title">投影与视图</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li><b class="kw">平行投影</b>：太阳光形成（平行光线），物高与影长成正比（同一时刻）；<b>中心投影</b>：点光源（灯光）。</li>
+            <li><b class="kw">三视图</b>：主视图（从正面看）、俯视图（从上面看）、左视图（从左面看）；画三视图规则：<b>长对正、高平齐、宽相等</b>；看得见的轮廓线画实线，看不见的画虚线。</li>
+            <li>由三视图还原几何体：圆锥、圆柱、棱柱、球及组合体；常与表面积、体积计算结合。</li>
+          </ul>
+        </div></div>
+      </article>
+    </section>
+
+    <!-- ================= 专题 ================= -->
+    <section class="grade-block" id="grade-topic">
+      <h2 class="grade-title"><span class="badge">中考思想方法</span></h2>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">1</span><span class="ch-title">常用公式速记</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <div class="tbl-wrap">
+          <table>
+            <tr><th>图形</th><th>周长 / 面积 / 体积</th></tr>
+            <tr><td>三角形</td><td>S = ½ah（a 底 h 高）</td></tr>
+            <tr><td>平行四边形</td><td>S = ah</td></tr>
+            <tr><td>梯形</td><td>S = ½(a+b)h</td></tr>
+            <tr><td>圆</td><td>C = 2πr；S = πr²</td></tr>
+            <tr><td>柱体</td><td>V = Sh；圆柱侧面积 = 2πrh</td></tr>
+            <tr><td>锥体</td><td>V = ⅓Sh；圆锥侧面积 = πrl</td></tr>
+            <tr><td>球</td><td>S = 4πr²，V = 4/3·πr³（了解）</td></tr>
+          </table>
+          </div>
+          <p>数轴两点距离 |a−b|；平面内 A(x₁,y₁)、B(x₂,y₂)：AB = √[(x₁−x₂)²+(y₁−y₂)²]，中点坐标 ((x₁+x₂)/2, (y₁+y₂)/2)。</p>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">2</span><span class="ch-title">数学思想与解题策略</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li><b class="kw">方程与函数思想</b>：用字母表示未知量，把几何关系、实际问题转化为方程（组）或函数。</li>
+            <li><b class="kw">数形结合</b>：函数图象与性质、数轴、几何图形代数化（建系）、用面积法验证公式。</li>
+            <li><b class="kw">分类讨论</b>：等腰三角形（谁为腰）、直角顶点位置、动点位置、绝对值、相似对应关系、函数开口方向；讨论后注意检验是否重复遗漏。</li>
+            <li><b class="kw">转化与化归</b>：未知转已知、复杂转简单、立体转平面、一般转特殊；分式方程化整式、多边形转三角形。</li>
+            <li><b class="kw">整体思想</b>：整体代入（韦达定理求 x₁²+x₂² = (x₁+x₂)²−2x₁x₂）、换元法。</li>
+            <li><b class="kw">建模思想</b>：实际问题 → 方程、不等式、函数、几何模型。</li>
+          </ul>
+          <div class="box tip">压轴题（动点/存在性）通用步骤：① 用含 t 的式子表示关键线段；② 按图形关系列方程；③ 分类画图；④ 检验结果是否在 t 的取值范围内。</div>
+          <div class="box exam">选择填空提速：特殊值法、排除法、代入验证法、度量估算法；解答题规范：设、列、解、验、答五步完整。</div>
+        </div></div>
+      </article>
+    </section>
+    </div><!-- /#knowledge -->
+
+    <!-- ================= 真题练习 ================= -->
+    <section id="quizPanel" hidden>
+      <div class="bank-info" id="bankInfo"></div>
+
+      <div class="quiz-entry">
+        <div class="row">
+          <label>年级：</label>
+          <select id="qGrade"><option value="">全部年级</option></select>
+          <label>单元：</label>
+          <select id="qUnit"></select>
+          <button type="button" class="btn-main" id="btnStartUnit">开始练习</button>
+        </div>
+        <div class="row quick">
+          <button type="button" class="btn-quick" id="btnRandom">🎲 随机 20 题综合检测</button>
+          <button type="button" class="btn-quick" id="btnMonth">🆕 本月新题</button>
+          <button type="button" class="btn-quick" id="btnWrong">❌ 错题重练（<span class="wrong-count">0</span>）</button>
+        </div>
+      </div>
+
+      <h2 class="grade-title" id="quizTitle" style="margin-top:24px">选择范围后开始练习</h2>
+      <div class="quiz-summary" id="quizSummary">完成后这里会显示正确率</div>
+      <div id="quizBody"></div>
+    </section>
+
+    <!-- ================= 错题集 ================= -->
+    <section id="wrongPanel" hidden>
+      <h2 class="grade-title">我的错题集</h2>
+      <div class="wrong-stat-bar" id="wrongStat"></div>
+      <div class="clear-row"><button type="button" class="btn-mini" id="btnClearWrong">🗑 清空全部错题</button></div>
+      <div id="wrongBody"></div>
+    </section>
+
+  </main>
+</div>
+
+<button class="back-top" aria-label="返回顶部">↑</button>
+<script src="js/main.js"></script>
+<script src="js/math-bank.js"></script>
+<script src="js/quiz-core.js"></script>
+</body>
+</html>
