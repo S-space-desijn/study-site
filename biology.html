@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>生物（北师大版）· 初中学习助手</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-subject="biology">
+<div class="read-progress"></div>
+
+<header class="topbar">
+  <a class="home-link" href="index.html"><span class="logo-dot">🧬</span> 学习助手</a>
+  <span class="subject-name"><b>生物</b> · 北师大版</span>
+  <button class="menu-btn" aria-label="菜单">☰</button>
+  <div class="search-box">
+    <span class="ico">🔍</span>
+    <input id="searchInput" type="text" placeholder="搜索：光合作用、血液循环、染色体…">
+  </div>
+</header>
+<div class="sidebar-mask"></div>
+
+<div class="layout">
+  <aside class="sidebar">
+    <h4>分册目录</h4>
+    <nav>
+      <a href="#grade-7a">七年级上册</a>
+      <a href="#grade-7b">七年级下册</a>
+      <a href="#grade-8a">八年级上册</a>
+      <a href="#grade-8b">八年级下册</a>
+      <a href="#grade-topic">实验与图解题</a>
+    </nav>
+    <div class="progress-wrap">
+      <div class="bar"><i></i></div>
+      <p>掌握进度 <span class="pct">0%</span></p>
+    </div>
+    <h4 style="margin-top:18px">题库训练</h4>
+    <nav>
+      <a href="#quiz" data-tab="quiz">📝 真题 / 模拟题练习</a>
+      <a href="#wrong" data-tab="wrong">❌ 错题集 <span class="wrong-count" style="color:var(--red);font-weight:700">0</span></a>
+    </nav>
+  </aside>
+
+  <main class="content">
+    <section class="page-hero" data-emoji="🧬">
+      <h1>生物 · 北师大版</h1>
+      <p>按北师大版四册教材整理：细胞与植物生理、人体八大系统、动物运动与行为、微生物、生殖发育、遗传变异与进化、生态系统及生物多样性。</p>
+      <div class="tags">
+        <span>细胞</span><span>植物生理</span><span>人体生理</span><span>遗传进化</span><span>生态系统</span>
+      </div>
+    </section>
+
+    <div class="quiz-tabs">
+      <button type="button" data-tab="knowledge" class="active">📖 知识要点</button>
+      <button type="button" data-tab="quiz">📝 真题练习</button>
+      <button type="button" data-tab="wrong">❌ 错题集 <span class="wrong-count">0</span></button>
+    </div>
+
+    <div id="knowledge">
+    <div class="toolbar">
+      <button id="expandAll">全部展开</button>
+      <button id="collapseAll">全部收起</button>
+      <span class="tip">重点关注结构图、过程图与实验探究</span>
+    </div>
+
+    <!-- ================= 七上 ================= -->
+    <section class="grade-block" id="grade-7a">
+      <h2 class="grade-title"><span class="badge">七年级上册</span><span class="en">细胞 · 生物体结构层次 · 绿色植物</span></h2>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">1</span><span class="ch-title">生命的世界与探索生命</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li>生物的特征：应激性、生长、繁殖、新陈代谢（最基本特征：生活需要营养、能进行呼吸、排出废物）、除病毒外都由细胞构成、都有遗传变异。</li>
+            <li><b class="kw">生物圈</b>：地球上所有生物及其生活环境；范围包括大气圈下层、整个水圈、岩石圈上层；为生物提供营养物质、阳光、空气、水、适宜温度和生存空间。</li>
+            <li>生物多样性：<b>物种多样性、遗传（基因）多样性、生态系统多样性</b>；遗传多样性是实质和基础。</li>
+            <li>生物与环境：环境影响生物（非生物因素：阳光、水、温度、空气；生物因素：捕食、竞争、合作、寄生）；生物适应环境（保护色、警戒色、拟态），也影响和改变环境（蚯蚓松土、大树底下好乘凉）。</li>
+          </ul>
+          <div class="box tip">探究实验一般过程：发现并提出问题 → 收集信息作出假设 → 设计并完成实验（设置对照、控制单一变量、重复实验取平均值）→ 分析现象得出结论 → 表达交流。</div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">2</span><span class="ch-title">细胞：显微镜与细胞结构</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <h3>显微镜使用</h3>
+          <ul>
+            <li>步骤：取镜安放 → 对光（低倍镜、大光圈、看到明亮视野）→ 放置玻片 → 观察（降镜筒时眼睛注视物镜防压碎；左眼注视目镜，右眼睁开便于画图）→ 收放。</li>
+            <li>放大倍数 = 目镜倍数 × 物镜倍数；倍数越大，看到细胞越大、数目越少、视野越暗。</li>
+            <li>像为<b class="kw">倒像（上下颠倒、左右相反）</b>：物像偏哪就向哪移动玻片；污点位置：移动目镜/玻片判断。</li>
+            <li>光线弱时用大光圈、凹面镜；光线强时用小光圈、平面镜；低倍换高倍后不能动粗准焦螺旋。</li>
+          </ul>
+          <h3>动植物细胞结构与功能</h3>
+          <div class="tbl-wrap">
+          <table>
+            <tr><th>结构</th><th>功能</th><th>动物</th><th>植物</th></tr>
+            <tr><td>细胞壁</td><td>保护和支持细胞</td><td>无</td><td>有</td></tr>
+            <tr><td>细胞膜</td><td>保护，<b>控制物质进出</b>（选择透过性）</td><td>有</td><td>有</td></tr>
+            <tr><td>细胞质</td><td>生命活动主要场所，可流动加速物质交换</td><td>有</td><td>有</td></tr>
+            <tr><td>细胞核</td><td>含遗传物质，<b>控制生命活动（遗传信息库）</b></td><td>有</td><td>有</td></tr>
+            <tr><td>液泡</td><td>细胞液中含糖、色素、酸味物质等</td><td>无（成熟植物有大液泡）</td><td>有</td></tr>
+            <tr><td>叶绿体</td><td>光合作用场所，将光能转变成化学能</td><td>无</td><td>绿色部分有</td></tr>
+            <tr><td>线粒体</td><td>呼吸作用主要场所，“动力车间”</td><td>有</td><td>有</td></tr>
+          </table>
+          </div>
+          <ul>
+            <li>细胞通过<b class="kw">分裂</b>增加数目（先核分裂后质分裂，染色体先复制再平均分配）；通过<b>生长</b>增大体积；通过<b>分化</b>形成组织（细胞形态结构功能发生变化，遗传物质不变）。</li>
+          </ul>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">3</span><span class="ch-title">生物体的结构层次</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <div class="box formula">
+            植物体层次：细胞 → <b>组织</b>（保护、营养、输导、分生组织）→ <b>器官</b>（营养器官：根、茎、叶；生殖器官：花、果实、种子）→ 植物体。<br>
+            动物体层次：细胞 → <b>组织</b>（上皮、肌肉、结缔、神经组织）→ <b>器官</b> → <b>系统</b>（八大系统）→ 动物体（人体）。
+          </div>
+          <ul>
+            <li>分生组织细胞小、壁薄、核大、质浓，有很强分裂能力；输导组织中导管运输水和无机盐（自下而上），筛管运输有机物（自上而下）。</li>
+            <li>人体四大组织：上皮组织（保护分泌，皮肤表皮、腺体）、结缔组织（支持连接营养保护，血液、骨、软骨、肌腱）、肌肉组织（收缩舒张，平滑肌/骨骼肌/心肌）、神经组织（接受刺激产生传导兴奋，脑脊髓神经）。</li>
+          </ul>
+          <div class="box exam">叶片是器官，叶肉是营养组织；血液是组织（结缔组织），心脏是器官，植物的一片叶是器官。</div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">4</span><span class="ch-title">绿色开花植物的生活方式（五大作用）</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <h3>光合作用</h3>
+          <div class="box formula">
+            概念：绿色植物通过叶绿体，利用光能，把二氧化碳和水合成储存能量的有机物（主要是淀粉），并释放氧气。<br>
+            表达式：二氧化碳 + 水 ——(光能，叶绿体)→ 有机物（储存能量）+ 氧气。<br>
+            意义：制造有机物（食物来源）、储存能量（能量来源）、释放氧气（维持碳—氧平衡）。
+          </div>
+          <ul>
+            <li>“绿叶在光下制造淀粉”实验：暗处理（耗尽原有淀粉）→ 部分遮光（对照，变量光）→ 光照 → 酒精隔水加热脱色 → 清水漂洗 → 滴碘液 → 见光部分变蓝（产生淀粉），遮光部分不变蓝。</li>
+            <li>探究光合作用需要二氧化碳（氢氧化钠吸收 CO₂）、产生氧气（金鱼藻收集气体使带火星木条复燃）、场所是叶绿体（银边天竺葵）。</li>
+          </ul>
+          <h3>呼吸作用</h3>
+          <div class="box formula">
+            概念：细胞内有机物在氧参与下被分解成二氧化碳和水，同时释放能量。<br>
+            表达式：有机物（储存能量）+ 氧气 → 二氧化碳 + 水 + <b>能量</b>；主要场所：线粒体；所有活细胞时刻进行。<br>
+            意义：为生命活动（细胞分裂、吸收无机盐、运输有机物等）提供动力。
+          </div>
+          <div class="box tip">光合 vs 呼吸：光合只在有光时、含叶绿体的细胞进行，合成有机物、储存能量；呼吸昼夜都进行、所有活细胞都进行，分解有机物、释放能量。新疆瓜果甜、大棚增产：增大昼夜温差，白天促进光合、夜晚低温抑制呼吸。</div>
+          <h3>吸收作用</h3>
+          <ul>
+            <li>根吸水主要部位：<b class="kw">根尖成熟区</b>（大量根毛增大面积）；根吸水动力是蒸腾作用；原理：细胞液浓度 &gt; 周围溶液浓度时吸水，反之失水（“烧苗”）。</li>
+            <li>植物需要量最多的无机盐：<b>氮（叶茂）、磷（开花结果）、钾（茎秆健壮、促淀粉运输）</b>；缺氮叶片发黄、缺磷暗绿带紫、缺钾叶缘焦枯。</li>
+          </ul>
+          <h3>运输作用</h3>
+          <p>木质部中<b class="kw">导管</b>（死细胞）自下而上运输水和无机盐；韧皮部中<b>筛管</b>（活细胞）自上而下运输有机物。“树怕伤皮不怕空心”——伤皮切断筛管。</p>
+          <h3>蒸腾作用</h3>
+          <ul>
+            <li>主要通过叶片<b class="kw">气孔</b>（由两个半月形保卫细胞围成，下表皮多于上表皮）散失水分；意义：降低叶面温度、产生蒸腾拉力促进水和无机盐运输、提高大气湿度增加降水。</li>
+            <li>移栽植物：带土坨（保护根毛）、剪去部分枝叶、阴天或傍晚移栽（降低蒸腾）。</li>
+          </ul>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">5</span><span class="ch-title">绿色开花植物的生活史</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <h3>种子结构与萌发</h3>
+          <ul>
+            <li>大豆种子（双子叶）：种皮 + 胚（胚芽、胚轴、胚根、两片子叶）；营养储存在<b>子叶</b>。</li>
+            <li>玉米种子（单子叶）：果皮和种皮 + 胚 + 胚乳；营养储存在<b>胚乳</b>，子叶 1 片转运营养；滴碘液胚乳变蓝。</li>
+            <li>胚是新植物的幼体，是种子主要部分。</li>
+            <li>萌发自身条件：胚完整且活、度过休眠期、有供胚发育的营养物质；外界条件：<b class="kw">适量的水分、适宜的温度、充足的空气</b>（光不是必要条件）。</li>
+            <li>萌发过程：胚根先突破种皮发育成根 → 胚轴伸长 → 胚芽发育成茎和叶。</li>
+          </ul>
+          <h3>开花结果</h3>
+          <ul>
+            <li>花的主要结构是<b class="kw">雄蕊（花药+花丝）和雌蕊（柱头+花柱+子房）</b>；花药产生花粉（内有精子），子房内有胚珠（内有卵细胞）。</li>
+            <li>过程：开花 → 传粉（自花/异花，媒介主要是昆虫和风力）→ 受精（精子+卵细胞结合）→ 结果。</li>
+            <li>受精后：子房发育成<b>果实</b>，子房壁发育成<b>果皮</b>，胚珠发育成<b>种子</b>，珠被发育成种皮，受精卵发育成<b>胚</b>，受精极核发育成胚乳。</li>
+          </ul>
+          <div class="box exam">葵花籽、玉米粒是果实（果皮种皮紧贴）；西瓜籽、花生仁是种子；“麻屋子（果皮）、红帐子（种皮）、白胖子（胚）”。</div>
+        </div></div>
+      </article>
+    </section>
+
+    <!-- ================= 七下 ================= -->
+    <section class="grade-block" id="grade-7b">
+      <h2 class="grade-title"><span class="badge">七年级下册</span><span class="en">人体营养 · 运输 · 呼吸 · 排泄 · 调节 · 健康</span></h2>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">1</span><span class="ch-title">人体的营养与消化吸收</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <div class="tbl-wrap">
+          <table>
+            <tr><th>营养物质</th><th>主要作用</th><th>缺乏症/来源</th></tr>
+            <tr><td>糖类</td><td>主要供能物质</td><td>米饭、面食</td></tr>
+            <tr><td>蛋白质</td><td>生长发育、细胞修复更新、也可供能</td><td>瘦肉、鱼、蛋、奶、豆类</td></tr>
+            <tr><td>脂肪</td><td>备用能源物质、保温</td><td>肥肉、植物油</td></tr>
+            <tr><td>水</td><td>细胞主要成分，占体重 60%～70%</td><td>运输营养和废物</td></tr>
+            <tr><td>无机盐</td><td>钙磷构成骨骼牙齿；铁构成血红蛋白；碘合成甲状腺激素</td><td>缺钙儿童佝偻病/成人骨质疏松；缺铁贫血；缺碘地方性甲状腺肿（大脖子病），儿童呆小症</td></tr>
+            <tr><td>维生素</td><td>不供能、不构成细胞，需要量小但不可缺</td><td>缺 A 夜盲症（胡萝卜、肝）；缺 B₁ 脚气病（粗粮）；缺 C 坏血病（新鲜果蔬）；缺 D 佝偻病、骨质疏松（鱼肝油、晒太阳促合成）</td></tr>
+          </table>
+          </div>
+          <h3>消化系统</h3>
+          <ul>
+            <li>组成：消化道（口→咽→食道→胃→小肠→大肠→肛门）和消化腺（唾液腺、肝脏、胰腺、胃腺、肠腺）。</li>
+            <li><b class="kw">肝脏是最大的消化腺</b>，分泌胆汁（<b>不含消化酶</b>，乳化脂肪为脂肪微粒，物理性消化）；胰腺分泌胰液。</li>
+            <li>消化过程：淀粉在口腔开始消化（唾液淀粉酶→麦芽糖，在小肠最终变葡萄糖）；蛋白质在胃开始（胃蛋白酶，最终变氨基酸）；脂肪只在小肠消化（胆汁+胰液肠液→甘油和脂肪酸）。</li>
+            <li><b class="kw">小肠是消化和吸收的主要器官</b>：长（5～6 m）、有皱襞和小肠绒毛增大面积、绒毛壁和毛细血管壁仅一层上皮细胞、含肠液胰液胆汁多种消化液。</li>
+          </ul>
+          <div class="box tip">合理膳食：平衡膳食宝塔，早中晚能量比约 3:4:3；关注食品安全（QS/SC 标志、保质期、绿色食品）。</div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">2</span><span class="ch-title">人体内的物质运输</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <h3>血液</h3>
+          <div class="tbl-wrap">
+          <table>
+            <tr><th>成分</th><th>特点</th><th>功能</th></tr>
+            <tr><td>血浆</td><td>淡黄色半透明，主要成分水</td><td>运载血细胞，运输养料和废物</td></tr>
+            <tr><td>红细胞</td><td>数量最多，成熟无细胞核，含血红蛋白（含铁、易与氧结合）</td><td>运输氧和部分二氧化碳；少→贫血，多吃含铁蛋白质食物</td></tr>
+            <tr><td>白细胞</td><td>体积最大、有细胞核</td><td>吞噬病菌，防御保护；增多→炎症</td></tr>
+            <tr><td>血小板</td><td>最小、形状不规则、无细胞核</td><td>止血和加速凝血；过少伤口血流不止</td></tr>
+          </table>
+          </div>
+          <ul>
+            <li>血型 ABO 系统：A、B、AB、O 型；输血以<b class="kw">输同型血</b>为原则；万能受血者 AB 型，万能输血者 O 型（紧急少量）；一次献血 200～300 mL 不影响健康。</li>
+          </ul>
+          <h3>血管与心脏</h3>
+          <ul>
+            <li>动脉：离心送血，管壁厚弹性大、血流快；静脉：回心，壁薄弹性小、有静脉瓣；毛细血管：内径最小（红细胞单行通过）、壁仅一层上皮细胞、血流最慢，适于物质交换。</li>
+            <li>心脏四腔：上房下室（左心房、左心室、右心房、右心室）；<b class="kw">左心室壁最厚</b>（体循环动力）；房室瓣、动脉瓣保证血液按一定方向流动（心房→心室→动脉，不倒流）。</li>
+            <li>相连血管：左心室—主动脉；右心室—肺动脉；左心房—肺静脉；右心房—上下腔静脉。<b>心室连动脉、心房连静脉</b>。</li>
+          </ul>
+          <h3>血液循环</h3>
+          <div class="box formula">
+            <b>体循环</b>：左心室 → 主动脉 → 全身毛细血管网（动脉血变静脉血）→ 上下腔静脉 → 右心房。<br>
+            <b>肺循环</b>：右心室 → 肺动脉 → 肺部毛细血管网（静脉血变动脉血）→ 肺静脉 → 左心房。<br>
+            两循环同时进行、在心脏处连通成一条完整路线。
+          </div>
+          <ul>
+            <li>动脉血含氧多、颜色鲜红；静脉血含氧少、颜色暗红；<b>不是按血管名称区分</b>（肺动脉流静脉血，肺静脉流动脉血）。</li>
+          </ul>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">3</span><span class="ch-title">人体的能量供应与呼吸</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li>食物中能量通过呼吸作用释放；热价：脂肪 &gt; 蛋白质 &gt; 糖类。</li>
+            <li>呼吸系统组成：呼吸道（鼻、咽、喉、气管、支气管）和<b class="kw">肺</b>（气体交换主要场所）。</li>
+            <li>呼吸道功能：气体通道，对吸入气体进行处理——鼻毛过滤、黏膜分泌黏液清洁湿润、毛细血管温暖空气；<b>咽是气体和食物共同通道</b>（会厌软骨在吞咽时盖住喉口）；喉有声带。</li>
+            <li>肺适于气体交换：肺泡数量多、肺泡壁薄（一层上皮细胞）、外面缠绕丰富毛细血管和弹性纤维。</li>
+          </ul>
+          <div class="tbl-wrap">
+          <table>
+            <tr><th></th><th>肋间肌/膈肌</th><th>胸廓</th><th>肺</th><th>肺内气压</th><th>气体</th></tr>
+            <tr><td>吸气</td><td>收缩（膈顶下降）</td><td>扩大</td><td>扩张</td><td>低于外界</td><td>入肺</td></tr>
+            <tr><td>呼气</td><td>舒张（膈顶回升）</td><td>缩小</td><td>回缩</td><td>高于外界</td><td>出肺</td></tr>
+          </table>
+          </div>
+          <ul>
+            <li>气体交换原理：<b class="kw">气体扩散作用</b>（从高浓度到低浓度）；肺泡内 O₂ 进入血液、CO₂ 进入肺泡；组织处血液中 O₂ 进入组织细胞、CO₂ 进入血液。</li>
+            <li>氧气最终在线粒体中参与呼吸作用；呼出气体中氧气减少、二氧化碳和水增多。</li>
+          </ul>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">4</span><span class="ch-title">代谢废物的排出与人体的自我调节</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <h3>排泄（区别排遗）</h3>
+          <ul>
+            <li>排泄三条途径：皮肤排汗（水、无机盐、尿素）；呼吸系统呼气（CO₂、水）；<b class="kw">泌尿系统排尿</b>（主要途径）。</li>
+            <li>泌尿系统：肾脏（形成尿液，基本单位是<b>肾单位</b>：肾小球、肾小囊、肾小管）→ 输尿管 → 膀胱（暂存）→ 尿道。</li>
+            <li>尿液形成两步：① <b>肾小球的滤过作用</b>（除血细胞和大分子蛋白质外，血浆中一部分水、无机盐、葡萄糖、尿素滤过形成<b>原尿</b>）；② <b>肾小管的重吸收作用</b>（原尿中全部葡萄糖、大部分水、部分无机盐被重吸收）。</li>
+            <li>尿液成分：水、无机盐、尿素；<b>原尿与血浆比少了大分子蛋白质；尿液与原尿比不含葡萄糖</b>。血尿/蛋白尿→肾小球病变；糖尿→肾小管病变或胰岛素不足。</li>
+          </ul>
+          <h3>神经调节</h3>
+          <ul>
+            <li>神经系统：中枢神经系统（脑、脊髓）和周围神经系统（脑神经、脊神经）；结构功能基本单位是<b class="kw">神经元</b>（细胞体+突起：树突接受信息、轴突传出信息）。</li>
+            <li><b class="kw">反射</b>是神经调节的基本方式；结构基础是<b>反射弧</b>：感受器 → 传入神经（有神经节）→ 神经中枢 → 传出神经 → 效应器。</li>
+            <li>非条件反射（生来就有、由大脑皮层以下中枢完成）：缩手反射、眨眼反射、膝跳反射、婴儿吮吸；条件反射（后天形成、大脑皮层参与）：望梅止渴、谈虎色变。与语言文字有关的反射是人类特有。</li>
+            <li>眼：光线 → 角膜 → 瞳孔 → 晶状体（折射，通过睫状体调节曲度）→ 玻璃体 → 视网膜（成像，有感光细胞，产生神经冲动）→ 视神经 → 大脑皮层视觉中枢（形成视觉）。近视：晶状体曲度过大或眼球前后径过长，物像落在视网膜前方，戴<b>凹透镜</b>。</li>
+            <li>耳：外耳（耳廓、外耳道）、中耳（鼓膜、听小骨、鼓室）、内耳（半规管、前庭、<b>耳蜗有听觉感受器</b>）；听觉在大脑皮层形成；咽鼓管连通咽和鼓室，维持鼓膜两侧气压平衡。</li>
+          </ul>
+          <h3>激素调节</h3>
+          <div class="tbl-wrap">
+          <table>
+            <tr><th>激素</th><th>腺体</th><th>作用</th><th>异常症</th></tr>
+            <tr><td>生长激素</td><td>垂体</td><td>促进生长发育</td><td>幼年不足侏儒症；过多巨人症；成年过多肢端肥大症</td></tr>
+            <tr><td>甲状腺激素</td><td>甲状腺</td><td>促进代谢和生长发育，提高神经系统兴奋性</td><td>幼年不足呆小症；成年不足黏液性水肿；过多甲亢；缺碘地方性甲状腺肿</td></tr>
+            <tr><td>胰岛素</td><td>胰岛（胰腺内）</td><td>调节糖代谢，降低血糖浓度</td><td>不足→糖尿病（注射胰岛素治疗，不能口服，本质是蛋白质）</td></tr>
+          </table>
+          </div>
+          <p>人体生命活动主要受神经系统调节，同时也受激素调节，二者相互协调。</p>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">5</span><span class="ch-title">健康地生活</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li>健康：身体上、心理上和社会适应方面的良好状态（不仅是没病）；养成生活规律、合理膳食、合理用药（处方药 R、非处方药 OTC）、拒绝吸烟酗酒吸毒。</li>
+            <li>传染病特点：传染性、流行性；三个基本环节：<b class="kw">传染源（病人、携带者、患病动物）、传播途径（空气飞沫、饮食、血液、接触、生物媒介）、易感人群</b>。</li>
+            <li>预防措施：控制传染源（隔离治疗、焚烧深埋患病动物）、切断传播途径（消毒、讲卫生、灭蚊蝇）、保护易感人群（锻炼、预防接种）。</li>
+            <li><b class="kw">免疫</b>三道防线：① 皮肤和黏膜（非特异性）；② 体液中杀菌物质（溶菌酶）和吞噬细胞（非特异性，生来就有、对多种病原体起作用）；③ 免疫器官和免疫细胞产生<b>抗体</b>（特异性免疫，后天形成、只针对特定抗原）。</li>
+            <li>抗原（引起产生抗体的物质，如病原体、疫苗、移植器官）；抗体是淋巴细胞产生的特殊蛋白质；计划免疫：接种疫苗（属抗原）使人体产生相应抗体和记忆细胞，属于特异性免疫。</li>
+          </ul>
+        </div></div>
+      </article>
+    </section>
+
+    <!-- ================= 八上 ================= -->
+    <section class="grade-block" id="grade-8a">
+      <h2 class="grade-title"><span class="badge">八年级上册</span><span class="en">动物运动与行为 · 动物资源 · 微生物</span></h2>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">1</span><span class="ch-title">动物的运动</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li>动物运动方式：水中游泳（鳍、蹼）、陆地爬行/行走/奔跑/跳跃、空中飞行（翼、翅）。</li>
+            <li>运动系统组成：<b class="kw">骨、骨连结、骨骼肌</b>三部分（骨与骨连结构成骨骼）。</li>
+            <li>关节结构：关节面（关节头、关节窝，表面有关节软骨——减少摩擦缓冲震动）、关节囊（分泌滑液、连接牢固）、关节腔（内有滑液）；特点：既牢固（关节囊、韧带）又灵活（关节软骨、滑液）。脱臼：关节头从关节窝滑脱。</li>
+            <li>骨骼肌：由肌腹（中间、收缩）和肌腱（两端、附着在不同骨上）组成；一块骨骼肌两端肌腱绕过关节连在<b>不同</b>的骨上。</li>
+          </ul>
+          <div class="box formula">运动产生：骨骼肌受神经传来的刺激收缩，牵动骨绕关节活动。<b>屈肘</b>：肱二头肌收缩，肱三头肌舒张；<b>伸肘</b>：肱三头肌收缩，肱二头肌舒张；提重物时都收缩，自然下垂时都舒张。运动需要神经系统调节、消化系统/呼吸系统/循环系统配合提供能量。</div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">2</span><span class="ch-title">动物的行为</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <div class="tbl-wrap">
+          <table>
+            <tr><th></th><th>先天性行为（本能行为）</th><th>后天学习行为</th></tr>
+            <tr><td>获得</td><td>生来就有，由体内遗传物质决定</td><td>在遗传因素基础上，由生活经验和学习获得</td></tr>
+            <tr><td>特点</td><td>同种动物基本相同，相对稳定</td><td>个体差异大、易变化、越高等动物学习能力越强</td></tr>
+            <tr><td>举例</td><td>蜘蛛结网、蜜蜂采蜜、鸟类筑巢迁徙、婴儿吮吸、孔雀开屏</td><td>蚯蚓走迷宫、大山雀偷喝牛奶、黑猩猩钓白蚁、鹦鹉学舌</td></tr>
+          </table>
+          </div>
+          <ul>
+            <li>按功能类型：取食行为、领域行为、攻击行为（同种之间、很少致死）、防御行为（保护色、警戒色、拟态、假死）、繁殖行为、节律行为（昼夜、季节、潮汐节律）、<b class="kw">社群行为</b>（蜜蜂、蚂蚁、狒狒：群体内有组织、分工、等级，靠动作、声音、气味——如性外激素——传递信息）。</li>
+          </ul>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">3</span><span class="ch-title">生物圈中的动物与微生物</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li>动物在生物圈中作用：促进物质循环；帮助植物传粉、传播种子；维持生态平衡；仿生应用（雷达—蝙蝠回声定位、冷光灯—萤火虫、薄壳建筑—龟壳）。</li>
+            <li>我国珍稀动物：大熊猫、金丝猴、白鳍豚、朱鹮、扬子鳄（中生代动物“活化石”）；生物多样性面临威胁主因：栖息地破坏、掠夺式开发、环境污染、外来物种入侵；保护措施：<b>就地保护（建立自然保护区，最有效）、易地保护（动物园/繁育中心）、法制教育管理</b>。</li>
+          </ul>
+          <h3>微生物</h3>
+          <div class="tbl-wrap">
+          <table>
+            <tr><th></th><th>细菌</th><th>真菌</th><th>病毒</th></tr>
+            <tr><td>结构</td><td>单细胞，无成形细胞核（原核生物），有细胞壁膜质，无叶绿体；特殊：荚膜、鞭毛、芽孢（休眠体，耐高温）</td><td>有真正细胞核（真核生物），无叶绿体；酵母菌单细胞，霉菌、蘑菇多细胞（菌丝构成）</td><td>无细胞结构，由蛋白质外壳和内部遗传物质组成</td></tr>
+            <tr><td>营养</td><td>多数异养（腐生/寄生），少数自养</td><td>异养（腐生、寄生）</td><td>全部寄生，离开活细胞无生命现象</td></tr>
+            <tr><td>生殖</td><td>分裂生殖</td><td>酵母菌出芽生殖；霉菌、蘑菇孢子生殖</td><td>在宿主细胞内复制增殖</td></tr>
+            <tr><td>举例</td><td>乳酸菌（酸奶泡菜）、醋酸菌（醋）、根瘤菌（固氮）、大肠杆菌</td><td>酵母菌（酿酒、发面）、霉菌（制酱、青霉产青霉素）、蘑菇木耳（食用）</td><td>动物病毒、植物病毒、细菌病毒（噬菌体）；流感、新冠、艾滋病病毒</td></tr>
+          </table>
+          </div>
+          <ul>
+            <li>食品保存原理：把食品内细菌真菌杀死或抑制其生长繁殖（脱水、冷藏、真空包装、腌制、巴氏消毒）。</li>
+          </ul>
+        </div></div>
+      </article>
+    </section>
+
+    <!-- ================= 八下 ================= -->
+    <section class="grade-block" id="grade-8b">
+      <h2 class="grade-title"><span class="badge">八年级下册</span><span class="en">生殖发育 · 遗传变异 · 进化 · 多样性 · 生态系统</span></h2>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">1</span><span class="ch-title">生物的生殖和发育</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li>人的生殖：男性主要器官<b>睾丸</b>（产生精子、分泌雄性激素）；女性主要器官<b>卵巢</b>（产生卵细胞、分泌雌性激素）；受精场所<b>输卵管</b>；胚胎发育场所<b>子宫</b>；胎儿通过<b>胎盘和脐带</b>从母体获得营养和氧气、排出废物（胎盘进行物质交换）；怀孕约 40 周分娩。</li>
+            <li>青春期特点：身高突增（显著特征）、神经系统心肺功能增强、性发育和性成熟（突出特征，出现第二性征、男孩遗精、女孩月经）。</li>
+          </ul>
+          <div class="tbl-wrap">
+          <table>
+            <tr><th>类群</th><th>受精/发育</th></tr>
+            <tr><td>昆虫</td><td>体内受精，卵生。完全变态：卵→幼虫→蛹→成虫（家蚕、蜜蜂、蝴蝶、蚊蝇）；不完全变态：卵→若虫→成虫（蝗虫、蟋蟀、螳螂、蝉）</td></tr>
+            <tr><td>两栖动物</td><td>体外受精（水中），卵生；变态发育：受精卵→蝌蚪（像鱼、用鳃呼吸）→幼蛙→成蛙（用肺呼吸、皮肤辅助）；生殖发育离不开水</td></tr>
+            <tr><td>鸟类</td><td>体内受精，卵生；鸟卵结构：卵壳（保护、透气）、卵白（营养和水）、<b>卵黄（主要营养）</b>、胚盘（含细胞核，发育成雏鸟）、气室（供氧）、系带（固定）</td></tr>
+          </table>
+          </div>
+          <ul>
+            <li>植物生殖：有性生殖（经过两性生殖细胞结合，如种子繁殖，后代具有更大变异性）；无性生殖（不经过两性生殖细胞结合，由母体直接产生新个体，保持母本优良性状、繁殖快）——扦插、嫁接（接穗与砧木的<b>形成层</b>紧密结合）、压条、组织培养、分株。</li>
+          </ul>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">2</span><span class="ch-title">生物的遗传和变异</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li>遗传：亲子间相似性；变异：亲子间及子代个体间差异。生物的遗传和变异是通过生殖和发育实现的。</li>
+            <li>性状：生物体形态结构、生理特性和行为方式；相对性状：同种生物同一性状的不同表现形式（有耳垂/无耳垂）。</li>
+            <li>细胞核中有染色体（由 <b class="kw">DNA 和蛋白质</b>组成），DNA 是主要遗传物质，呈双螺旋结构；基因是 DNA 上有遗传效应的片段，控制生物性状；染色体在体细胞中<b>成对</b>存在，基因也成对。</li>
+            <li>人的体细胞有 <b class="kw">23 对（46 条）</b>染色体；生殖细胞（精子、卵细胞）中 23 条（成单存在）；受精卵中 23 对。</li>
+          </ul>
+          <div class="box formula">
+            生殖过程中染色体变化：体细胞（2n）→ 生殖细胞（n，减数分裂）→ 受精后受精卵（2n）。<br>
+            性别决定：男性 XY（产生含 X 或 Y 的两种精子，比例 1:1），女性 XX（只产生含 X 的卵细胞）；生男生女取决于精子类型，机会各 50%。
+          </div>
+          <ul>
+            <li>基因传递：亲代基因经生殖细胞传给子代；显性基因（A）控制显性性状，隐性基因（a）；AA、Aa 表现显性性状，aa 表现隐性性状；近亲结婚后代患<b>隐性遗传病</b>概率增大（我国婚姻法规定直系血亲和三代以内旁系血亲禁止结婚）。</li>
+            <li>变异类型：可遗传变异（遗传物质改变，如基因突变、基因重组、染色体变异）与不可遗传变异（仅环境引起，遗传物质未变，如晒黑）；应用：人工选择育种、杂交育种（袁隆平杂交水稻）、诱变育种、转基因技术（超级鼠、抗虫棉）。</li>
+          </ul>
+          <div class="box exam">一对相对性状遗传分析：双亲均为显性（如 Aa×Aa），后代基因型 AA:Aa:aa=1:2:1，显性:隐性=3:1；“无中生有”新出现的性状为隐性性状。</div>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">3</span><span class="ch-title">生命的发生和发展（进化）</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li>生命起源的化学进化：原始大气（甲烷、氨、水蒸气、氢等，<b>无氧气</b>）在高温、紫外线、雷电作用下形成简单有机物 → 原始海洋（“生命摇篮”）中形成复杂有机物和原始生命；米勒实验模拟证明无机小分子可生成有机小分子。</li>
+            <li>生物进化证据：<b class="kw">化石是最直接、最重要的证据</b>（越古老地层中化石生物越简单低等）；还有比较解剖学（同源器官）、分子生物学（细胞色素 c）等证据。</li>
+            <li>进化历程：植物：藻类 → 苔藓 → 蕨类 → 种子植物（裸子植物→被子植物）；动物：无脊椎动物 → 鱼类 → 两栖类 → 爬行类 → 鸟类和哺乳类。总趋势：<b>由简单到复杂、由低等到高等、由水生到陆生</b>。</li>
+          </ul>
+          <div class="box formula">
+            <b>自然选择学说</b>（达尔文《物种起源》）：过度繁殖 → 生存斗争 → 遗传变异 → 适者生存、不适者被淘汰。<br>
+            变异是不定向的（先有变异），自然选择是定向的（环境起选择作用）；保护色、长颈鹿长颈、细菌抗药性都是自然选择的结果。
+          </div>
+          <ul>
+            <li>人类起源：人类和现代类人猿（长臂猿、猩猩、大猩猩、黑猩猩）共同祖先是<b class="kw">森林古猿</b>；进化历程：南方古猿 → 能人 → 直立人（北京猿人，用火）→ 智人；人与猿分界的重要标志是<b>直立行走</b>；劳动在进化中起重要作用。</li>
+          </ul>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">4</span><span class="ch-title">生物的分类与主要类群</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li>分类等级（从大到小）：<b class="kw">界、门、纲、目、科、属、种</b>；<b>种</b>是最基本单位；分类单位越小，包含生物越少、共同特征越多、亲缘关系越近；林奈双名法（属名+种加词，拉丁文）。</li>
+            <li>五大类群：原核生物界、原生生物界、真菌界、植物界、动物界（也有六界分法）。</li>
+          </ul>
+          <h3>植物类群</h3>
+          <div class="tbl-wrap">
+          <table>
+            <tr><th>类群</th><th>生活环境</th><th>器官分化</th><th>代表</th></tr>
+            <tr><td>藻类植物</td><td>多水生</td><td>无根、茎、叶分化，无输导组织</td><td>衣藻、海带、紫菜</td></tr>
+            <tr><td>苔藓植物</td><td>阴湿陆地</td><td>有茎叶、无根（假根），无输导组织；监测空气污染指示植物</td><td>葫芦藓、地钱</td></tr>
+            <tr><td>蕨类植物</td><td>阴湿陆地</td><td>有真正根茎叶和输导组织；孢子繁殖</td><td>肾蕨、满江红、桫椤</td></tr>
+            <tr><td>裸子植物</td><td>陆地</td><td>种子裸露，无果皮包被（无果实）</td><td>松、柏、杉、银杏、苏铁</td></tr>
+            <tr><td>被子植物</td><td>最广</td><td>种子外有果皮包被，形成果实；绿色开花植物，最高等</td><td>桃、小麦、玉米</td></tr>
+          </table>
+          </div>
+          <h3>动物类群</h3>
+          <ul>
+            <li><b>无脊椎动物</b>：腔肠动物（水螅、海葵、珊瑚虫，有口无肛门）、扁形动物（涡虫、猪肉绦虫）、线形动物（蛔虫，有口有肛门）、环节动物（蚯蚓，身体由许多体节构成，湿润体壁呼吸）、软体动物（河蚌、乌贼，有外套膜，常具贝壳）、<b class="kw">节肢动物（最大门，昆虫是最大纲）</b>：身体分部、体表有外骨骼（防止水分散失、保护，但限制生长需蜕皮）、足和触角分节；蝗虫、蜜蜂、虾蟹、蜘蛛。</li>
+            <li>鱼类：终生水生，体表鳞片，用<b>鳃</b>呼吸，用鳍游泳，心脏一心房一心室，体外受精，卵生。</li>
+            <li>两栖类：幼体水生用鳃，成体水陆两栖用肺（皮肤辅助），变态发育，体外受精。</li>
+            <li>爬行类：真正陆生脊椎动物，体表覆盖角质鳞片或甲，用肺呼吸，<b>体内受精、卵生（卵壳坚韧）</b>，摆脱水的限制。</li>
+            <li>鸟类：体表被覆羽毛，前肢变成翼，用肺呼吸并有<b>气囊辅助（双重呼吸）</b>，体温恒定，心脏四腔，卵生。</li>
+            <li>哺乳类：最高等；体表被毛，<b>胎生、哺乳</b>，体温恒定，大脑发达。</li>
+          </ul>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">5</span><span class="ch-title">生态系统及其稳定性</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li>生态系统 = 生物部分 + 非生物部分（阳光、空气、水、温度、土壤）；生物部分包括：<b class="kw">生产者（绿色植物）、消费者（动物）、分解者（细菌真菌等营腐生生活的微生物）</b>，三者相互依存，生产者和分解者是连接生物与非生物环境的两个重要环节。</li>
+            <li>食物链：生产者与消费者之间吃与被吃的关系（起点必须是生产者，箭头指向捕食者，<b>不写分解者和非生物部分</b>）；如：草 → 兔 → 狐。</li>
+            <li>食物网：多条食物链交错；生物富集：有毒物质（DDT、重金属）沿食物链<b>积累</b>，营养级别越高浓度越高。</li>
+          </ul>
+          <div class="box formula">
+            能量流动特点：<b>单向流动、逐级递减</b>（传递效率约 10%～20%），所以食物链一般不超过 4～5 个营养级；能量最终来源是<b>太阳能</b>。<br>
+            物质循环特点：<b>反复循环</b>（碳循环以 CO₂ 形式在生物与无机环境间循环；光合作用固定、呼吸作用和分解释放、燃烧也释放）。
+          </div>
+          <ul>
+            <li>生态系统具有一定的<b class="kw">自动调节能力</b>，使生态系统保持相对稳定（生态平衡）；生物种类越多、营养结构越复杂，调节能力越强、越稳定（森林 &gt; 草原 &gt; 荒漠）；但调节能力有一定限度，超过限度生态系统会遭到破坏。</li>
+            <li>人口增长与环境：实行计划生育（控制人口数量、提高人口素质）；生态农业实现物质循环利用、能量多级利用（桑基鱼塘、沼气池）。</li>
+          </ul>
+        </div></div>
+      </article>
+    </section>
+
+    <!-- ================= 专题 ================= -->
+    <section class="grade-block" id="grade-topic">
+      <h2 class="grade-title"><span class="badge">实验与图解题专题</span></h2>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">1</span><span class="ch-title">经典实验与探究要点</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li><b>显微镜与临时装片</b>：擦→滴（植物滴清水、动物滴生理盐水——保持细胞正常形态）→取→展/涂→盖（盖玻片一侧先接触液滴再缓缓放下，防气泡）→染（碘液，一侧滴另一侧吸）。</li>
+            <li><b>探究种子萌发条件</b>：对照实验，水分/温度/空气三组对照，每组只一个变量；用多粒种子避免偶然性。</li>
+            <li><b>探究唾液对淀粉消化</b>：馒头碎屑（模拟牙齿咀嚼）、搅拌（模拟舌）、37℃ 水浴（接近体温酶活性最强）、加碘液检验（变蓝说明有淀粉）；加唾液组不变蓝。</li>
+            <li><b>绿叶在光下制造淀粉</b>：暗处理—遮光—光照—酒精隔水脱色—碘液检验（见光变蓝）。</li>
+            <li><b>探究呼吸作用</b>：萌发种子瓶中温度升高（放热）、气体使澄清石灰水变浑浊（产生 CO₂）、使燃烧蜡烛熄灭（消耗 O₂）；煮熟种子为对照。</li>
+            <li><b>验证光合产生氧气</b>：金鱼藻在光下产生气泡，收集气体使带火星卫生香/木条复燃。</li>
+            <li><b>探究甲状腺激素作用</b>：蝌蚪饲喂实验（加激素组提前发育成小青蛙）；设置正常组对照。</li>
+          </ul>
+        </div></div>
+      </article>
+
+      <article class="chapter">
+        <button type="button" class="chapter-head"><span class="ch-no">2</span><span class="ch-title">高频结构图与识图技巧</span><span class="ch-master"></span><span class="ch-arrow">▼</span></button>
+        <div class="chapter-body"><div class="chapter-body-inner">
+          <ul>
+            <li>动植物细胞对比图：细胞壁、叶绿体、液泡是植物细胞“三大件”。</li>
+            <li>叶片横切面：上/下表皮（有气孔，保卫细胞围成）、叶肉（栅栏组织、海绵组织，含叶绿体）、叶脉（导管+筛管）。</li>
+            <li>消化系统图：识图顺序口→胃→小肠（盘曲最长）；肝脏在右上腹、胃左上腹。</li>
+            <li>心脏图：“<b>上房下室、左右相反（图上右边为心脏左侧）</b>”；心室壁厚于心房，左心室最厚。</li>
+            <li>血液循环图：体循环“左室出右房回”，肺循环“右室出左房回”。</li>
+            <li>肾单位：肾小球（毛细血管球）+肾小囊（套在球外）+肾小管（外绕出球小动脉形成的毛细血管网）。</li>
+            <li>反射弧：找神经节（传入神经上有膨大部分）确定方向。</li>
+            <li>关节图：关节头、关节窝、关节软骨、关节囊、关节腔。</li>
+            <li>花的结构图与发育：子房→果实、胚珠→种子。</li>
+          </ul>
+          <div class="box tip">识图题策略：先看图名和箭头方向，再按“结构名称→功能→相关过程”顺序作答；曲线题看清纵横坐标含义、起点拐点和变化趋势（如血糖浓度、酶活性随温度呈先升后降）。</div>
+        </div></div>
+      </article>
+    </section>
+    </div><!-- /#knowledge -->
+
+    <!-- ================= 真题练习 ================= -->
+    <section id="quizPanel" hidden>
+      <div class="bank-info" id="bankInfo"></div>
+
+      <div class="quiz-entry">
+        <div class="row">
+          <label>年级：</label>
+          <select id="qGrade"><option value="">全部年级</option></select>
+          <label>单元：</label>
+          <select id="qUnit"></select>
+          <button type="button" class="btn-main" id="btnStartUnit">开始练习</button>
+        </div>
+        <div class="row quick">
+          <button type="button" class="btn-quick" id="btnRandom">🎲 随机 20 题综合检测</button>
+          <button type="button" class="btn-quick" id="btnMonth">🆕 本月新题</button>
+          <button type="button" class="btn-quick" id="btnWrong">❌ 错题重练（<span class="wrong-count">0</span>）</button>
+        </div>
+      </div>
+
+      <h2 class="grade-title" id="quizTitle" style="margin-top:24px">选择范围后开始练习</h2>
+      <div class="quiz-summary" id="quizSummary">完成后这里会显示正确率</div>
+      <div id="quizBody"></div>
+    </section>
+
+    <!-- ================= 错题集 ================= -->
+    <section id="wrongPanel" hidden>
+      <h2 class="grade-title">我的错题集</h2>
+      <div class="wrong-stat-bar" id="wrongStat"></div>
+      <div class="clear-row"><button type="button" class="btn-mini" id="btnClearWrong">🗑 清空全部错题</button></div>
+      <div id="wrongBody"></div>
+    </section>
+
+  </main>
+</div>
+
+<button class="back-top" aria-label="返回顶部">↑</button>
+<script src="js/main.js"></script>
+<script src="js/biology-bank.js"></script>
+<script src="js/quiz-core.js"></script>
+</body>
+</html>
